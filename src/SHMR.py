@@ -1,60 +1,70 @@
 import illustris_python as il
 import matplotlib.pyplot as plt
 import numpy as np
+import time
+start_time = time.time()
 
 #tng100-1
 basePath = "./data/tng100-1/output"
-subhaloFields = ['SubhaloMassType', 'SubhaloFlag', "SubhaloPos"]
-haloFields = ["GroupMassType", "GroupNsubs", "GroupPos"]
+subhaloFields = ["SubhaloMass", 'SubhaloMassType', 'SubhaloFlag', "SubhaloPos"]
+haloFields = ["GroupMass", "GroupMassType", "GroupNsubs", "GroupPos", "GroupFirstSub"]
 subhalos = il.groupcat.loadSubhalos(basePath,99,fields=subhaloFields)
 halos = il.groupcat.loadHalos(basePath,99,fields=haloFields)
 
 subhaloFlag = subhalos["SubhaloFlag"]
 subhaloMasses = subhalos["SubhaloMassType"]
+subhaloMass = subhalos["SubhaloMass"]
 subhaloDmMass = []
 subhaloStellarMass = []
 
-subhaloPos = subhalos["SubhaloPos"]
-haloPos = halos["GroupPos"]
-centralHaloDmMass = []
-centralHaloStellarMass = []
-
-numberOfSubhalos=halos["GroupNsubs"]
+numberOfSubhalos = halos["GroupNsubs"]
+centralHalos = halos["GroupFirstSub"]
 haloMasses = halos["GroupMassType"]
+haloMass = halos["GroupMass"]
 haloDmMass = []
 haloStellarMass = []
 
+centralHaloDmMass = []
+centralHaloStellarMass = []
+centrals = 0
 fieldHaloDmMass = []
 fieldHaloStellarMass = []
 fields = 0
 
-N= 100 #len(haloMasses)
-for i in range (0, N):
-    if haloMasses[i][1] >0.01:
-        haloDmMass.append(haloMasses[i][1]*10**10)
-        haloStellarMass.append(haloMasses[i][4]*10**10)
+maxSH = len(subhaloMasses) #use whole data set
+maxH = len(haloMasses)
+step = 1000 #use a smaller sample. Set equal to 1 if you want all the data shown.
+n = 0
+
+for i in range (0,maxSH,step):
+    n = n + 1
+    mass = subhaloMass[i]
+    dm = subhaloMasses[i][1]
+    stellar = subhaloMasses[i][4]
+    ratio = dm/mass
+    if (subhaloFlag[i] > 0) and (mass>0.01) and ratio>0.1: 
+        subhaloDmMass.append(dm*10**10)
+        subhaloStellarMass.append(stellar*10**10)        
+
+
+for i in range (0,maxH, step):
+    mass = haloMass[i]
+    dm = haloMasses[i][1]
+    stellar = haloMasses[i][4]
+    ratio = dm/mass
+    m = centralHalos[i]
+    if (mass >0.01) and (ratio>0.1):
         if numberOfSubhalos[i] == 1:
             fields = fields + 1
-            fieldHaloDmMass.append(haloMasses[i][1]*10**10)
-            fieldHaloStellarMass.append(haloMasses[i][4]*10**10)
+            fieldHaloDmMass.append(dm*10**10)
+            fieldHaloStellarMass.append(stellar*10**10)
+        if m>0:
+            centralHaloDmMass.append(subhaloMasses[m][1]*10**10)
+            centralHaloStellarMass.append(subhaloMasses[m][4]*10**10)
+            centrals = centrals +1
 
-print(fields)
-
-n = 1000 #len(subhaloMasses)
-lost = 0
-
-for i in range (n):
-    if (subhaloFlag[i] > 0) and subhaloMasses[i][1]>0.01:
-        subhaloDmMass.append(subhaloMasses[i][1]*10**10)
-        subhaloStellarMass.append(subhaloMasses[i][4]*10**10)
-        """
-        if subhaloMasses[i][1]>1:
-            if subhaloPos[i] in haloPos: #this takes a LONG time for such a big dataset
-                centralHaloDmMass.append(subhaloMasses[i][1]*10**10)
-                centralHaloStellarMass.append(subhaloMasses[i][4]*10**10)
-        """
-    else:
-        lost = lost+1
+print("For "+ str(n) + " subhalos, " + str(centrals) + " centrals and " + str(fields) + " field galaxies were found.")
+print("Process finished --- %s seconds ---" % int((time.time() - start_time)))
 
 #Subhalo plot
 area = np.pi*2
@@ -63,36 +73,36 @@ plt.axis([10**8, 10**14, 10**5, 10**14])
 plt.xscale("log")
 plt.yscale("log")
 
-plt.title("Subhalo SHM")
+plt.title("Subhalo SHM, N = " + str(n))
 plt.xlabel(r'Halo mass [$ M_\odot /h $]')
 plt.ylabel(r"Stellar mass [$ M_\odot /h $]")
-plt.savefig("./fig/SHMR/initialPlotSubhalos.png")
-plt.show()
-
-"""
-#All halos plot
-area = np.pi*2
-plt.scatter(haloDmMass,haloStellarMass, s=area, alpha=0.5)
-plt.axis([10**8, 10**15, 10**6, 10**14])
-plt.xscale("log")
-plt.yscale("log")
-
-plt.title("Halo SHM")
-plt.xlabel(r'Halo mass [$ M_\odot /h $]')
-plt.ylabel(r"Stellar mass [$M_\odot /h $]")
-plt.savefig("./fig/SHMR/initialPlotHalos.png")
+#plt.savefig("./fig/SHMR/Subhalos.png")
 plt.show()
 
 #Only field galaxies plot
 area = np.pi*2
 plt.scatter(fieldHaloDmMass,fieldHaloStellarMass, s=area, alpha=0.5)
-plt.axis([10**8, 10**12, 10**6, 10**10])
+plt.axis([10**8, 10**12, 10**4, 10**11])
 plt.xscale("log")
 plt.yscale("log")
 
-plt.title("Field Halo SHM")
+plt.title("Field Galaxies SHM, N = " + str(fields))
 plt.xlabel(r'Halo mass [$ M_\odot /h $]')
 plt.ylabel(r"Stellar mass [$M_\odot /h $]")
-plt.savefig("./fig/SHMR/initialPlotFieldHalos.png")
+#plt.savefig("./fig/SHMR/FieldHalos.png")
 plt.show()
-"""
+
+
+#Only central galaxies plot
+area = np.pi*2
+plt.scatter(centralHaloDmMass,centralHaloStellarMass, s=area, alpha=0.5)
+plt.axis([10**8, 10**15, 10**5, 10**13])
+plt.xscale("log")
+plt.yscale("log")
+
+plt.title("Central Galaxy SHM, N = " + str(centrals))
+plt.xlabel(r'Halo mass [$ M_\odot /h $]')
+plt.ylabel(r"Stellar mass [$M_\odot /h $]")
+#plt.savefig("./fig/SHMR/CentralHalos.png")
+plt.show()
+
