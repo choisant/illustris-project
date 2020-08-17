@@ -33,7 +33,7 @@ fields = 0
 
 maxSH = len(subhaloMasses) #use whole data set
 maxH = len(haloMasses)
-step = 1000 #use a smaller sample. Set equal to 1 if you want all the data shown.
+step = 1 #use a smaller sample. Set equal to 1 if you want all the data shown.
 n = 0
 
 for i in range (0,maxSH,step):
@@ -42,7 +42,7 @@ for i in range (0,maxSH,step):
     dm = subhaloMasses[i][1]
     stellar = subhaloMasses[i][4]
     ratio = dm/mass
-    if (subhaloFlag[i] > 0) and (mass>0.01) and ratio>0.1: 
+    if (subhaloFlag[i] > 0) and (mass>1) and ratio>0.5: 
         subhaloDmMass.append(dm*10**10)
         subhaloStellarMass.append(stellar*10**10)        
 
@@ -53,7 +53,7 @@ for i in range (0,maxH, step):
     stellar = haloMasses[i][4]
     ratio = dm/mass
     m = centralHalos[i]
-    if (mass >0.01) and (ratio>0.1):
+    if (mass >1) and (ratio>0.5):
         if numberOfSubhalos[i] == 1:
             fields = fields + 1
             fieldHaloDmMass.append(dm*10**10)
@@ -69,7 +69,7 @@ print("Process finished --- %s seconds ---" % int((time.time() - start_time)))
 #Subhalo plot
 area = np.pi*2
 plt.scatter(subhaloDmMass,subhaloStellarMass, s=area, alpha=0.5)
-plt.axis([10**8, 10**14, 10**5, 10**14])
+plt.axis([10**10, 10**14, 10**5, 10**14])
 plt.xscale("log")
 plt.yscale("log")
 
@@ -82,7 +82,7 @@ plt.show()
 #Only field galaxies plot
 area = np.pi*2
 plt.scatter(fieldHaloDmMass,fieldHaloStellarMass, s=area, alpha=0.5)
-plt.axis([10**8, 10**12, 10**4, 10**11])
+plt.axis([10**10, 10**12, 10**4, 10**11])
 plt.xscale("log")
 plt.yscale("log")
 
