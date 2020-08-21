@@ -8,14 +8,13 @@ data1 = {
     "count": 4,
     "velocity": [12, 14, 1],
     "mass": np.array([10, 23, 67]),
-    "SubhaloMassType": (np.array([[0.11, 5.44, 6.88, 2.99, 2.44, 7.33], [0.11, 5.44, 6.88, 2.99, 2.44, 7.33], [0.11, 5.44, 6.88, 2.99, 2.44, 7.33]])),
+    "SubhaloMassType": (np.array([[0.11, 5.44, 6.88, 2.99, 21.4, 7.33], [0.11, 5.44, 6.88, 2.99, 1.44, 7.33], [0.11, 5.44, 6.88, 2.99, 5.34, 7.33]])),
     "flag": [True, True, False]
 }
 
 
 def dictToPandas(data):
     keyList = list(data.keys())
-
     for key in keyList:
         if key != "count":
             dummy = data[key]
@@ -26,7 +25,7 @@ def dictToPandas(data):
                             "SubhaloMassDM": 1, 
                             "None": 2, 
                             "SubhaloMassTracers": 3, 
-                            "SubhaloMassStars": 4, 
+                            "SubhaloMassStellar": 4, 
                             "SubhaloMassBH": 5}
             masses = np.array(data[key]) #create Series object
             for particle in particleTypes:
@@ -37,4 +36,4 @@ def dictToPandas(data):
     df = pd.DataFrame(data, dtype=object)
     return df
 
-#print(dictToPandas(data1))
+df = dictToPandas(data1)

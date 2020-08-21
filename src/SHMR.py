@@ -1,107 +1,53 @@
 import illustris_python as il
 import matplotlib.pyplot as plt
+import pandas as pd
 import numpy as np
-import time
-start_time = time.time()
 
-#tng100-1
-basePath = "./data/tng100-1/output"
-subhaloFields = ["SubhaloMass", 'SubhaloMassType', 'SubhaloFlag', "SubhaloPos"]
-haloFields = ["GroupMass", "GroupMassType", "GroupNsubs", "GroupPos", "GroupFirstSub"]
-subhalos = il.groupcat.loadSubhalos(basePath,99,fields=subhaloFields)
-halos = il.groupcat.loadHalos(basePath,99,fields=haloFields)
+dataPath = "./data/tng100-1/cutdata/Subhalo_minE9_SM.csv"
+dfAll = pd.read_csv(dataPath)
 
-subhaloFlag = subhalos["SubhaloFlag"]
-subhaloMasses = subhalos["SubhaloMassType"]
-subhaloMass = subhalos["SubhaloMass"]
-subhaloDmMass = []
-subhaloStellarMass = []
+def doublePowerLaw(b, c, M1, N, x):
+    y = 2*N*x*((x/M1)**(-b)+(x/M1)**(c))**(-1)
+    return y
 
-numberOfSubhalos = halos["GroupNsubs"]
-centralHalos = halos["GroupFirstSub"]
-haloMasses = halos["GroupMassType"]
-haloMass = halos["GroupMass"]
-haloDmMass = []
-haloStellarMass = []
+def meanValuesLogLog (df, ymin, ymax, dy, ykey, xkey):
+    #Calculate log-mean 
+    dfAll = df.sort_values(ykey)
+    ylist = np.arange(ymin, ymax, dy)
+    dictAllMean = {"xMean": [], "yMean": [], "xSigma": [], "ySigma": [] }
 
-centralHaloDmMass = []
-centralHaloStellarMass = []
-centrals = 0
-fieldHaloDmMass = []
-fieldHaloStellarMass = []
-fields = 0
+    for y in ylist:
+        dfPart = df[df[ykey] > y-dy]
+        dfPart = dfPart[dfPart[ykey] < y+dy]
+        dictAllMean["yMean"].append(dfPart[ykey].mean())
+        dictAllMean["xMean"].append(dfPart[xkey].mean())
+        dictAllMean["ySigma"].append(dfPart[ykey].std())
+        dictAllMean["xSigma"].append(dfPart[xkey].std())
+    return pd.DataFrame.from_dict(dictAllMean)
 
-maxSH = len(subhaloMasses) #use whole data set
-maxH = len(haloMasses)
-step = 100 #use a smaller sample. Set equal to 1 if you want all the data shown.
-n = 0
 
-for i in range (0,maxSH,step):
-    n = n + 1
-    mass = subhaloMass[i]
-    dm = subhaloMasses[i][1]
-    stellar = subhaloMasses[i][4]
-    ratio = dm/mass
-    if (subhaloFlag[i] > 0) and (stellar>0.01) and ratio>0.1: 
-        subhaloDmMass.append(dm*10**10)
-        subhaloStellarMass.append(stellar*10**10)        
+#Plot SHMR for all galaxies
+dfAll["SubhaloMassDM"] = np.log10(dfAll["SubhaloMassDM"]*10**10)
+dfAll["SubhaloMassStellar"] = np.log10(dfAll["SubhaloMassStellar"]*10**10)
+dfAllmean = meanValuesLogLog(dfAll, 8.0, 12.0, 0.4, "SubhaloMassStellar", "SubhaloMassDM")
 
-for i in range (0,maxH, step):
-    mass = haloMass[i]
-    dm = haloMasses[i][1]
-    stellar = haloMasses[i][4]
-    ratio = dm/mass
-    m = centralHalos[i]
-    if (stellar>0.01) and (ratio>0.1):
-        if numberOfSubhalos[i] == 1:
-            fields = fields + 1
-            fieldHaloDmMass.append(dm*10**10)
-            fieldHaloStellarMass.append(stellar*10**10)
-        if m>0:
-            centralHaloDmMass.append(subhaloMasses[m][1]*10**10)
-            centralHaloStellarMass.append(subhaloMasses[m][4]*10**10)
-            centrals = centrals +1
+ax = dfAll.plot.scatter(x = "SubhaloMassDM", y = "SubhaloMassStellar", s = 1)
+dfAllmean.plot.scatter(x = "xMean", y = "yMean", s = 8, ax = ax)
+dfAllmean.plot(x = "xMean", y = "yMean", c="navy", label = "TNG100-1", ax=ax)
+dfAllmean.plot.scatter(x = "xMean", y = "yMean", yerr = "ySigma", c = "navy", ax = ax)
 
-print("For "+ str(n) + " subhalos, " + str(centrals) + " centrals and " + str(fields) + " field galaxies were found.")
-print("Process finished --- %s seconds ---" % int((time.time() - start_time)))
+#Plot Moster fit
+xmin = 10**9
+xmax = 10**14
+dx = 10**10
+x=np.arange(xmin,xmax,dx)
+y = doublePowerLaw(b = 1.376, c = 0.608,M1 = 10**11.590, N = 0.0351, x = x)
 
-#Subhalo plot
-area = np.pi*2
-plt.scatter(subhaloDmMass,subhaloStellarMass, s=area, alpha=0.5)
-plt.axis([10**10, 10**14, 10**8, 10**14])
-plt.xscale("log")
-plt.yscale("log")
+plt.plot(np.log10(x),np.log10(y), c="red", label= "Moster2012")
 
-plt.title("Subhalo SHM, N = " + str(n))
+plt.axis([9, 14, 9.5, 12.5])
+plt.title("Subhalo SHM, N = " + str(len(dfAll["SubhaloMassDM"])))
 plt.xlabel(r'Halo mass [$ M_\odot /h $]')
 plt.ylabel(r"Stellar mass [$ M_\odot /h $]")
-#plt.savefig("./fig/SHMR/Subhalos.png")
+plt.savefig("./fig/SHMR/allGalaxiesTNG100-1.png")
 plt.show()
-
-#Only field galaxies plot
-area = np.pi*2
-plt.scatter(fieldHaloDmMass,fieldHaloStellarMass, s=area, alpha=0.5)
-plt.axis([10**10, 10**12, 10**8, 10**11])
-plt.xscale("log")
-plt.yscale("log")
-
-plt.title("Field Galaxies SHM, N = " + str(fields))
-plt.xlabel(r'Halo mass [$ M_\odot /h $]')
-plt.ylabel(r"Stellar mass [$M_\odot /h $]")
-#plt.savefig("./fig/SHMR/FieldHalos.png")
-plt.show()
-
-
-#Only central galaxies plot
-area = np.pi*2
-plt.scatter(centralHaloDmMass,centralHaloStellarMass, s=area, alpha=0.5)
-plt.axis([10**9, 10**15, 10**8, 10**13])
-plt.xscale("log")
-plt.yscale("log")
-
-plt.title("Central Galaxy SHM, N = " + str(centrals))
-plt.xlabel(r'Halo mass [$ M_\odot /h $]')
-plt.ylabel(r"Stellar mass [$M_\odot /h $]")
-#plt.savefig("./fig/SHMR/CentralHalos.png")
-plt.show()
-
