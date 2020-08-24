@@ -25,6 +25,12 @@ def meanValuesLogLog (df, ymin, ymax, dy, ykey, xkey):
         dictAllMean["xSigma"].append(dfPart[xkey].std())
     return pd.DataFrame.from_dict(dictAllMean)
 
+def formatPlot():
+    plt.axis([9, 14, 9.5, 12.5])
+    plt.title("Subhalo SHM, N = " + str(len(dfAll["SubhaloMassDM"])))
+    plt.xlabel(r'Halo mass [$ M_\odot /h $]')
+    plt.ylabel(r"Stellar mass [$ M_\odot /h $]")
+    #plt.savefig("./fig/SHMR/allGalaxiesTNG100-1.png")
 
 #Plot SHMR for all galaxies
 dfAll["SubhaloMassDM"] = np.log10(dfAll["SubhaloMassDM"]*10**10)
@@ -32,22 +38,20 @@ dfAll["SubhaloMassStellar"] = np.log10(dfAll["SubhaloMassStellar"]*10**10)
 dfAllmean = meanValuesLogLog(dfAll, 8.0, 12.0, 0.4, "SubhaloMassStellar", "SubhaloMassDM")
 
 ax = dfAll.plot.scatter(x = "SubhaloMassDM", y = "SubhaloMassStellar", s = 1)
-dfAllmean.plot.scatter(x = "xMean", y = "yMean", s = 8, ax = ax)
+ax = dfAllmean.plot.scatter(x = "xMean", y = "yMean", s = 8, ax = ax)
 dfAllmean.plot(x = "xMean", y = "yMean", c="navy", label = "TNG100-1", ax=ax)
 dfAllmean.plot.scatter(x = "xMean", y = "yMean", yerr = "ySigma", c = "navy", ax = ax)
 
 #Plot Moster fit
+h = 0.678 #Planck 2015
 xmin = 10**9
 xmax = 10**14
 dx = 10**10
-x=np.arange(xmin,xmax,dx)
+x=(np.arange(xmin,xmax,dx))
 y = doublePowerLaw(b = 1.376, c = 0.608,M1 = 10**11.590, N = 0.0351, x = x)
 
-plt.plot(np.log10(x),np.log10(y), c="red", label= "Moster2012")
+plt.plot(np.log10(x/h),np.log10(y/h), c="red", label= "Moster2012")
+formatPlot()
 
-plt.axis([9, 14, 9.5, 12.5])
-plt.title("Subhalo SHM, N = " + str(len(dfAll["SubhaloMassDM"])))
-plt.xlabel(r'Halo mass [$ M_\odot /h $]')
-plt.ylabel(r"Stellar mass [$ M_\odot /h $]")
-plt.savefig("./fig/SHMR/allGalaxiesTNG100-1.png")
+#plt.savefig("./fig/SHMR/allGalaxiesTNG100-1.png")
 plt.show()
