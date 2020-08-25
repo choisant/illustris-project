@@ -6,9 +6,30 @@ import numpy as np
 dataPath = "./data/tng100-1/cutdata/Subhalo_minE9_SM.csv"
 dfAll = pd.read_csv(dataPath)
 
-def doublePowerLaw(b, c, M1, N, x):
+h = 0.678 #Planck 2015
+
+def doublePowerLaw(b, c, M1, N):
+    xmin, xmax = 10**9, 10**14
+    dx = 10**10
+    x=(np.arange(xmin,xmax,dx))
     y = 2*N*x*((x/M1)**(-b)+(x/M1)**(c))**(-1)
-    return y
+    return x,y
+
+def behroozi():
+    a = -1.412
+    M1 = 10**(11.514)
+    c = 0.316 
+    d = 3.508
+    e = 10**(-1.78)
+    def f(x):
+        f = -np.log10(10**(a*x)+1)+d*((np.log10(1+np.exp(x)))**c)/(1+np.exp(10**(-x)))
+        return f
+    xmin, xmax = 10**9, 10**14
+    dx = 10**10
+    X=(np.arange(xmin,xmax,dx))/h
+    Y = np.log10(e*M1)+f(np.log10(X/M1)) - f(0)
+
+    return np.log10(X),Y
 
 def meanValuesLogLog (df, ymin, ymax, dy, ykey, xkey):
     #Calculate log-mean 
@@ -30,6 +51,7 @@ def formatPlot():
     plt.title("Subhalo SHM, N = " + str(len(dfAll["SubhaloMassDM"])))
     plt.xlabel(r'Halo mass [$ M_\odot /h $]')
     plt.ylabel(r"Stellar mass [$ M_\odot /h $]")
+    plt.legend()
     #plt.savefig("./fig/SHMR/allGalaxiesTNG100-1.png")
 
 #Plot SHMR for all galaxies
@@ -43,15 +65,12 @@ dfAllmean.plot(x = "xMean", y = "yMean", c="navy", label = "TNG100-1", ax=ax)
 dfAllmean.plot.scatter(x = "xMean", y = "yMean", yerr = "ySigma", c = "navy", ax = ax)
 
 #Plot Moster fit
-h = 0.678 #Planck 2015
-xmin = 10**9
-xmax = 10**14
-dx = 10**10
-x=(np.arange(xmin,xmax,dx))
-y = doublePowerLaw(b = 1.376, c = 0.608,M1 = 10**11.590, N = 0.0351, x = x)
+M2012x,M2012y = M2012x,M2012y = doublePowerLaw(b = 1.376, c = 0.608,M1 = 10**11.590, N = 0.0351)
+ax.plot(np.log10(M2012x/h),np.log10(M2012y/h), c="red", label= "Moster2012")
 
-plt.plot(np.log10(x/h),np.log10(y/h), c="red", label= "Moster2012")
+#Plot Behroozi fit
+B2013x,B2013y = behroozi()
+ax.plot((B2013x),(B2013y), c="orange", label= "Behroozi2013")
+
 formatPlot()
-
-#plt.savefig("./fig/SHMR/allGalaxiesTNG100-1.png")
 plt.show()
