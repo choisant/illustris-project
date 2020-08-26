@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 
-dataPath = "./data/tng100-1/cutdata/Subhalo_minE9_SM.csv"
+dataPath = "./data/tng100-1/cutdata/Subhalo_Centrals_minE9_SM_SMHR.csv"
 dfAll = pd.read_csv(dataPath)
 
 h = 0.678 #Planck 2015
@@ -46,18 +46,18 @@ def meanValuesLogLog (df, ymin, ymax, dy, ykey, xkey):
         dictAllMean["xSigma"].append(dfPart[xkey].std())
     return pd.DataFrame.from_dict(dictAllMean)
 
-def formatPlot():
-    plt.axis([9, 14, 9.5, 12.5])
-    plt.title("Subhalo SHM, N = " + str(len(dfAll["SubhaloMassDM"])))
-    plt.xlabel(r'Halo mass [$ M_\odot /h $]')
-    plt.ylabel(r"Stellar mass [$ M_\odot /h $]")
+def formatPlot (title, df):
+    plt.axis([10, 14, 9, 12.5])
+    plt.title(title + " SHMR, N = " + str(len(df["SubhaloMassDM"])))
+    plt.xlabel(r'log (Halo mass [$ M_\odot /h $])')
+    plt.ylabel(r"log (Stellar mass [$ M_\odot /h $])")
     plt.legend()
-    #plt.savefig("./fig/SHMR/allGalaxiesTNG100-1.png")
+    plt.savefig("./fig/SHMR/"+title+"TNG100-1_compare.png")
 
 #Plot SHMR for all galaxies
 dfAll["SubhaloMassDM"] = np.log10(dfAll["SubhaloMassDM"]*10**10)
 dfAll["SubhaloMassStellar"] = np.log10(dfAll["SubhaloMassStellar"]*10**10)
-dfAllmean = meanValuesLogLog(dfAll, 8.0, 12.0, 0.4, "SubhaloMassStellar", "SubhaloMassDM")
+dfAllmean = meanValuesLogLog(dfAll, 9, 14.0, 0.4, "SubhaloMassStellar", "SubhaloMassDM")
 
 ax = dfAll.plot.scatter(x = "SubhaloMassDM", y = "SubhaloMassStellar", s = 1)
 ax = dfAllmean.plot.scatter(x = "xMean", y = "yMean", s = 8, ax = ax)
@@ -72,5 +72,5 @@ ax.plot(np.log10(M2012x/h),np.log10(M2012y/h), c="red", label= "Moster2012")
 B2013x,B2013y = behroozi()
 ax.plot((B2013x),(B2013y), c="orange", label= "Behroozi2013")
 
-formatPlot()
+formatPlot(title = "Central galaxies only ", df = dfAll)
 plt.show()

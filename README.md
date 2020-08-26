@@ -1,6 +1,5 @@
 # Illustris project
-This is my first trial at making a functioning repository for working with the [Illustris](tng-project.org) data. 
-
+This is the repository for my project thesis at NTNU where I work on the [Illustris](tng-project.org) data. 
 
 ## Installation
 
@@ -14,6 +13,7 @@ The python packages used in this project are:
 - matplotlib
 - h5py
 - six
+- pandas
 
 You also need the Jupyter Notebook application
 ```bash
@@ -36,3 +36,13 @@ cd "..."/illustris-project
 jupyter notebook
 ```
 NOTE: the python files and the jupyter notebook files use slightly different paths to navigate through the directories. Any problems that arise might have to do with this, so please be aware of what is your working directory while running the code.
+
+## Contents
+
+The repository consists of three main folders:
+* data/ contains the raw and modified data from the TNG simulations. There may be some large files in this folder.
+* fig/ contains the figures produced in the project
+* src/ contains the actual python and jupyter notebook scripts
+
+### Data
+The data is organised by their respective TNG run, as well as whether or not it is the complete catalogue files. The smaller filtered data that is tailored for each scripts needs are placed in the subfolders `./cutdata/`. The file names should be descriptive of what data they contain.
