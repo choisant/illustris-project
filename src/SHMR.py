@@ -33,18 +33,19 @@ def behroozi():
 
 def meanValuesLogLog (df, ymin, ymax, dy, ykey, xkey):
     #Calculate log-mean 
-    dfAll = df.sort_values(ykey)
     ylist = np.arange(ymin, ymax, dy)
-    dictAllMean = {"xMean": [], "yMean": [], "xSigma": [], "ySigma": [] }
-
+    values = {"xMean": [], "yMean": [], "xSigma": [], "ySigma": [] }
+    
     for y in ylist:
         dfPart = df[df[ykey] > y-dy]
         dfPart = dfPart[dfPart[ykey] < y+dy]
-        dictAllMean["yMean"].append(dfPart[ykey].mean())
-        dictAllMean["xMean"].append(dfPart[xkey].mean())
-        dictAllMean["ySigma"].append(dfPart[ykey].std())
-        dictAllMean["xSigma"].append(dfPart[xkey].std())
-    return pd.DataFrame.from_dict(dictAllMean)
+        #mean values
+        values["yMean"].append(dfPart[ykey].mean())
+        values["xMean"].append(dfPart[xkey].mean())
+        #standard deviation gives the error
+        values["ySigma"].append(dfPart[ykey].std())
+        values["xSigma"].append(dfPart[xkey].std())
+    return pd.DataFrame.from_dict(values)
 
 def formatPlot (title, df):
     plt.axis([10, 14, 9, 12.5])
@@ -52,7 +53,7 @@ def formatPlot (title, df):
     plt.xlabel(r'log (Halo mass [$ M_\odot /h $])')
     plt.ylabel(r"log (Stellar mass [$ M_\odot /h $])")
     plt.legend()
-    plt.savefig("./fig/SHMR/"+title+"TNG100-1_compare.png")
+    #plt.savefig("./fig/SHMR/"+title+"TNG100-1_compare.png")
 
 #Plot SHMR for all galaxies
 dfAll["SubhaloMassDM"] = np.log10(dfAll["SubhaloMassDM"]*10**10)

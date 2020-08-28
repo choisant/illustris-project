@@ -8,7 +8,7 @@ The data is then run through the desired filter, and saved as a .csv file in the
 """
 #read in data
 basePath = "./data/tng100-1/output"
-subhaloFields = ["SubhaloMass", 'SubhaloMassType', 'SubhaloFlag', "SubhaloLen"]
+subhaloFields = ["SubhaloMass", 'SubhaloMassType', 'SubhaloFlag', "SubhaloLen", "SubhaloSFR"]
 haloFields = ["GroupMass", "GroupMassType", "GroupNsubs", "GroupFirstSub"]
 subhalos = il.groupcat.loadSubhalos(basePath,99,fields=subhaloFields)
 halos = il.groupcat.loadHalos(basePath,99,fields=haloFields)
@@ -49,6 +49,22 @@ def centralGalaxies(dfHalos, dfSubhalos):
     centrals = dfSubhalos.iloc[centralIndices]
     return centrals
 
+def lateType(df):
+    df["SubhalosSFR"]  = df["SubhaloSFR"]/df["SubhaloMassStellar"]
+    df["SubhalosSFR"] *=10**(-1) #sSFR in unit Gyr^(-1)
+    indexNames1 = df[df["SubhalosSFR"] > 0.36].index
+    df.drop(indexNames1, inplace = True)
+    indexNames2 = df[df["SubhalosSFR"] < 0.036].index
+    df.drop(indexNames2, inplace = True)
+    return df
+
+def earlyType(df):
+    df["SubhalosSFR"]  = df["SubhaloSFR"]/df["SubhaloMassStellar"]
+    df["SubhalosSFR"] *= 10**(-1) #sSFR in unit Gyr^(-1)
+    indexNames = df[df["SubhalosSFR"] > 0.01148].index
+    df.drop(indexNames, inplace = True)
+    return df
+
 #Saving the data in the correct format
 def saveDataCSV(df, haloType, filename, tngFolder):
     path = "./data/"+tngFolder+"/cutdata/"+haloType+"_"+filename+".csv"
@@ -56,7 +72,12 @@ def saveDataCSV(df, haloType, filename, tngFolder):
     newdf.to_csv(path)
     
 #newdf = minYMass(dfSubhalos, minStellarMass, Y = "DM", haloType = "Subhalo")
-newdf = centralGalaxies(dfHalos, dfSubhalos)
-newdf2 = minYMass(newdf, minMass = 0.1, Y = "Stellar", haloType = "Subhalo")
+#newdf = centralGalaxies(dfHalos, dfSubhalos)
+dataPath = "./data/tng100-1/cutdata/Subhalo_Centrals_minE9_SM_SFR.csv"
+newdf = pd.read_csv(dataPath)
 
-#saveDataCSV(newdf2, haloType="Subhalo", filename = "Centrals_minE9_SM_SMHR", tngFolder = "tng100-1")
+#newdf2 = minYMass(newdf, minMass = 0.1, Y = "Stellar", haloType = "Subhalo")
+#earlies = earlyType(newdf)
+#saveDataCSV(earlies, haloType="Subhalo", filename = "Centrals_minE9_SM_early", tngFolder = "tng100-1")
+lates = lateType(newdf)
+saveDataCSV(lates, haloType="Subhalo", filename = "Centrals_minE9_SM_late", tngFolder = "tng100-1")
