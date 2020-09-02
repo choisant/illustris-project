@@ -33,6 +33,19 @@ def dictToPandas(data):
                 data[particle] = list(temp)
             data.pop(key)
 
+        if key == "SubhaloMassInHalfRadType" or key == "GroupMassInHalfRadType":
+            particleTypes = {"SubhaloMassInHalfRadGas": 0, 
+                            "SubhaloMassInHalfRadDM": 1, 
+                            "SubhaloMassInHalfRadNone": 2, 
+                            "SubhaloMassInHalfRadTracers": 3, 
+                            "SubhaloMassInHalfRadStellar": 4, 
+                            "SubhaloMassInHalfRadBH": 5}
+            masses = np.array(data[key]) #create Series object
+            for particle in particleTypes:
+                temp = masses[:,particleTypes[particle]]
+                data[particle] = list(temp)
+            data.pop(key)
+
     df = pd.DataFrame(data, dtype=object)
     return df
 

@@ -1,3 +1,3 @@
-__all__ = ["groupcat", "snapshot", "util", "sublink", "lhalotree", "pandasformat"]
+__all__ = ["groupcat", "snapshot", "util", "sublink", "lhalotree", "pandasformat", "formatplot"]
 
 from . import *

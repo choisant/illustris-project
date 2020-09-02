@@ -35,7 +35,7 @@ The jupyter notebooks can be run from the browser by starting the Jupyter Notebo
 cd "..."/illustris-project
 jupyter notebook
 ```
-NOTE: the python files and the jupyter notebook files use slightly different paths to navigate through the directories. Any problems that arise might have to do with this, so please be aware of what is your working directory while running the code.
+NOTE: the python files and the jupyter notebook files use slightly different paths to navigate through the directories, as I run my python files from the top directory, but the jupyter notebook files are run from the src/ folder. Any problems that arise might have to do with this, so please be aware of what is your working directory while running the code.
 
 ## Contents
 
