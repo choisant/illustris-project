@@ -26,6 +26,6 @@ df1["SubhaloMassStellar"] *=10**10
 df2["SubhaloMassStellar"] *=10**10
 ax = df1.plot.scatter(x="SubhaloVelDisp", y="SubhaloMassStellar",s=1, label = "SFR")
 #df2.plot.scatter(x="SubhaloVelDisp", y="SubhaloMassStellar",s=2, color = "orange", label = "GasFraction", ax=ax)
-il.formatplot.formatPlotVD_SM(title = "Velocity dispersion", df=df1)
+il.formatplot.VD_SM(title = "Velocity dispersion", df=df1)
 
 plt.show()
