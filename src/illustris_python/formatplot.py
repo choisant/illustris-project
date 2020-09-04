@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
 import pandas as pd
 import numpy as np
 
@@ -46,3 +47,36 @@ def SM_SFR (title, df, x0=10**9, x1=10**13, y0=10**(-4), y1=10**0):
     plt.ylabel(r"sSFR [$ Gyr^{-1} $]")
     plt.legend()
 
+def FP_3D(df):
+    #make the figure
+    fig = plt.figure(figsize = (9,6))
+    ax = fig.gca(projection='3d')
+
+    #plot the data
+    x, y, z = [], [], []
+    z = np.log10(list(df["SubhaloMassInHalfRadStellar"]))
+    y = np.log10(list(df["SubhaloHalfmassRad"]))
+    x = np.log10(list(df["SubhaloVelDisp"]))
+    s = list(df["SubhaloMass"])
+    s = [i**(1/2) for i in s]
+
+    ax.scatter(xs = x, ys = y, zs = z, alpha=0.8, c=y, cmap=plt.get_cmap("magma"), s = s)
+
+    #plane
+    """
+    FPz = np.arange(0,12, 0.25)
+    FPy = np.arange(0,12, 0.25)
+    FPz, FPy = np.meshgrid(FPz, FPy)
+    FPx = 0.8*FPz-0.8*FPy -2
+    # Plot the surface.
+    ax.plot_surface(FPx, FPy, FPz, linewidth=0, antialiased=False, alpha = 0.2)
+    """
+    #Format
+    ax.set_title("Fundamental Plane", fontsize = 14)
+    ax.set_zlabel('Mass')
+    ax.set_ylabel('Radius')
+    ax.set_xlabel('Velocity')
+    ax.set_zlim(8, 13)
+    ax.set_ylim(1, 4)
+    ax.set_xlim(1, 3)
+    return ax

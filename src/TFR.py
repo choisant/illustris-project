@@ -21,6 +21,18 @@ def velocities(df):
 
 df1=velocities(df1)
 
-ax = df1.plot.scatter(x="SubhaloCircVel", y="SubhaloMassInHalfRadStellar",s=1)
+ax = df1.plot.scatter(x="SubhaloCircVel", y="SubhaloMassInHalfRadStellar",s=1, label = "TNG-100")
+
+#Power law
+x = np.linspace(0, 200)
+y= x**(3.6)*10**4
+plt.plot(x, y, color = "orange", label = r"$\gamma$ = 3.6")
 il.formatplot.CV_SM(title = "Tully Fisher relation", df=df1, x0=10**1)
+
+#plt.show()
+
+df1["SubhaloHalfmassRad"] *=10 #Units in km/s
+df1["SubhaloMassStellar"] *=10**10
+df1.plot.scatter(x="SubhaloHalfmassRad", y="SubhaloMassInHalfRadStellar",s=1, label = "TNG-100", alpha=0.8, color="crimson")
+il.formatplot.R_SM(title="Effective radius", df = df1, x0= 10**2, x1= 10**4)
 plt.show()

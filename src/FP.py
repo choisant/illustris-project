@@ -4,28 +4,27 @@ import pandas as pd
 import numpy as np
 import math
 
-dataPath1 = "./data/tng100-1/cutdata/Subhalo_Centrals_minE9_SM_earlyType_SFR.pkl"
-df1 = pd.read_pickle(dataPath1)
-#df1["SubhaloVel"] = df1.eval(df1["SubhaloVel"])
+# This import registers the 3D projection, but is otherwise unused.
+from mpl_toolkits.mplot3d import Axes3D  # noqa: F401 unused import
 
-dataPath2 = "./data/tng100-1/cutdata/Subhalo_Centrals_minE9_SM_earlyType_Gas.pkl"
-df2 = pd.read_pickle(dataPath2)
-#df2["SubhaloVel"] = df2.eval(df2["SubhaloVel"])
+dataPath1 = "./data/tng100-1/cutdata/Subhalo_Centrals_minE9_SM_earlyType_Gas.pkl"
+data = pd.read_pickle(dataPath1)
 
-def formatPlot (title, df):
-    plt.axis([10**1.5, 10**2.5, 10**(9), 10**(12)])
-    plt.xscale("log")
-    plt.yscale("log")
-    plt.title(title + " N = " + str(len(df["SubhaloMassDM"])))
-    plt.xlabel(r'Velocity [km/s]')
-    plt.ylabel(r"Stellar mass [$ M_\odot /h $]")
-    plt.legend()
-    #plt.savefig("./fig/SFR/"+title+"TNG100-1_sSFR.png")
+data["SubhaloMassInHalfRadStellar"] *=10**10 #Stellar mass in normal units
+data["SubhaloHalfmassRad"] *=10 #Units in km/s
 
-df1["SubhaloMassStellar"] *=10**10
-df2["SubhaloMassStellar"] *=10**10
-ax = df1.plot.scatter(x="SubhaloVelDisp", y="SubhaloMassStellar",s=1, label = "SFR")
-#df2.plot.scatter(x="SubhaloVelDisp", y="SubhaloMassStellar",s=2, color = "orange", label = "GasFraction", ax=ax)
-il.formatplot.VD_SM(title = "Velocity dispersion", df=df1)
+"""
+x, y, z = [], [], []
+x = np.log10(list(data["SubhaloMassInHalfRadStellar"]))
+y = np.log10(list(data["SubhaloHalfmassRad"]))
+z = np.log10(list(data["SubhaloVelDisp"]))
+
+FP = plt.figure().gca(projection='3d')
+FP.scatter(xs = x, ys = y, zs = z, c =("red"), s=1)
+FP.set_xlabel('Mass')
+FP.set_ylabel('Radius')
+FP.set_zlabel('Velocity')
+"""
+fig = il.formatplot.FP_3D(data)
 
 plt.show()
