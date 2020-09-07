@@ -8,7 +8,9 @@ The data is then run through the desired filter, and saved as a .csv file in the
 """
 #read in data
 basePath = "./data/tng100-1/output"
-subhaloFields = ["SubhaloMass", 'SubhaloMassType', 'SubhaloFlag', "SubhaloLen", "SubhaloSFR", "SubhaloVel", "SubhaloVelDisp", "SubhaloHalfmassRad", "SubhaloMassInHalfRadType", "SubhaloMassInHalfRad"]
+subhaloFields = ["SubhaloMass", 'SubhaloMassType', 'SubhaloFlag', "SubhaloLen", "SubhaloSFR", 
+                "SubhaloVel", "SubhaloVelDisp", "SubhaloHalfmassRad", "SubhaloMassInHalfRadType", 
+                "SubhaloMassInHalfRad", "SubhaloVmax"]
 haloFields = ["GroupMass", "GroupMassType", "GroupNsubs", "GroupFirstSub"]
 subhalos = il.groupcat.loadSubhalos(basePath,99,fields=subhaloFields)
 halos = il.groupcat.loadHalos(basePath,99,fields=haloFields)

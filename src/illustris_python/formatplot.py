@@ -4,21 +4,21 @@ import pandas as pd
 import numpy as np
 
 def VD_SM (title, df, x0=10**1.5, x1=10**2.5, y0=10**9, y1=10**12):
-    #plt.axis([x0, x1, y0, y1])
-    plt.xscale("log")
-    plt.yscale("log")
-    plt.title(title + ", N = " + str(len(df["SubhaloMassStellar"])))
-    plt.xlabel(r'Velocity [km/s]')
-    plt.ylabel(r"Stellar mass [$ M_\odot /h $]")
-    plt.legend()
-
-def CV_SM (title, df, x0=10**1.5, x1=10**2.5, y0=10**9, y1=10**12):
     plt.axis([x0, x1, y0, y1])
     plt.xscale("log")
     plt.yscale("log")
     plt.title(title + ", N = " + str(len(df["SubhaloMassStellar"])))
-    plt.xlabel(r'Velocity [km/s]')
-    plt.ylabel(r"Stellar mass [$ M_\odot /h $]")
+    plt.xlabel(r'$\sigma$ [km/s]')
+    plt.ylabel(r"Stellar half-light mass [$ M_\odot /h $]")
+    plt.legend()
+
+def Vmax_SM (title, df, x0=10**1.5, x1=10**2.5, y0=10**9, y1=10**12):
+    plt.axis([x0, x1, y0, y1])
+    plt.xscale("log")
+    plt.yscale("log")
+    plt.title(title + ", N = " + str(len(df["SubhaloMassStellar"])))
+    plt.xlabel(r'$V_{max}$ [km/s]')
+    plt.ylabel(r"Stellar half-light mass [$ M_\odot /h $]")
     plt.legend()
 
 def HM_SM_loglog (title, df, x0=11, x1=14, y0=9.5, y1=12):
