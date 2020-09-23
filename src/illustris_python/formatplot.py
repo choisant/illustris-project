@@ -30,18 +30,17 @@ def CV_SM (title, df, x0=10**1.5, x1=10**2.5, y0=10**9, y1=10**12):
     plt.ylabel(r"Stellar half-light mass [$ M_\odot /h $]")
     plt.legend()
 
-def C_SM (type, ax, df, x0=10**9, x1=10**12, y0=-1, y1=1):
+def C_SM (type, ax, x0=10**9, x1=10**12, y0=-1, y1=1):
     ax.set(xlim = (x0, x1), ylim = (y0, y1))
     ax.set_xscale("log")
     ax.set_ylabel(type + " [mag]")
     ax.set_xlabel(r"Stellar mass [$ M_\odot /h $]")
     ax.legend(loc = 4)
     
-def PDF_C (type):
-    plt.title("Distribution function")
-    plt.ylabel("PDF")
-    plt.xlabel(type + " color [mag]")
-    plt.legend()
+def PDF_C (type, ax):
+    ax.set_ylabel("PDF")
+    ax.set_xlabel(type + " color [mag]")
+    ax.legend()
 
 def HM_SM_loglog (title, df, x0=11, x1=14, y0=9.5, y1=12):
     plt.axis([x0, x1, y0, y1])
