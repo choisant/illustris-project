@@ -1,17 +1,6 @@
 import pandas as pd
 import numpy as np
-
-#takes in a dictionary
-
-#debugging
-data1 = {
-    "count": 4,
-    "velocity": [12, 14, 1],
-    "mass": np.array([10, 23, 67]),
-    "SubhaloMassType": (np.array([[0.11, 5.44, 6.88, 2.99, 21.4, 7.33], [0.11, 5.44, 6.88, 2.99, 1.44, 7.33], [0.11, 5.44, 6.88, 2.99, 5.34, 7.33]])),
-    "flag": [True, True, False]
-}
-
+from operator import truediv 
 
 def dictToPandas(data):
     keyList = list(data.keys())
@@ -49,4 +38,26 @@ def dictToPandas(data):
     df = pd.DataFrame(data, dtype=object)
     return df
 
-df = dictToPandas(data1)
+def stellarMasses(df):
+    particleTypes = ["SubhaloMassGas", 
+                        "SubhaloMassDM",  
+                        "SubhaloMassStellar", 
+                        "SubhaloMassBH",
+                        "SubhaloMassInHalfRadGas", 
+                        "SubhaloMassInHalfRadDM",  
+                        "SubhaloMassInHalfRadStellar", 
+                        "SubhaloMass",
+                        "SubhaloMassInHalfRad",
+                        "SubhaloBHMass"]
+    
+    for particle in particleTypes:
+        print(particle + "...")
+        df[particle] *= 10**10 #changes the units to stellar mass
+    return df
+
+def ssfr(df):
+    keys = df.keys()
+    if "SubhaloSFR" in keys:
+        df["SubhalosSFR"]  = df["SubhaloSFR"]/df["SubhaloMassStellar"]
+        df["SubhalosSFR"] *= 10**(9) #sSFR in unit Gyr^(-1)
+    return df

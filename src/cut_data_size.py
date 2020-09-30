@@ -5,19 +5,8 @@ pd.options.mode.chained_assignment = None  # default='warn'
 
 """
 This script takes in the Group catalog data from the .hdf5 files, and uses the pandasformat.py file to convert the data to the pandas DataFrame format.
-The data is then run through the desired filter, and saved as a .csv file in the cutdata folder of the relevant simulation.
+The data is then run through the desired filter, and saved as a .pkl file in the cutdata folder of the relevant simulation.
 """
-#read in data
-basePath = "./data/tng100-1/output"
-subhaloFields = ["SubhaloMass", 'SubhaloMassType', 'SubhaloFlag', "SubhaloLen", "SubhaloSFR", 
-                "SubhaloVel", "SubhaloVelDisp", "SubhaloHalfmassRad", "SubhaloMassInHalfRadType", 
-                "SubhaloMassInHalfRad", "SubhaloVmax", "SubhaloStellarPhotometrics", "SubhaloBHMass"]
-haloFields = ["GroupMass", "GroupMassType", "GroupNsubs", "GroupFirstSub"]
-subhalos = il.groupcat.loadSubhalos(basePath,99,fields=subhaloFields)
-halos = il.groupcat.loadHalos(basePath,99,fields=haloFields)
-
-dfSubhalos = il.pandasformat.dictToPandas(subhalos)
-dfHalos = il.pandasformat.dictToPandas(halos)
 
 #filters
 def subhaloFlagDrop (df):
@@ -31,6 +20,7 @@ def darkMatterZeros (df):
     return df
 
 def minParticles (df, minPart):
+    print("Removing galaxies below the minimum mass.")
     indexNames = df[df["SubhaloLen"] < minPart].index
     df.drop(indexNames, inplace = True)
     return df
@@ -47,14 +37,13 @@ def minYMass(df, minMass, Y, haloType):
 
 def centralGalaxies(dfHalos, dfSubhalos):
     #dfHalos must have the key-value pair GroupFirstSub
+    print("Starting the central galaxies sorting")
     centralIndices = dfHalos["GroupFirstSub"]
     centralIndices = centralIndices[centralIndices > 0]
     centrals = dfSubhalos.iloc[centralIndices]
     return centrals
 
 def lateTypeSFR(df):
-    df["SubhalosSFR"]  = df["SubhaloSFR"]/df["SubhaloMassStellar"]
-    df["SubhalosSFR"] *=10**(-1) #sSFR in unit Gyr^(-1)
     indexNames1 = df[df["SubhalosSFR"] > 0.36].index
     df.drop(indexNames1, inplace = True)
     indexNames2 = df[df["SubhalosSFR"] < 0.036].index
@@ -62,8 +51,6 @@ def lateTypeSFR(df):
     return df
 
 def earlyTypeSFR(df):
-    df["SubhalosSFR"]  = df["SubhaloSFR"]/df["SubhaloMassStellar"]
-    df["SubhalosSFR"] *= 10**(-1) #sSFR in unit Gyr^(-1)
     indexNames = df[df["SubhalosSFR"] > 0.01148].index
     df.drop(indexNames, inplace = True)
     return df
@@ -101,13 +88,30 @@ def saveDataPickle(df, haloType, filename, tngFolder):
     f = open(path, "a+") #Create file if it does not already exist.
     df.to_pickle(path)
 
-newdf = centralGalaxies(dfHalos, dfSubhalos)
-#dataPath = "./data/tng100-1/cutdata/Subhalo_Centrals_minE9_SM_SFR.csv"
-#newdf = pd.read_csv(dataPath)
+#read in data
 
-allGalaxies = minYMass(newdf, minMass = 0.1, Y = "Stellar", haloType = "Subhalo")
-saveDataPickle(allGalaxies, haloType ="Subhalos", filename = "Centrals_minE9_SM", tngFolder = "tng100-1")
-#lates = lateTypeGas(allGalaxies)
-#saveDataPickle(lates, haloType="Subhalo", filename = "Centrals_minE9_SM_lateType_Gas", tngFolder = "tng100-1")
-#earlies = earlyTypeGas(allGalaxies)
-#saveDataPickle(earlies, haloType="Subhalo", filename = "Centrals_minE9_SM_earlyType_Gas", tngFolder = "tng100-1")
+basePath = "./data/tng100-1/output"
+subhaloFields = ["SubhaloMass", 'SubhaloMassType', 'SubhaloFlag', "SubhaloLen", "SubhaloSFR", 
+                "SubhaloVel", "SubhaloVelDisp", "SubhaloHalfmassRad", "SubhaloMassInHalfRadType", 
+                "SubhaloMassInHalfRad", "SubhaloVmax", "SubhaloStellarPhotometrics", "SubhaloBHMass"]
+subhalos = il.groupcat.loadSubhalos(basePath,99,fields=subhaloFields)
+dfSubhalos = il.pandasformat.dictToPandas(subhalos)
+dfSubhalos = il.pandasformat.stellarMasses(dfSubhalos)
+print("Changed the masses to stellar masses.")
+dfSubhalos = il.pandasformat.ssfr(dfSubhalos)
+print("added ssfr")
+
+haloFields = ["GroupMass", "GroupMassType", "GroupNsubs", "GroupFirstSub"]
+halos = il.groupcat.loadHalos(basePath,99,fields=haloFields)
+dfHalos = il.pandasformat.dictToPandas(halos)
+print("Done converting to pandas DataFrame")
+
+centrals = centralGalaxies(dfHalos, dfSubhalos)
+centralsMinMass = minYMass(centrals, minMass = 10**9, Y = "Stellar", haloType = "Subhalo")
+saveDataPickle(centralsMinMass, haloType ="Subhalo", filename = "Centrals_minE9_SM", tngFolder = "tng100-1")
+"""
+lates = lateTypeGas(centralsMinMass)
+saveDataPickle(lates, haloType="Subhalo", filename = "Centrals_minE9_SM_lateType_Gas", tngFolder = "tng100-1")
+"""
+earlies = earlyTypeGas(centralsMinMass)
+saveDataPickle(earlies, haloType="Subhalo", filename = "Centrals_minE9_SM_earlyType_Gas", tngFolder = "tng100-1")

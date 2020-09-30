@@ -68,6 +68,34 @@ def SM_SFR (title, df, x0=10**9, x1=10**13, y0=10**(-4), y1=10**0):
     plt.ylabel(r"sSFR [$ Gyr^{-1} $]")
     plt.legend()
 
+
+def VD_BH (title, df, ax, x0=10**1, x1=10**3, y0=10**(6), y1=10**(10)):
+    ax.set(xlim = (x0, x1), ylim = (y0, y1))
+    ax.set_xscale("log")
+    ax.set_yscale("log")
+    ax.set_ylabel(r"SMBH mass [$ M_\odot /h $]")
+    ax.set_xlabel(r'$\sigma$ [km/s]')
+    ax.set_title(title + ", N = " + str(len(df["SubhaloMassDM"])))
+    ax.legend()
+
+def SM_BH (title, df, ax, x0=10**9, x1=10**(13), y0=10**(6), y1=10**(10)):
+    ax.set(xlim = (x0, x1), ylim = (y0, y1))
+    ax.set_xscale("log")
+    ax.set_yscale("log")
+    ax.set_ylabel(r"SMBH mass [$ M_\odot /h $]")
+    ax.set_xlabel(r"Stellar mass [$ M_\odot /h $]")
+    ax.set_title(title + ", N = " + str(len(df["SubhaloMassDM"])))
+    ax.legend()
+
+def DM_BH (title, df, ax, x0=10**10, x1=10**(14), y0=10**(6), y1=10**(10)):
+    ax.set(xlim = (x0, x1), ylim = (y0, y1))
+    ax.set_xscale("log")
+    ax.set_yscale("log")
+    ax.set_ylabel(r"SMBH mass [$ M_\odot /h $]")
+    ax.set_xlabel(r"DM mass [$ M_\odot /h $]")
+    ax.set_title(title + ", N = " + str(len(df["SubhaloMassDM"])))
+    ax.legend()
+
 def FP_3D(df):
     #make the figure
     fig = plt.figure(figsize = (9,6))
@@ -79,7 +107,7 @@ def FP_3D(df):
     y = np.log10(list(df["SubhaloHalfmassRad"]))
     x = np.log10(list(df["SubhaloVelDisp"]))
     s = list(df["SubhaloMass"])
-    s = [i**(1/2) for i in s]
+    s = [(i/(10**(10)))**(1/2) for i in s]
 
     ax.scatter(xs = x, ys = y, zs = z, alpha=0.8, c=y, cmap=plt.get_cmap("magma"), s = s)
 
