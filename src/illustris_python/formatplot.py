@@ -96,6 +96,15 @@ def DM_BH (title, df, ax, x0=10**10, x1=10**(14), y0=10**(6), y1=10**(10)):
     ax.set_title(title + ", N = " + str(len(df["SubhaloMassDM"])))
     ax.legend()
 
+def R_BH (title, df, ax, x0=10**1.5, x1=10**4, y0=10**(6), y1=10**(10)):
+    ax.set(xlim = (x0, x1), ylim = (y0, y1))
+    ax.set_xscale("log")
+    ax.set_yscale("log")
+    ax.set_ylabel(r"SMBH mass [$ M_\odot /h $]")
+    ax.set_xlabel(r'Half light radius [kpc/h]')
+    ax.set_title(title + ", N = " + str(len(df["SubhaloMassDM"])))
+    ax.legend()
+
 def FP_3D(df):
     #make the figure
     fig = plt.figure(figsize = (9,6))
