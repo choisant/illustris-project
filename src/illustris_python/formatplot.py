@@ -3,23 +3,23 @@ from mpl_toolkits.mplot3d import Axes3D
 import pandas as pd
 import numpy as np
 
-def VD_SM (title, df, x0=10**1.5, x1=10**2.5, y0=10**9, y1=10**12):
-    plt.axis([x0, x1, y0, y1])
-    plt.xscale("log")
-    plt.yscale("log")
-    plt.title(title + ", N = " + str(len(df["SubhaloMassStellar"])))
-    plt.xlabel(r'$\sigma$ [km/s]')
-    plt.ylabel(r"Stellar half-light mass [$ M_\odot /h $]")
-    plt.legend()
+def VD_SM (title, ax, x0=10**1.5, x1=10**2.5, y0=10**9, y1=10**12):
+    ax.set(xlim = (x0, x1), ylim = (y0, y1))
+    ax.set_xscale("log")
+    ax.set_yscale("log")
+    ax.set_title(title)
+    ax.set_xlabel(r'$\sigma$ [km/s]')
+    ax.set_ylabel(r"Stellar half-light mass [$ M_\odot /h $]")
+    ax.legend()
 
-def Vmax_SM (title, df, x0=10**1.5, x1=10**2.5, y0=10**9, y1=10**12):
-    plt.axis([x0, x1, y0, y1])
-    plt.xscale("log")
-    plt.yscale("log")
-    plt.title(title + ", N = " + str(len(df["SubhaloMassStellar"])))
-    plt.xlabel(r'$V_{max}$ [km/s]')
-    plt.ylabel(r"Stellar half-light mass [$ M_\odot /h $]")
-    plt.legend()
+def Vmax_SM (title, df, ax, x0=10**1.5, x1=10**2.5, y0=10**9, y1=10**12):
+    ax.set(xlim = (x0, x1), ylim = (y0, y1))
+    ax.set_xscale("log")
+    ax.set_yscale("log")
+    ax.set_title(title + ", N = " + str(len(df["SubhaloMassStellar"])))
+    ax.set_xlabel(r'$V_{max}$ [km/s]')
+    ax.set_ylabel(r"Stellar half-light mass [$ M_\odot /h $]")
+    ax.legend()
 
 def CV_SM (title, df, x0=10**1.5, x1=10**2.5, y0=10**9, y1=10**12):
     plt.axis([x0, x1, y0, y1])
@@ -50,14 +50,14 @@ def HM_SM_loglog (title, df, x0=11, x1=14, y0=9.5, y1=12):
     plt.legend()
     plt.show()
 
-def R_SM (title, df, x0=10**1.5, x1=10**4, y0=10**9, y1=10**13):
-    plt.axis([x0, x1, y0, y1])
-    plt.xscale("log")
-    plt.yscale("log")
-    plt.title(title + ", N = " + str(len(df["SubhaloMassDM"])))
-    plt.xlabel(r'Half light radius [kpc/h]')
-    plt.ylabel(r"Stellar mass [$ M_\odot /h $]")
-    plt.legend()
+def R_SM (title, ax, x0=10**1.5, x1=10**4, y0=10**9, y1=10**13):
+    ax.set(xlim = (x0, x1), ylim = (y0, y1))
+    ax.set_xscale("log")
+    ax.set_yscale("log")
+    ax.set_title(title)
+    ax.set_xlabel(r'Half light radius [ckpc/h]')
+    ax.set_ylabel(r"Stellar half-light mass [$ M_\odot /h $]")
+    ax.legend()
 
 def SM_SFR (title, df, x0=10**9, x1=10**13, y0=10**(-4), y1=10**0):
     plt.axis([x0, x1, y0, y1])
@@ -96,12 +96,12 @@ def DM_BH (title, df, ax, x0=10**10, x1=10**(14), y0=10**(6), y1=10**(10)):
     ax.set_title(title + ", N = " + str(len(df["SubhaloMassDM"])))
     ax.legend()
 
-def R_BH (title, df, ax, x0=10**1.5, x1=10**4, y0=10**(6), y1=10**(10)):
+def R_BH (title, df, ax, x0=10**0, x1=10**4, y0=10**(6), y1=10**(10)):
     ax.set(xlim = (x0, x1), ylim = (y0, y1))
     ax.set_xscale("log")
     ax.set_yscale("log")
     ax.set_ylabel(r"SMBH mass [$ M_\odot /h $]")
-    ax.set_xlabel(r'Half light radius [kpc/h]')
+    ax.set_xlabel(r'Half light radius [ckpc/h]')
     ax.set_title(title + ", N = " + str(len(df["SubhaloMassDM"])))
     ax.legend()
 
