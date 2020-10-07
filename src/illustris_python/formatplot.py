@@ -12,11 +12,11 @@ def VD_SM (title, ax, x0=10**1.5, x1=10**2.5, y0=10**9, y1=10**12):
     ax.set_ylabel(r"Stellar half-light mass [$ M_\odot /h $]")
     ax.legend()
 
-def Vmax_SM (title, df, ax, x0=10**1.5, x1=10**2.5, y0=10**9, y1=10**12):
+def Vmax_SM (title, ax, x0=10**1.5, x1=10**2.5, y0=10**9, y1=10**12):
     ax.set(xlim = (x0, x1), ylim = (y0, y1))
     ax.set_xscale("log")
     ax.set_yscale("log")
-    ax.set_title(title + ", N = " + str(len(df["SubhaloMassStellar"])))
+    ax.set_title(title)
     ax.set_xlabel(r'$V_{max}$ [km/s]')
     ax.set_ylabel(r"Stellar half-light mass [$ M_\odot /h $]")
     ax.legend()
