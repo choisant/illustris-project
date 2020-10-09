@@ -55,16 +55,6 @@ def earlyTypeSFR(df):
     df.drop(indexNames, inplace = True)
     return df
 
-def lateTypeKinetic(df):
-    #Use "Stellar Circularities, Angular Momenta, Axis Ratios" Genel catalogue
-    #df.drop(indexNames2, inplace = True)
-    return df
-
-def earlyTypeKinetic(df):
-    #Use "Stellar Circularities, Angular Momenta, Axis Ratios" Genel catalogue
-    #df.drop(indexNames, inplace = True)
-    return df
-
 def lateTypeGas(df):
     df["SubhaloGasFraction"]  = df["SubhaloMassInHalfRadGas"]/df["SubhaloMassInHalfRadStellar"]
     indexNames = df[df["SubhaloGasFraction"] < 0.1].index #Ferrero2020

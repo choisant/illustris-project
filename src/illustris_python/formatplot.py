@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import pandas as pd
 import numpy as np
+from matplotlib.ticker import ScalarFormatter
 
 def VD_SM (title, ax, x0=10**1.5, x1=10**2.5, y0=10**9, y1=10**12):
     ax.set(xlim = (x0, x1), ylim = (y0, y1))
@@ -10,6 +11,7 @@ def VD_SM (title, ax, x0=10**1.5, x1=10**2.5, y0=10**9, y1=10**12):
     ax.set_title(title)
     ax.set_xlabel(r'$\sigma$ [km/s]')
     ax.set_ylabel(r"Stellar half-light mass [$ M_\odot /h $]")
+    ax.grid(True,which="both", linestyle='--')
     ax.legend()
 
 def Vmax_SM (title, ax, x0=10**1.5, x1=10**2.5, y0=10**9, y1=10**12):
