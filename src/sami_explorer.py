@@ -4,18 +4,10 @@ import pandas as pd
 import numpy as np
 
 #df = pd.read_pickle("./data/SAMI/sami.pkl")
-df1 = pd.read_csv("./data/SAMI/dr1.csv")
-df2 = pd.read_csv("./data/SAMI/dr2_stellar_kinematics.csv")
-df3 = pd.read_csv("./data/SAMI/dr2_gas.csv")
-df4 = pd.read_csv("./data/SAMI/dr2_gas_recom.csv")
-datalist = [df1, df2, df3, df4]
-data = pd.DataFrame()
+df1 = pd.read_csv("./data/SAMI/allData.csv")
+indexNames = df1[df1["r_petro"] < 0].index
+df1.drop(indexNames, inplace = True)
+df1["radius"] = df1["r_petro"]**(-1)*10/0.68
+df1.plot.scatter(x="radius", y ="mstar",s = 3)
+plt.show()
 
-for df in datalist:
-    for key in df.keys():
-        data[key] = df[key]
-check = data[data["catid"] == 7841]
-print(check["mag_r_band_petrosian"])
-#print(data[data["catid"] == 7841])
-#plt.plot(data.index, data["catid"])
-#plt.show()

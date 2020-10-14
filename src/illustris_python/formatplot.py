@@ -14,13 +14,22 @@ def VD_SM (title, ax, x0=10**1.5, x1=10**2.5, y0=10**9, y1=10**12):
     ax.grid(True,which="both", linestyle='--')
     ax.legend()
 
+def VSigma_SM (title, ax, x0=0, x1=2.5, y0=10**9, y1=10**12):
+    ax.set(xlim = (x0, x1), ylim = (y0, y1))
+    #ax.set_xscale("log")
+    ax.set_yscale("log")
+    ax.set_title(title)
+    ax.set_xlabel(r'$V_{max}/\sigma$')
+    ax.set_ylabel(r"Stellar mass [$ M_\odot /h $]")
+    ax.legend()
+
 def Vmax_SM (title, ax, x0=10**1.5, x1=10**2.5, y0=10**9, y1=10**12):
     ax.set(xlim = (x0, x1), ylim = (y0, y1))
     ax.set_xscale("log")
     ax.set_yscale("log")
     ax.set_title(title)
     ax.set_xlabel(r'$V_{max}$ [km/s]')
-    ax.set_ylabel(r"Stellar half-light mass [$ M_\odot /h $]")
+    ax.set_ylabel(r"Stellar mass [$ M_\odot /h $]")
     ax.legend()
 
 def CV_SM (title, df, x0=10**1.5, x1=10**2.5, y0=10**9, y1=10**12):
@@ -29,7 +38,7 @@ def CV_SM (title, df, x0=10**1.5, x1=10**2.5, y0=10**9, y1=10**12):
     plt.yscale("log")
     plt.title(title + ", N = " + str(len(df["SubhaloMassStellar"])))
     plt.xlabel(r'$V_{circ}$ [km/s]')
-    plt.ylabel(r"Stellar half-light mass [$ M_\odot /h $]")
+    plt.ylabel(r"Stellar mass [$ M_\odot /h $]")
     plt.legend()
 
 def C_SM (type, ax, x0=10**9, x1=10**12, y0=-1, y1=1):
@@ -59,7 +68,18 @@ def R_SM (title, ax, x0=10**1.5, x1=10**4, y0=10**9, y1=10**13):
     ax.set_title(title)
     ax.set_xlabel(r'Half light radius [ckpc/h]')
     ax.set_ylabel(r"Stellar half-light mass [$ M_\odot /h $]")
+    ax.grid(True,which="both", linestyle='--')
     ax.legend()
+
+def R_VD (title, ax, x0=10**0, x1=10**3, y0=10**1.5, y1=10**2.5):
+    ax.set(xlim = (x0, x1), ylim = (y0, y1))
+    ax.set_xscale("log")
+    ax.set_yscale("log")
+    ax.set_title(title)
+    ax.set_xlabel(r'Half light radius [ckpc/h]')
+    ax.set_ylabel(r'$\sigma$ [km/s]')
+    ax.grid(True,which="both", linestyle='--')
+    ax.legend(loc=4)
 
 def SM_SFR (title, df, x0=10**9, x1=10**13, y0=10**(-4), y1=10**0):
     plt.axis([x0, x1, y0, y1])
