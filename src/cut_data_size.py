@@ -44,28 +44,32 @@ def centralGalaxies(dfHalos, dfSubhalos):
     return centrals
 
 def lateTypeSFR(df):
-    indexNames1 = df[df["SubhalosSFR"] > 0.36].index
-    df.drop(indexNames1, inplace = True)
-    indexNames2 = df[df["SubhalosSFR"] < 0.036].index
-    df.drop(indexNames2, inplace = True)
-    return df
+    df_copy = df.copy(deep=True)
+    indexNames1 = df_copy[df_copy["SubhalosSFR"] > 0.36].index
+    df_copy.drop(indexNames1, inplace = True)
+    indexNames2 = df_copy[df_copy["SubhalosSFR"] < 0.036].index
+    df_copy.drop(indexNames2, inplace = True)
+    return df_copy
 
 def earlyTypeSFR(df):
-    indexNames = df[df["SubhalosSFR"] > 0.01148].index
-    df.drop(indexNames, inplace = True)
-    return df
+    df_copy = df.copy(deep=True)
+    indexNames = df_copy[df_copy["SubhalosSFR"] > 0.01148].index
+    df_copy.drop(indexNames, inplace = True)
+    return df_copy
 
 def lateTypeGas(df):
-    df["SubhaloGasFraction"]  = df["SubhaloMassInHalfRadGas"]/df["SubhaloMassInHalfRadStellar"]
-    indexNames = df[df["SubhaloGasFraction"] < 0.1].index #Ferrero2020
-    df.drop(indexNames, inplace = True)
-    return df
+    df_copy = df.copy(deep=True)
+    df_copy["SubhaloGasFraction"]  = df_copy["SubhaloMassInHalfRadGas"]/df_copy["SubhaloMassInHalfRadStellar"]
+    indexNames = df_copy[df_copy["SubhaloGasFraction"] < 0.1].index #Ferrero2020
+    df_copy.drop(indexNames, inplace = True)
+    return df_copy
 
 def earlyTypeGas(df):
-    df["SubhaloGasFraction"]  = df["SubhaloMassInHalfRadGas"]/df["SubhaloMassInHalfRadStellar"]
-    indexNames = df[df["SubhaloGasFraction"] > 0.1].index #Ferrero2020
-    df.drop(indexNames, inplace = True)
-    return df
+    df_copy = df.copy(deep=True)
+    df_copy["SubhaloGasFraction"]  = df_copy["SubhaloMassInHalfRadGas"]/df_copy["SubhaloMassInHalfRadStellar"]
+    indexNames = df_copy[df_copy["SubhaloGasFraction"] > 0.1].index #Ferrero2020
+    df_copy.drop(indexNames, inplace = True)
+    return df_copy
 
 #Saving the data in the correct format
 def saveDataCSV(df, haloType, filename, tngFolder):
@@ -82,7 +86,7 @@ def saveDataPickle(df, haloType, filename, tngFolder):
 
 basePath = "./data/tng100-1/output"
 subhaloFields = ["SubhaloMass", 'SubhaloMassType', 'SubhaloFlag', "SubhaloLen", "SubhaloSFR", 
-                "SubhaloVel", "SubhaloVelDisp", "SubhaloHalfmassRad", "SubhaloMassInHalfRadType", 
+                "SubhaloVel", "SubhaloVelDisp", "SubhaloHalfmassRadType", "SubhaloMassInHalfRadType", 
                 "SubhaloMassInHalfRad", "SubhaloVmax", "SubhaloStellarPhotometrics", "SubhaloBHMass"]
 subhalos = il.groupcat.loadSubhalos(basePath,99,fields=subhaloFields)
 dfSubhalos = il.pandasformat.dictToPandas(subhalos)
@@ -95,13 +99,17 @@ haloFields = ["GroupMass", "GroupMassType", "GroupNsubs", "GroupFirstSub"]
 halos = il.groupcat.loadHalos(basePath,99,fields=haloFields)
 dfHalos = il.pandasformat.dictToPandas(halos)
 print("Done converting to pandas DataFrame")
-
+"""
+minSM = minYMass(dfSubhalos, minMass = 10**9, Y = "Stellar", haloType = "Subhalo")
+saveDataPickle(minSM, haloType="Subhalo", filename = "MinE9_SM", tngFolder = "tng100-1")
+"""
 centrals = centralGalaxies(dfHalos, dfSubhalos)
 centralsMinMass = minYMass(centrals, minMass = 10**9, Y = "Stellar", haloType = "Subhalo")
 saveDataPickle(centralsMinMass, haloType ="Subhalo", filename = "Centrals_minE9_SM", tngFolder = "tng100-1")
-"""
+
 lates = lateTypeGas(centralsMinMass)
 saveDataPickle(lates, haloType="Subhalo", filename = "Centrals_minE9_SM_lateType_Gas", tngFolder = "tng100-1")
-"""
+
 earlies = earlyTypeGas(centralsMinMass)
 saveDataPickle(earlies, haloType="Subhalo", filename = "Centrals_minE9_SM_earlyType_Gas", tngFolder = "tng100-1")
+#saveDataCSV(earlies, haloType="Subhalo", filename = "Centrals_minE9_SM_earlyType_Gas", tngFolder = "tng100-1")

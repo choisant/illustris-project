@@ -6,7 +6,9 @@ import numpy as np
 
 sami = pd.read_csv("./data/SAMI/allData.csv")
 earlies = sami[sami["morph"] == 0]
-lates = sami[sami["morph"] == 2]
+lates = sami[sami["morph"] >= 1]
+indexNames = lates[lates["morph"] ==3].index
+lates.drop(indexNames)
 
 earlies.to_csv("./data/SAMI/earlies.csv")
 lates.to_csv("./data/SAMI/lates.csv")

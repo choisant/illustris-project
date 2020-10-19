@@ -10,9 +10,9 @@ def VD_SM (title, ax, x0=10**1.5, x1=10**2.5, y0=10**9, y1=10**12):
     ax.set_yscale("log")
     ax.set_title(title)
     ax.set_xlabel(r'$\sigma$ [km/s]')
-    ax.set_ylabel(r"Stellar half-light mass [$ M_\odot /h $]")
+    ax.set_ylabel(r"Stellar mass [$ M_\odot /h $]")
     ax.grid(True,which="both", linestyle='--')
-    ax.legend()
+    ax.legend(loc = 4)
 
 def VSigma_SM (title, ax, x0=0, x1=2.5, y0=10**9, y1=10**12):
     ax.set(xlim = (x0, x1), ylim = (y0, y1))
@@ -53,30 +53,43 @@ def PDF_C (type, ax):
     ax.set_xlabel(type + " color [mag]")
     ax.legend()
 
-def HM_SM_loglog (title, df, x0=11, x1=14, y0=9.5, y1=12):
+def HM_SM(title, df, x0=10**11, x1=10**14, y0=10**(9.5), y1=10**(12)):
     plt.axis([x0, x1, y0, y1])
+    plt.xscale("log")
+    plt.yscale("log")
     plt.title(title + ", N = " + str(len(df["SubhaloMassStellar"])))
     plt.xlabel(r'log (Halo mass [$ M_\odot /h $])')
     plt.ylabel(r"log (Stellar mass [$ M_\odot /h $])")
     plt.legend()
     plt.show()
 
-def R_SM (title, ax, x0=10**1.5, x1=10**4, y0=10**9, y1=10**13):
+def R_SM (title, ax, x0=10**(-1), x1=10**2, y0=10**9, y1=10**13):
     ax.set(xlim = (x0, x1), ylim = (y0, y1))
     ax.set_xscale("log")
     ax.set_yscale("log")
     ax.set_title(title)
-    ax.set_xlabel(r'Half light radius [ckpc/h]')
-    ax.set_ylabel(r"Stellar half-light mass [$ M_\odot /h $]")
+    ax.set_xlabel(r'Half light radius [kpc]')
+    ax.set_ylabel(r"Stellar mass [$ M_\odot $]")
     ax.grid(True,which="both", linestyle='--')
     ax.legend()
 
-def R_VD (title, ax, x0=10**0, x1=10**3, y0=10**1.5, y1=10**2.5):
+
+def SM_R (title, ax, x0=10**(9), x1=10**13, y0=10**(-1), y1=10**2):
     ax.set(xlim = (x0, x1), ylim = (y0, y1))
     ax.set_xscale("log")
     ax.set_yscale("log")
     ax.set_title(title)
-    ax.set_xlabel(r'Half light radius [ckpc/h]')
+    ax.set_ylabel(r'Half light radius [kpc]')
+    ax.set_xlabel(r"Stellar mass [$ M_\odot $]")
+    ax.grid(True,which="both", linestyle='--')
+    ax.legend()
+
+def R_VD (title, ax, x0=10**(-1), x1=10**2, y0=10**1.5, y1=10**2.5):
+    ax.set(xlim = (x0, x1), ylim = (y0, y1))
+    ax.set_xscale("log")
+    ax.set_yscale("log")
+    ax.set_title(title)
+    ax.set_xlabel(r'Half light radius [kpc/h]')
     ax.set_ylabel(r'$\sigma$ [km/s]')
     ax.grid(True,which="both", linestyle='--')
     ax.legend(loc=4)
@@ -135,7 +148,7 @@ def FP_3D(df):
     #plot the data
     x, y, z = [], [], []
     z = np.log10(list(df["SubhaloMassInHalfRadStellar"]))
-    y = np.log10(list(df["SubhaloHalfmassRad"]))
+    y = np.log10(list(df["SubhaloHalfmassRadStellar"]))
     x = np.log10(list(df["SubhaloVelDisp"]))
     s = list(df["SubhaloMass"])
     s = [(i/(10**(10)))**(1/2) for i in s]
