@@ -5,17 +5,17 @@ import numpy as np
 from matplotlib.ticker import ScalarFormatter
 
 def VD_SM (title, ax, x0=10**1.5, x1=10**2.5, y0=10**9, y1=10**12):
-    ax.set(xlim = (x0, x1), ylim = (y0, y1))
+    ax.set(xlim=(x0, x1), ylim=(y0, y1))
     ax.set_xscale("log")
     ax.set_yscale("log")
     ax.set_title(title)
     ax.set_xlabel(r'$\sigma$ [km/s]')
     ax.set_ylabel(r"Stellar mass [$ M_\odot /h $]")
-    ax.grid(True,which="both", linestyle='--')
+    ax.grid(True, which="both", linestyle='--')
     ax.legend(loc = 4)
 
 def VSigma_SM (title, ax, x0=0, x1=2.5, y0=10**9, y1=10**12):
-    ax.set(xlim = (x0, x1), ylim = (y0, y1))
+    ax.set(xlim=(x0, x1), ylim=(y0, y1))
     #ax.set_xscale("log")
     ax.set_yscale("log")
     ax.set_title(title)
@@ -24,7 +24,7 @@ def VSigma_SM (title, ax, x0=0, x1=2.5, y0=10**9, y1=10**12):
     ax.legend()
 
 def Vmax_SM (title, ax, x0=10**1.5, x1=10**2.5, y0=10**9, y1=10**12):
-    ax.set(xlim = (x0, x1), ylim = (y0, y1))
+    ax.set(xlim=(x0, x1), ylim=(y0, y1))
     ax.set_xscale("log")
     ax.set_yscale("log")
     ax.set_title(title)
@@ -41,57 +41,56 @@ def CV_SM (title, df, x0=10**1.5, x1=10**2.5, y0=10**9, y1=10**12):
     plt.ylabel(r"Stellar mass [$ M_\odot /h $]")
     plt.legend()
 
-def C_SM (type, ax, x0=10**9, x1=10**12, y0=-1, y1=1):
-    ax.set(xlim = (x0, x1), ylim = (y0, y1))
+def C_SM (color, ax, x0=10**9, x1=10**12, y0=-1, y1=1):
+    ax.set(xlim=(x0, x1), ylim=(y0, y1))
     ax.set_xscale("log")
-    ax.set_ylabel(type + " [mag]")
+    ax.set_ylabel(color + " [mag]")
     ax.set_xlabel(r"Stellar mass [$ M_\odot /h $]")
-    ax.legend(loc = 4)
+    ax.legend(loc=4)
     
-def PDF_C (type, ax):
+def PDF_C (color, ax):
     ax.set_ylabel("PDF")
-    ax.set_xlabel(type + " color [mag]")
+    ax.set_xlabel(color + " color [mag]")
     ax.legend()
 
-def HM_SM(title, df, x0=10**11, x1=10**14, y0=10**(9.5), y1=10**(12)):
-    plt.axis([x0, x1, y0, y1])
-    plt.xscale("log")
-    plt.yscale("log")
-    plt.title(title + ", N = " + str(len(df["SubhaloMassStellar"])))
-    plt.xlabel(r'log (Halo mass [$ M_\odot /h $])')
-    plt.ylabel(r"log (Stellar mass [$ M_\odot /h $])")
-    plt.legend()
-    plt.show()
+def HM_SM(title, ax, x0=10**11, x1=10**14, y0=10**(9.5), y1=10**(12)):
+    ax.set(xlim=(x0, x1), ylim=(y0, y1))
+    ax.set_xscale("log")
+    ax.set_yscale("log")
+    ax.set_title(title)
+    ax.set_xlabel(r'Halo mass [$ M_\odot /h $]')
+    ax.set_ylabel(r"Stellar mass [$ M_\odot /h $]")
+    ax.legend()
 
 def R_SM (title, ax, x0=10**(-1), x1=10**2, y0=10**9, y1=10**13):
-    ax.set(xlim = (x0, x1), ylim = (y0, y1))
+    ax.set(xlim=(x0, x1), ylim=(y0, y1))
     ax.set_xscale("log")
     ax.set_yscale("log")
     ax.set_title(title)
     ax.set_xlabel(r'Half light radius [kpc]')
     ax.set_ylabel(r"Stellar mass [$ M_\odot $]")
-    ax.grid(True,which="both", linestyle='--')
+    ax.grid(True, which="both", linestyle='--')
     ax.legend()
 
 
 def SM_R (title, ax, x0=10**(9), x1=10**13, y0=10**(-1), y1=10**2):
-    ax.set(xlim = (x0, x1), ylim = (y0, y1))
+    ax.set(xlim=(x0, x1), ylim=(y0, y1))
     ax.set_xscale("log")
     ax.set_yscale("log")
     ax.set_title(title)
     ax.set_ylabel(r'Half light radius [kpc]')
     ax.set_xlabel(r"Stellar mass [$ M_\odot $]")
-    ax.grid(True,which="both", linestyle='--')
+    ax.grid(True, which="both", linestyle='--')
     ax.legend()
 
 def R_VD (title, ax, x0=10**(-1), x1=10**2, y0=10**1.5, y1=10**2.5):
-    ax.set(xlim = (x0, x1), ylim = (y0, y1))
+    ax.set(xlim=(x0, x1), ylim=(y0, y1))
     ax.set_xscale("log")
     ax.set_yscale("log")
     ax.set_title(title)
     ax.set_xlabel(r'Half light radius [kpc/h]')
     ax.set_ylabel(r'$\sigma$ [km/s]')
-    ax.grid(True,which="both", linestyle='--')
+    ax.grid(True, which="both", linestyle='--')
     ax.legend(loc=4)
 
 def SM_SFR (title, df, x0=10**9, x1=10**13, y0=10**(-4), y1=10**0):
@@ -103,9 +102,8 @@ def SM_SFR (title, df, x0=10**9, x1=10**13, y0=10**(-4), y1=10**0):
     plt.ylabel(r"sSFR [$ Gyr^{-1} $]")
     plt.legend()
 
-
 def VD_BH (title, df, ax, x0=10**1, x1=10**3, y0=10**(6), y1=10**(10)):
-    ax.set(xlim = (x0, x1), ylim = (y0, y1))
+    ax.set(xlim=(x0, x1), ylim=(y0, y1))
     ax.set_xscale("log")
     ax.set_yscale("log")
     ax.set_ylabel(r"SMBH mass [$ M_\odot /h $]")
@@ -114,7 +112,7 @@ def VD_BH (title, df, ax, x0=10**1, x1=10**3, y0=10**(6), y1=10**(10)):
     ax.legend()
 
 def SM_BH (title, df, ax, x0=10**9, x1=10**(13), y0=10**(6), y1=10**(10)):
-    ax.set(xlim = (x0, x1), ylim = (y0, y1))
+    ax.set(xlim=(x0, x1), ylim=(y0, y1))
     ax.set_xscale("log")
     ax.set_yscale("log")
     ax.set_ylabel(r"SMBH mass [$ M_\odot /h $]")
@@ -123,7 +121,7 @@ def SM_BH (title, df, ax, x0=10**9, x1=10**(13), y0=10**(6), y1=10**(10)):
     ax.legend()
 
 def DM_BH (title, df, ax, x0=10**10, x1=10**(14), y0=10**(6), y1=10**(10)):
-    ax.set(xlim = (x0, x1), ylim = (y0, y1))
+    ax.set(xlim=(x0, x1), ylim=(y0, y1))
     ax.set_xscale("log")
     ax.set_yscale("log")
     ax.set_ylabel(r"SMBH mass [$ M_\odot /h $]")
@@ -131,8 +129,8 @@ def DM_BH (title, df, ax, x0=10**10, x1=10**(14), y0=10**(6), y1=10**(10)):
     ax.set_title(title + ", N = " + str(len(df["SubhaloMassDM"])))
     ax.legend()
 
-def R_BH (title, df, ax, x0=10**0, x1=10**4, y0=10**(6), y1=10**(10)):
-    ax.set(xlim = (x0, x1), ylim = (y0, y1))
+def R_BH (title, df, ax, x0=10**0, x1=10**2, y0=10**(6), y1=10**(10)):
+    ax.set(xlim=(x0, x1), ylim=(y0, y1))
     ax.set_xscale("log")
     ax.set_yscale("log")
     ax.set_ylabel(r"SMBH mass [$ M_\odot /h $]")
@@ -153,7 +151,7 @@ def FP_3D(df):
     s = list(df["SubhaloMass"])
     s = [(i/(10**(10)))**(1/2) for i in s]
 
-    ax.scatter(xs = x, ys = y, zs = z, alpha=0.8, c=y, cmap=plt.get_cmap("magma"), s = s)
+    ax.scatter(xs = x, ys = y, zs = z, alpha=0.8, c=y, cmap=plt.get_cmap("magma"), s=s)
 
     #plane
     """
@@ -165,7 +163,7 @@ def FP_3D(df):
     ax.plot_surface(FPx, FPy, FPz, linewidth=0, antialiased=False, alpha = 0.2)
     """
     #Format
-    ax.set_title("Fundamental Plane", fontsize = 14)
+    ax.set_title("Fundamental Plane", fontsize=14)
     ax.set_zlabel('Mass')
     ax.set_ylabel('Radius')
     ax.set_xlabel('Velocity')
