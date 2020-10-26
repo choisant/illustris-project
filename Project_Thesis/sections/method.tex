@@ -1,0 +1,24 @@
+\subsection{IllustrisTNG and the Data Catalogues}
+
+IllustrisTNG is the follow-up project after the success of Illustris. It is a huge project, built upon a magneto-hydrodynamical cosmological simulation code with added physical processes on a subgrid level \parencite{Weinberger2016}. The IllustrisTNG project includes 18 different simulations, with different resolutions, spatial size and physics. In this project, the TNG100-1 simulation data has been used. It has a volume of $110.7^3 \,$ Mpc, and a baryonic particle resolution of $1.1 \cdot 10^7 M_{\odot}$. The other simulation data that was available as of fall 2020 has a volume of $302.6^3 \,$ Mpc which is great for studying galaxy clusters, but it has a significantly lower mass resolution. In this project, the effects of galaxy environments are not studied, so the TNG-100 simulation was the ideal middle ground with respect to size and resolution.
+
+All the Illustris-TNG data is available online **insert link**. The data products that are available are snapshots, group catalogs and merger trees. The snapshots are taken at specific redshifts and include all all particles in the whole volume of the simulation, with a handful including all the particle fields as well. Group catalogs are a smart way to access the different halos/galaxies instead of looking at each particle. There are two different group catalogs, FoF and Subfind. The FoF catalog contains the different DM halos, and the Subfind catalog contains the subhalos. Each subhalo has a parent halo, and the largest subhalo in each halo is the central subhalo. The merger trees data product contain the merger history of each subhalo.
+
+This project makes use of the group catalogs, as they require much less computational power to work with. (...)
+
+
+\subsection{Finding central galaxies}
+For most of the relations covered in this project, it is desirable to only use the central galaxies in each halo. This is because satellite galaxies are heavily influenced by their environment, for instance through tidal forces. They also mostly contain relatively small amounts of stars compared to dark matter, so they are more interesting for studying dark matter than galaxies. The FoF catalog contains the index for the largest subhalo in each halo, so combining this information with the Subfind catalog allows one to create a subset of the data containing only the central galaxies.
+
+\subsection{Separating out early and late type galaxies}
+As several of the relations studied in this project relate to the morphological type of the galaxies, it is interesting to filter out early and late type galaxies to study separately. This can be done in many different ways, and in many studies several criteria for classification have been chosen. In this case, the fraction of gas inside the effective radius of each galaxy has been chosen as the criteria for classification.
+\begin{equation}
+    M_{gas}/M  = f
+\end{equation}
+
+For $f > 0.1$, the galaxy is classifies as late type, while for $f< 0.1$, the galaxy is flagged as early type.
+
+(... hopefully do more here)
+
+\subsection{Comparing data}
+SAMI...Behroozi etc

@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage{url}
+\usepackage{appendix}
+\usepackage{caption}
+\usepackage{subfig}
+\usepackage{hyperref}
+\usepackage{epigraph}
+\setlength\epigraphwidth{.8\textwidth}
+\usepackage{parskip}
+\usepackage{amsmath}
+\usepackage[backend=biber, style=alphabetic, citestyle=authoryear]{biblatex}
+\addbibresource{mybib.bib} %Imports bibliography file
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\input{sections/titlepage}
+
+\section*{Abstract}
+\input{sections/abstract}
+
+\section{Introduction}
+\input{sections/introduction}
+
+\section{Theory}
+\input{sections/theory}
+
+\section{Method}
+\input{sections/method}
+
+\section{Results and discussions}
+\input{sections/results}
+
+\section{Conclusions}
+\input{sections/conclusions}
+
+\medskip
+\printbibliography
+
+\end{document}
