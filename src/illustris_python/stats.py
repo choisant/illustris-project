@@ -3,7 +3,7 @@ functions for doing statistical calculations
 """
 import numpy as np
 
-def median_values(df, datatype, x_key, y_key, ymin, ymax, bin_out=False):
+def median_values(df, datatype, x_key, y_key, ymin=9, ymax=12, bin_out=False):
     """
     Takes in a dataframe and creates bins along y_key-axis. Returns median values.
     """

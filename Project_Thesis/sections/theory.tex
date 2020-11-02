@@ -1,10 +1,21 @@
 \subsection{Galaxy formation}
 
 \subsubsection{Dark matter halos}
-The $\Lambda$CDM model for our universe gives a bottom-up solution to galaxy formation. Essentially this means that larger galaxies have formed through mergers of smaller galaxies. In the early universe, dark matter is distributed isotropically on large scales, but with local perturbations. These perturbations in the density field grow with time, and the dark matter collapses into clumps known as halos. The halos provide the initial gravitational well needed for baryonic matter to collapse and create stars. This leads to galaxies forming at the center of their respective halos. Gravitationally bound halos are called subhalos, and are part of a larger host halo. Subhalos will fall towards the central subhalo, and accrete onto it, depending on variables like the subhalos size and orbit. There may be subhalos without an attached galaxy, but all galaxies have a dark matter subhalo.
+%you shouldn't mention "galaxies" here. it is a section about halos:
+%- what are they
+%- how they form
+%- Hierarchical Clustering
+%- Present "Halo Mass Function" , maybe a plot would be good. 
+
+The $\Lambda$CDM model for our universe gives a bottom-up solution to galaxy formation. Essentially this means that larger galaxies have formed through mergers of smaller galaxies. In the early universe, dark matter is distributed isotropically on large scales, but with local perturbations. These perturbations in the density field grow with time, and the dark matter collapses into clumps known as halos. The halos provide the initial gravitational well needed for gas to collapse and create stars. This leads to galaxies forming at the center of their respective halos. Gravitationally bound halos are called subhalos, and are part of a larger host halo. Subhalos will fall towards the central subhalo, and accrete onto it, depending on variables like the subhalos size and orbit. There may be subhalos without an attached galaxy, but all galaxies have a dark matter subhalo.
+
+%I would include a section before this: "Galaxies" and equivalent sub-section as "Dark Matter halos". In this new section you can say all the thinks about galaxies you %mention on "Dark Matter halos" section and also in this new section present (with a plot) the "galaxy luminosity function)
 
 \subsubsection{Stellar-to-Halo mass relation}
-The stellar-to-halo mass relation (SHMR) gives us an idea about what size galaxy populates a dark matter halo of a certain size. One way of looking for this relation is through a method called abundance matching \parencite{None2000}. Abundance matching is a numerical method which employs a guess for the form of a relation to simulate how such a universe might look, and then compares it to observations. By tweaking the form of the equation, a better match can be achieved, and as such a better estimate for the right answer. 
+%The technique consist in assuming that the most massive galaxy lives in the most massive halo, that the second most massive galaxy lives in the second most massive %halo, and so on. in practice, this is done by matching the abundances between the "halo mass function" and the "luminosity function of galaxies".
+
+The "luminosity function" can be measured observationally, because we can see galaxies. But "halo mass function" come from simulations, because we can not observe Halos.
+The stellar-to-halo mass relation (SHMR) gives us an idea about what mass a galaxy would have which populates a dark matter halo of a certain mass. One way of looking for this relation is through a method called abundance matching \parencite{None2000}. Abundance matching is a numerical method which employs a guess for the form of a relation to simulate how such a universe might look, and then compares it to observations. By tweaking the form of the equation, a better match can be achieved, and as such a better estimate for the right answer. 
 
 Using abundance matching, the SHMR has been found to be well described by a power law for low-mass galaxies, and a subpower law for the high-mass end of the spectrum \parencite{Behroozi2013}. 
 
@@ -16,11 +27,13 @@ Using abundance matching, the SHMR has been found to be well described by a powe
 \end{equation*}
 
 Here $M_*$ is the stellar mass, $M_h$ is the halo mass, $M_1$ is a characteristic halo mass, $\delta$ is the strength of the subpower law, $\alpha$ is the power law slope for $M_h << M_1$ and $\gamma$ is the power law index for $M_h >> M_1$.
+%I would also include a plot here showing the Behroozi relation or just explain that this relation is made by "join" the "halo mass function" and the "galaxies luminosity function" you already show in previous sub-sections. 
 
-This gives us a relation that matches smaller halos to smaller galaxies, and vice versa, as well as a characteristic halo mass of about $10^{12}M_{\odot}$.
+%%% not good This gives us a relation that matches smaller halos to smaller galaxies, and vice versa, as well as a characteristic halo mass of about $10^{12}M_{\odot}$.
 
 \subsection{Galaxy evolution and classification}
-As soon as telescopes became good enough to clearly make out galaxies in the sky, it became apparent that galaxies come in many different shapes and sizes. The morphology of a galaxy is important, because it turns out that morphology is closely linked to other properties of the galaxy. Edwin Hubble classified galaxies on a spectra \parencite{Hubble1926}, with spiral galaxies (galaxies with a prominent disk component) on one end of the spectrum and elliptical galaxies (galaxies that have a dominant spheroidal component) on the other (see Figure \ref{hubble}). He thought that galaxies started off as ellipticals and evolved along the spectrum, becoming more disk-dominated as it aged. This is the reason that elliptical and spiral galaxies are known as early and late type galaxies. These terms can be confusing as it turns out that Hubble was probably wrong, and the evolution of galaxies probably moves in the other direction. 
+%Maybe make list/figure to sum up differences
+As soon as telescopes became good enough to clearly make out galaxies in the sky, it became apparent that galaxies come in many different shapes and sizes. The morphology of a galaxy is important, because it turns out that morphology is closely linked to other properties of the galaxy. Edwin Hubble classified galaxies on a spectra \parencite{Hubble1926}, with spiral galaxies (galaxies with a prominent disk component) on one end of the spectrum and elliptical galaxies (galaxies that have a dominant spheroidal component) on the other (see Figure \ref{hubble}). He thought that galaxies started off as ellipticals and evolved along the spectrum, becoming more disk-dominated as it aged. This is the reason that elliptical and spiral galaxies are known as early and late type galaxies, respectively. These terms can be confusing as it turns out that Hubble was wrong, and the evolution of galaxies probably moves in the other direction. 
 
 In the $\Lambda$CDM model, galaxies grow through mergers. Mergers are separated into two types, major and minor mergers.  Major mergers are events where two galaxies of equal size collide and become one galaxy. Simulations have shown that a major merger between two disk galaxies produces an elliptical. The Milky Way, which is a large spiral galaxy ($M_*>10^{10}$) has probably grown through many smaller minor mergers, and thus kept its disky part.
 
@@ -31,7 +44,7 @@ In the $\Lambda$CDM model, galaxies grow through mergers. Mergers are separated 
     \label{hubble}
 \end{figure}
 
-It is not always easy to distinguish between a disky elliptical and a spiral with a large spheroidal component (bulge). Some galaxies are in the middle of a merging process. These can have very irregular shapes, and so are hard to classify. Other galaxies are very small, so called dwarf galaxies. These galaxies tend to have very little stellar mass compared to dark matter, so they do not exhibit the properties of ellipticals, even though they may be more elliptical in shape. In this project, we mostly look at larger, central galaxies, so we will not have to consider most of these special galaxy types.
+It is not always easy to distinguish between a disky elliptical and a spiral with a large spheroidal component (bulge). Some galaxies are in the middle of a merging process. These can have very irregular shapes, and so are hard to classify. Other galaxies are very small, so called dwarf galaxies. These galaxies tend to have very little stellar mass compared to dark matter, so they do not exhibit the properties of ellipticals, even though they may be more elliptical in shape.
 
 \subsubsection{Elliptical (early type) galaxies}
 Elliptical galaxies are mainly pressure-dominated systems, meaning that the motion of the stars is predominantly radial. The largest galaxies in the universe tend to be ellipticals, but they come in all sizes. The star population of ellipticals is generally older than that of spirals, and there is usually little to no star formation. There is very little gas and dust in ellipticals, and they tend to emit more light in the redder end of the EM spectrum. Early type galaxies are less common than late type galaxies, and are more usually found in galaxy clusters.
@@ -43,23 +56,33 @@ The large rotational velocities of the disky part of late-type galaxies perplexe
 
 
 \subsection{Galaxy properties}
+%Are you going to show a plot in each of the following  sub-sections ? 
+%You should also say that all this correlations are studied in all possible redshift range (not only z=0)
 
 
 \subsubsection{The Tully-Fisher relation}
 
-In 1977, R.B. Tully and J.R. Fisher \parencite{TullyFisher1977} published a paper where they found a surprisingly good correlation between the luminosity of a spiral galaxy and the rotational speed of its disk on the form of a simple power law with index 4.
+In 1977, R.B. Tully and J.R. Fisher \parencite{TullyFisher1977} published a paper where they found a surprisingly good correlation between the luminosity of a spiral galaxy and the rotational speed of its disk on the form of a simple power law with index $\alpha$.
 
 \begin{equation}
-    L \propto v_{rot}^4 
+    L \propto v_{rot}^\alpha
 \end{equation}
-
+%alpha = 4 
 As stellar mass is directly proportional to the luminosity, this gives us the ability to estimate stellar mass from a simple measurement of the rotational velocity.
 
 \begin{equation}
-    M_* \propto v_{rot}^4 
+    M_* \propto v_{rot}^\alpha 
 \end{equation}
 
-This relation is a great tool for estimating the distance (and hence age) to a galaxy, as the calculated luminosity can be compared to the observed luminosity at Earth. For numerical simulations, being able to reproduce the Tully-Fisher relation is an essential way to check if the model used is reliable.
+This relation is a great tool for estimating the distance to a galaxy, as the calculated luminosity can be compared to the observed luminosity at Earth. For numerical simulations, being able to reproduce the Tully-Fisher relation is an essential way to check if the model used is reliable.
+
+Assuming the particles move in circular orbits around the center of mass, the circular velocity of the TNG-galaxies can be calculated at a given radius by the formula
+
+\begin{equation}
+    v_{circ} = \sqrt{GM_{tot}(<R)/R} 
+\end{equation}
+
+This velocity
 
 \subsubsection{The Faber-Jackson relation and the Fundamental Plane}
 At around the same time that Tully and Fisher published their paper, Sandra M. Faber and Robert Earl Jackson published a paper that linked the velocity dispersion and luminosity of early-type galaxies. The proposed relation was on the form of a power law as well, with an index of approximately 4 \parencite{FaberJackson1976}.
@@ -68,7 +91,7 @@ At around the same time that Tully and Fisher published their paper, Sandra M. F
     L \propto \sigma^{\gamma} 
 \end{equation}
 
-This is known as the Faber-Jackson (FJ) relation. The correlation was not as tight as the Tully-Fisher relation however, and it was later found that the velocity dispersion also was dependent on the size of the galaxy.
+This is known as the Faber-Jackson (FJ) relation. The correlation is not as tight as the Tully-Fisher relation however, and it was later found that the velocity dispersion also was dependent on the size of the galaxy.
 
 \begin{equation}
     \sigma \propto L^a R^b

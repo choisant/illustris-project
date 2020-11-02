@@ -2,8 +2,8 @@ import pandas as pd
 
 #data.to_csv("./data/SAMI/earlies.csv")
 
-morph_key = "Morph_dilyar"
-sami = pd.read_csv("./data/SAMI/STELLAR_Details.csv")
+morph_key = "morph"
+sami = pd.read_csv("./data/SAMI/all_data_vrot.csv")
 
 earlies = sami[sami[morph_key] == 0]
 lates = sami[sami[morph_key] >= 1]
@@ -13,5 +13,7 @@ lates = lates.drop(indexNames)
 #earlies.to_csv("./data/SAMI/earlies.csv")
 #lates.to_csv("./data/SAMI/lates.csv")
 
-earlies.to_csv("./data/SAMI/STELLAR_Details_earlies.csv")
-lates.to_csv("./data/SAMI/STELLAR_Details_lates.csv")
+print(lates["morph"])
+
+earlies.to_csv("./data/SAMI/earlies_vrot.csv")
+lates.to_csv("./data/SAMI/lates_vrot.csv")

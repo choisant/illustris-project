@@ -1,13 +1,17 @@
 \subsection{IllustrisTNG and the Data Catalogues}
+%Add footnote with IllustrisTNG webpage
+IllustrisTNG is the follow-up project after the success of the Illustris simulations. It is a huge project, built upon a magneto-hydrodynamical cosmological simulation code with added physical processes on a subgrid level \parencite{Weinberger2016}. The IllustrisTNG project includes 18 different simulations, with varying resolutions, spatial size and included physics. The details for each simulation can be found (.Insert figure like Lovell 2019..) In this project, the TNG100-1 simulation data has been used. It has a volume of $110.7^3 \,$ Mpc, and a baryonic particle resolution of $1.1 \cdot 10^7 M_{\odot}$. The TNG-300 simulations have a volume of $302.6^3 \,$ Mpc which is great for studying galaxy clusters, but they have a significantly lower mass resolution. In this project, a large statistical sample of galaxies was needed, as well as detailed structure of the galaxies to calculate the different properties, so the TNG-100 simulation was the ideal middle ground with respect to size and resolution.
 
-IllustrisTNG is the follow-up project after the success of the Illustris simulations. It is a huge project, built upon a magneto-hydrodynamical cosmological simulation code with added physical processes on a subgrid level \parencite{Weinberger2016}. The IllustrisTNG project includes 18 different simulations, with varying resolutions, spatial size and included physics. In this project, the TNG100-1 simulation data has been used. It has a volume of $110.7^3 \,$ Mpc, and a baryonic particle resolution of $1.1 \cdot 10^7 M_{\odot}$. The TNG-300 simulations have a volume of $302.6^3 \,$ Mpc which is great for studying galaxy clusters, but they have a significantly lower mass resolution. In this project, the effects of galaxy environments are not studied, so the TNG-100 simulation was the ideal middle ground with respect to size and resolution.
-
-All the Illustris-TNG data is available online at the TNG webpage **insert link**. The data products that are available for each simulation are snapshots, group catalogs and merger trees. The snapshots are taken at specific redshifts and include all the particles in the whole volume of the simulation, with a handful including all the particle fields for each particle as well. Group catalogs are a smart way to access the different halos/galaxies instead of looking at each particle. There are two different group catalogs, FoF and Subfind. The FoF catalog contains all the DM halos, and the Subfind catalog contains all the subhalos. Each subhalo has a parent halo, and the largest subhalo in each halo is the central subhalo. The merger trees data product contain the merger history of each subhalo.
+All the Illustris-TNG data is available online at the TNG webpage **insert link**. The data products that are available for each simulation are snapshots, group catalogs and merger trees. The snapshots are taken at specific redshifts and include all the particles in the whole volume of the simulation, with a handful including all the particle fields for each particle as well. Group catalogs are a convenient way to quickly access already calculated properties of the different halos/galaxies instead of looking at each particle. This saves a lot of time and effort, but gives the user less control over what can be analysed. //In future work, it might be interesting to do the calculations from the snapshots myself.// There is one group catalog for each snapshot, and this includes two types of objects, FoF and Subfind. The FoF catalog contains all the DM halos, and the Subfind catalog contains all the subhalos for each halo. Each subhalo has a parent halo, and the largest subhalo in each halo is the central subhalo. The merger trees data product contain the merger history of each subhalo.
 
 This project makes use of the group catalogs, as they require much less computational power to work with. (...)
 
 
-\subsection{Finding central galaxies}
+\subsection{Cuts made in the data} %badtitle
+%This subsection should be combined with the mass cut.
+%You should say that you are applying to 1) only central galaxies, why? because satellites galaxies are more affected by the environment and that modify their kinematic and structural properties. and this introduce a big scatter on the scaling relations you are comparing in this work. so you want "isolated" galaxies. 
+%2) with stellar mass greater than 10^?, why? because less massive galaxies are composed with few stellar particles, and then their structure is not reliable.
+
 For most of the relations covered in this project, it is desirable to only use the central galaxies in each halo. The FoF catalog contains the index for the largest subhalo in each halo, so combining this information with the Subfind catalog allows one to create a subset of the data that contains only the central galaxies.
 
 \subsection{Separating out early and late type galaxies}
@@ -20,5 +24,12 @@ For $f > 0.1$, the galaxy is classified as late type, while for $f< 0.1$, the ga
 
 (... hopefully do more here)
 
-\subsection{Comparing data}
+\subsection{Calculating properties}
+To compare the simulation data with observational data for rotational velocities, circular velocities are calculated. Assuming the particles move in circular orbits around the center of mass, the circular velocity at a given radius are given by the formula
+
+\begin{equation}
+    v_{circ} = \sqrt{GM_{tot}(<R)/R}. 
+\end{equation}
+
+\subsection{Observational data}
 SAMI...Behroozi etc

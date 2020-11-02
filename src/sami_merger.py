@@ -23,8 +23,11 @@ data = pd.merge(data1, data3, how = "outer", on='cataid')
 #data = pd.merge(data3, df5, how = "outer", on="cataid")
 
 #adding useful fields
-data["mstar"] = 10**data["mstar"]
+data["mstar_log"] = data["mstar"]
+data["mstar"] = 10**data["mstar_log"]
 data["mstarhalf"] = data["mstar"]*0.5
+data["MSAMI_log"] = data["MSAMI"]
+data["MSAMI"] = 10**data["MSAMI_log"]
 indexNames = data[data["r_e"] < 0].index
 data.drop(indexNames, inplace=True)
 data["r_e_angles"] = data["r_e"]
