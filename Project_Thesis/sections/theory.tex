@@ -1,3 +1,6 @@
+%%%astrophysics stuff like redshift??
+
+
 \subsection{Galaxy formation}
 
 \subsubsection{Dark matter halos}
@@ -52,7 +55,14 @@ Elliptical galaxies are mainly pressure-dominated systems, meaning that the moti
 \subsubsection{Spiral (late type) galaxies}
 Late type galaxies have a prominent disky component, orbiting around the galaxy's center. The rotational velocity of the disk is typically much larger than the velocity dispersion of the galaxy's bulge. The stars in a spiral galaxy are usually much younger than those in early types. There is a lot of gas and dust present in spirals, giving rise to ongoing star formation. Late type galaxies are bluer in color than early types. Field galaxies, galaxies that are not part of a galaxy cluster, are predominantly spirals. 
 
-The large rotational velocities of the disky part of late-type galaxies perplexed early astrophysicists, as the mass inferred by the rotational motion was much greater than that which could be accounted for by the stars and gas in the galaxy. An effort to solve this problem led to the theory of dark matter, and later to the $\Lambda$CDM model.
+
+The rotational velocities of the stars at different radii in the disk of spiral galaxies can be measured observationally, and plotting the velocity as a function of radius gived us the velocity curve og the galaxy. If the mass in the galaxy was solely made up of the gas and stars that we are able to detect optically, we would expect the velocity curve to drop off as we get to the outer parts of the galaxy. Assuming the particles move in circular orbits around the center of mass, the circular velocity at a given radius are given by the formula
+
+\begin{equation}
+    v_{circ} = \sqrt{GM(<R)/R}. 
+\end{equation}
+
+However, the observational data shows that the velocity curve does not fall off towards the outer parts of the galaxy, but actually flattens out. //add figure// This perplexed early astrophysicists, as the mass inside the outer radii must be much greater than that which could be accounted for by the stars and gas in the galaxy. An effort to solve this problem led to the theory of dark matter, and later to the $\Lambda$CDM model.
 
 
 \subsection{Galaxy properties}
@@ -62,27 +72,22 @@ The large rotational velocities of the disky part of late-type galaxies perplexe
 
 \subsubsection{The Tully-Fisher relation}
 
-In 1977, R.B. Tully and J.R. Fisher \parencite{TullyFisher1977} published a paper where they found a surprisingly good correlation between the luminosity of a spiral galaxy and the rotational speed of its disk on the form of a simple power law with index $\alpha$.
+In 1977, R.B. Tully and J.R. Fisher \parencite{TullyFisher1977} published a paper where they found a surprisingly good correlation between the luminosity of a spiral galaxy and the characteristic rotational speed of its disk on the form of a simple power law with index $\alpha$.
 
 \begin{equation}
     L \propto v_{rot}^\alpha
 \end{equation}
 %alpha = 4 
-As stellar mass is directly proportional to the luminosity, this gives us the ability to estimate stellar mass from a simple measurement of the rotational velocity.
+This is known as the Tully-Fisher relation (TFR). As stellar mass is directly proportional to the luminosity, this gives us the ability to estimate stellar mass from a simple measurement of the rotational velocity.
 
 \begin{equation}
     M_* \propto v_{rot}^\alpha 
 \end{equation}
 
-This relation is a great tool for estimating the distance to a galaxy, as the calculated luminosity can be compared to the observed luminosity at Earth. For numerical simulations, being able to reproduce the Tully-Fisher relation is an essential way to check if the model used is reliable.
+The power law index $\alpha$ was found to be 3.7. Later work has found $\alpha$ to lie between 3.5 and 4 (needs citing...).
 
-Assuming the particles move in circular orbits around the center of mass, the circular velocity of the TNG-galaxies can be calculated at a given radius by the formula
 
-\begin{equation}
-    v_{circ} = \sqrt{GM_{tot}(<R)/R} 
-\end{equation}
-
-This velocity
+This relation is a great tool for estimating the distance to a galaxy, as the calculated luminosity can be compared to the observed luminosity at Earth. For numerical simulations, being able to reproduce the TFR is an essential way to check if the model used is reliable.
 
 \subsubsection{The Faber-Jackson relation and the Fundamental Plane}
 At around the same time that Tully and Fisher published their paper, Sandra M. Faber and Robert Earl Jackson published a paper that linked the velocity dispersion and luminosity of early-type galaxies. The proposed relation was on the form of a power law as well, with an index of approximately 4 \parencite{FaberJackson1976}.

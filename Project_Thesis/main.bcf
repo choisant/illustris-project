@@ -2360,6 +2360,10 @@
     <bcf:citekey order="8">FaberJackson1976</bcf:citekey>
     <bcf:citekey order="9">Djorgovski1987</bcf:citekey>
     <bcf:citekey order="10">Weinberger2016</bcf:citekey>
+    <bcf:citekey order="11">Scott2018</bcf:citekey>
+    <bcf:citekey order="12">Bloom2017</bcf:citekey>
+    <bcf:citekey order="13">Genel2017</bcf:citekey>
+    <bcf:citekey order="14">Kelvin2012</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">
