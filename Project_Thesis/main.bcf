@@ -2353,17 +2353,25 @@
     <bcf:citekey order="1">white</bcf:citekey>
     <bcf:citekey order="2">Boveia2018</bcf:citekey>
     <bcf:citekey order="3">Frenk1983</bcf:citekey>
-    <bcf:citekey order="4">None2000</bcf:citekey>
-    <bcf:citekey order="5">Behroozi2013</bcf:citekey>
-    <bcf:citekey order="6">Hubble1926</bcf:citekey>
-    <bcf:citekey order="7">TullyFisher1977</bcf:citekey>
-    <bcf:citekey order="8">FaberJackson1976</bcf:citekey>
-    <bcf:citekey order="9">Djorgovski1987</bcf:citekey>
-    <bcf:citekey order="10">Weinberger2016</bcf:citekey>
-    <bcf:citekey order="11">Scott2018</bcf:citekey>
-    <bcf:citekey order="12">Bloom2017</bcf:citekey>
-    <bcf:citekey order="13">Genel2017</bcf:citekey>
-    <bcf:citekey order="14">Kelvin2012</bcf:citekey>
+    <bcf:citekey order="4">Navarro1996</bcf:citekey>
+    <bcf:citekey order="5">Press1974</bcf:citekey>
+    <bcf:citekey order="6">Tinker2008</bcf:citekey>
+    <bcf:citekey order="7">Conselice2016</bcf:citekey>
+    <bcf:citekey order="8">Schechter1976</bcf:citekey>
+    <bcf:citekey order="9">Behroozi2013</bcf:citekey>
+    <bcf:citekey order="10">Hubble1926</bcf:citekey>
+    <bcf:citekey order="11">Zasov2017</bcf:citekey>
+    <bcf:citekey order="12">Zasov2017</bcf:citekey>
+    <bcf:citekey order="13">TullyFisher1977</bcf:citekey>
+    <bcf:citekey order="14">FaberJackson1976</bcf:citekey>
+    <bcf:citekey order="15">Djorgovski1987</bcf:citekey>
+    <bcf:citekey order="16">Mo2010</bcf:citekey>
+    <bcf:citekey order="17">Mo2010</bcf:citekey>
+    <bcf:citekey order="18">Weinberger2016</bcf:citekey>
+    <bcf:citekey order="19">Scott2018</bcf:citekey>
+    <bcf:citekey order="20">Bloom2017</bcf:citekey>
+    <bcf:citekey order="21">Genel2017</bcf:citekey>
+    <bcf:citekey order="22">Kelvin2012</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">

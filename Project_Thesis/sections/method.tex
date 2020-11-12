@@ -12,7 +12,7 @@ The IllustrisTNG project includes 18 different simulations with varying resoluti
  \hline
  \hline
    &  Volume [$Mpc^3$] & $N_{DM}$ & $m_{DM}$ [$M_{\odot}$] & $m_{baryon}$ [$M_{\odot}$] \\
-  \hline
+ \hline
  TNG50 & $51.7^3$ & $2163^3$ & $4.5 \times 10^5 $ & $8.5 \times 10^4 $ \\ 
  TNG100 & $110.7^3$ & $1820^3$ & $7.5 \times 10^6 $ & $1.4 \times 10^6 $  \\ 
  TNG300 & $302.6^3$ & $2500^3$ & $5.9 \times 10^7 $ & $1.1 \times 10^7 $  \\ 
@@ -31,7 +31,7 @@ The group catalogs provide a convenient way to quickly access already calculated
 
 This project makes use of the group catalogs for the $z = 0$ snapshot in TNG100-1, as we want to compare the output data to the present universe.
 
-\subsubsection{Cuts made in the data} %badtitle
+\subsubsection{Selection criteria} %badtitle
 
 The TNG documentation recommends filtering out all subhalos that are flagged with the $SubhaloFlag$ field, and so these were cut from the data. These are most probably subhalos of non-cosmological origin, and so should not be considered real galaxies.
 
@@ -52,7 +52,7 @@ It is desirable to use the same observational data when comparing different scal
 \subsubsection{SAMI Galaxy Survey}
 Sydney – Australian Astronomical Observatory Multi-Object Integral Field Spectrograph (SAMI) is mounted on the Anglo-Saxan telescope in Australia. The SAMI Galaxy Survey \footnote{https://sami-survey.org/} is a spectroscopic survey of a large sample of galaxies in the nearby universe ($z < 0.113$). The survey was started in 2013, and ended in 2018. There have been two major data releases, with the newest being Data Release Two (DR2) \parencite{Scott2018}. DR2 includes data for 1559 galaxies, which are about 50 \% of the full galaxy survey. The data products available are IFS data cubes and 2D maps, as well as catalogue data. Analysing data cubes and 2D maps falls outside the scope of this product, so catalogue data is used where possible. Some data is not available in the catalogues, but the direct results from research using the SAMI data has then been used.
 
-%%morphology here? or in properties?
+
 \subsubsection{Other data sets}
 SHMR
 SMBH
@@ -66,22 +66,25 @@ As several of the relations studied in this project relate to the morphological 
 In the SAMI DR2, the galaxy morphology is determined visually. They are classified into four different categories: ellipticals, S0, Sa/Sb and Sc/Sd/irregulars. See Figure \ref{hubble} in section 2.2 for a visualisation of the different galaxy classifications.
 
 \subsubsection{Circular velocities}
-To compare the simulation data with observational data for rotational velocities, calculated circular velocities are used. The Subhalo field $SubhaloVMax$ gives the maximum value for the spherically averaged rotation curve. A the rotational curves are nearly flat for large enough radii, it is not very important at which radius the observational rotational velocity is chosen. For the SAMI-data velocity curves were only available as 2D maps and not catalog data. So the best fit from \parencite{Bloom2017}, which already did the analysis of the 2D velocity maps, has been used. They used the rotational velocity at $2.2\, R_e$, which should lay well into the flat regime of the velocity curve, and coincide well with the maximum velocity.
+To compare the simulation data with observational data for rotational velocities, calculated circular velocities are used. The Subhalo field \texttt{SubhaloVMax} gives the maximum value for the spherically averaged rotation curve. As the rotational curves are nearly flat for large enough radii, it is not very important at which radius the observational rotational velocity is measured, as long as it is in the flat part of the curve. 
 
-%maximum velocity,velocity curves...2.2R_e
+For the SAMI-data velocity curves were only available as 2D maps and not catalog data. An analysis of the TFR for the SAMI Galaxy Survey had already been done in \parencite{Bloom2017}, so the best fit from that paper was used to represent the observational rotational velocities. They chose the rotational velocity at $2.2\, R_e$, which should lay well into the flat regime of the velocity curve, and coincide well with the maximum velocity.
+
+
 \subsubsection{Effective radius}
-In observational data, galaxy sizes are always projected sizes, as they are derived from 2D pictures. A common measure of the size of a galaxy is the effective radius, which is the radius within which is contained half the light of the galaxy. This quantity depends then on the analysis and quality of the 2D profiles, and may not be able to include all the light in a galaxy in the way that we can ensure that for TNG. It also depends on which band the measurements are made in, as different bands will capture different parts of the galaxy.
+In observational data, galaxy sizes are always projected sizes, as they are derived from 2D pictures. A common measure of the size of a galaxy is the effective radius, which is the radius within which half the light of the galaxy is contained. This quantity depends on the analysis and quality of the 2D profiles, and may not be able to include all the light in a galaxy in the way that we can ensure for computer simulated data. The radius also depends on which band the measurements are made in, as different bands will capture different parts of the galaxy.
 
-For TNG data, the $SubhaloHalfmassRadStellar$ field has been used. The half-mass radius is the radius within which half the stellar mass is found. This is not a projected quantity, so it can be considered the 3D half-mass radius. This value is in generally higher for a given mass up to $M_{*} < 10^10.5$ than the 2D projected haøf-light radius, as seen in \parencite{Genel2017}.
+For TNG data, the \texttt{SubhaloHalfmassRadStellar} field has been used. The half-mass radius is the radius of a spherical volume within which half the stellar mass is found. This can be considered as the 3D half-mass radius, as it is not a projected quantity. This value is generally higher than the 2D projected half-light radius for a given mass up to $M_{*} < 10^10.5$, as seen in \parencite{Genel2017}.
 
-The SAMI catalog data takes the values for the effective radius from the GAMA Sérsic catalogue \parencite{Kelvin2012}. The half-light radius is defined as the semi-major axis effective radius. To convert to circular radius, the definition of ellipticity $\epsilon$ is used:
+The SAMI catalog data takes the values for the effective radius from the GAMA Sérsic catalogue \parencite{Kelvin2012}. The effective radius is defined as the semi-major axis half-light radius, measured in the r-band. The values are given in units of arcseconds. The \texttt{astropy} python package was used to convert these to a comoving distance in kpc.
+
+
+To convert the elliptical radius to circular radius, the definition of ellipticity $\epsilon$ is used:
 
 \begin{equation}
-   r_{e, circ} = r_{e,sm}\sqrt{(1-\epsilon)}
+   r_{e, circ} = r_{e,sm}\sqrt{(1-\epsilon)},
 \end{equation}
 
+where $r_{e, circ}$ is the circular radius and $r_{e,sm}$ is the semi-major axis effective radius.
 
-%half mass 3D radius vs 2D projected half light radius: Lovell2019/Genel2018
-%also circular radii
-
-\subsubsection{Dynamical mass??}
+\subsubsection{Dynamical mass?}
