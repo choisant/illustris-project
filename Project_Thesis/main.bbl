@@ -18,56 +18,58 @@
 
 
 \refsection{0}
-  \datalist[entry]{anyt/global//global/global}
-    \entry{Boveia2018}{article}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=9dc4289eb003e6fdfc9374bab18acc24}{%
-           family={Boveia},
+  \datalist[entry]{nty/global//global/global}
+    \entry{Behroozi2013}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=9672939ec01d5aad87fff46d86d06f33}{%
+           family={{Behroozi}},
            familyi={B\bibinitperiod},
-           given={Antonio},
-           giveni={A\bibinitperiod},
+           given={Peter\bibnamedelima S.},
+           giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=9d51dad372ab14a8c339b6729540ec93}{%
-           family={Doglioni},
-           familyi={D\bibinitperiod},
-           given={Caterina},
+        {{un=0,uniquepart=base,hash=23b84e5175df95b0831fecc070c43d6d}{%
+           family={{Wechsler}},
+           familyi={W\bibinitperiod},
+           given={Risa\bibnamedelima H.},
+           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=faf864974eb463953af6bf764204af95}{%
+           family={{Conroy}},
+           familyi={C\bibinitperiod},
+           given={Charlie},
            giveni={C\bibinitperiod},
            givenun=0}}%
       }
-      \list{publisher}{1}{%
-        {Annual Reviews}%
-      }
-      \strng{namehash}{1fd8b3b71a7d269eb8db8cc612173380}
-      \strng{fullhash}{1fd8b3b71a7d269eb8db8cc612173380}
-      \strng{bibnamehash}{1fd8b3b71a7d269eb8db8cc612173380}
-      \strng{authorbibnamehash}{1fd8b3b71a7d269eb8db8cc612173380}
-      \strng{authornamehash}{1fd8b3b71a7d269eb8db8cc612173380}
-      \strng{authorfullhash}{1fd8b3b71a7d269eb8db8cc612173380}
-      \field{labelalpha}{BD18}
+      \strng{namehash}{436999f7f5b63d532e16c0910aba2cd5}
+      \strng{fullhash}{cd544175bf6b490a50cdb9df3a3624a8}
+      \strng{bibnamehash}{436999f7f5b63d532e16c0910aba2cd5}
+      \strng{authorbibnamehash}{436999f7f5b63d532e16c0910aba2cd5}
+      \strng{authornamehash}{436999f7f5b63d532e16c0910aba2cd5}
+      \strng{authorfullhash}{cd544175bf6b490a50cdb9df3a3624a8}
       \field{sortinit}{B}
       \field{sortinithash}{8de16967003c7207dae369d874f1456e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{1545-4134}
-      \field{journaltitle}{Annual Review of Nuclear and Particle Science}
-      \field{month}{10}
+      \field{eid}{57}
+      \field{eprintclass}{astro-ph.CO}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{The Astrophysical Journal}
+      \field{month}{6}
       \field{number}{1}
-      \field{title}{Dark Matter Searches at Colliders}
-      \field{volume}{68}
-      \field{year}{2018}
-      \field{pages}{429\bibrangedash 459}
-      \range{pages}{31}
+      \field{title}{{The Average Star Formation Histories of Galaxies in Dark Matter Halos from z = 0-8}}
+      \field{volume}{770}
+      \field{year}{2013}
+      \field{pages}{57}
+      \range{pages}{1}
       \verb{doi}
-      \verb 10.1146/annurev-nucl-101917-021008
+      \verb 10.1088/0004-637X/770/1/57
       \endverb
-      \verb{urlraw}
-      \verb http://dx.doi.org/10.1146/annurev-nucl-101917-021008
+      \verb{eprint}
+      \verb 1207.6105
       \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1146/annurev-nucl-101917-021008
-      \endverb
+      \keyw{dark matter,galaxies: abundances,galaxies: evolution,methods: numerical,Astrophysics - Cosmology and Extragalactic Astrophysics}
     \endentry
     \entry{Bloom2017}{article}{}
       \name{author}{11}{}{%
@@ -147,7 +149,6 @@
       \strng{authorbibnamehash}{427e6aa3d3e212934239ffdf3a21edc6}
       \strng{authornamehash}{427e6aa3d3e212934239ffdf3a21edc6}
       \strng{authorfullhash}{c23a8def30cb8749df3b77f2d424a76c}
-      \field{labelalpha}{Blo+17}
       \field{sortinit}{B}
       \field{sortinithash}{8de16967003c7207dae369d874f1456e}
       \field{extradatescope}{labelyear}
@@ -173,58 +174,54 @@
       \verb http://dx.doi.org/10.1093/mnras/stx1701
       \endverb
     \endentry
-    \entry{Behroozi2013}{article}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=9672939ec01d5aad87fff46d86d06f33}{%
-           family={{Behroozi}},
+    \entry{Boveia2018}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=9dc4289eb003e6fdfc9374bab18acc24}{%
+           family={Boveia},
            familyi={B\bibinitperiod},
-           given={Peter\bibnamedelima S.},
-           giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Antonio},
+           giveni={A\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=23b84e5175df95b0831fecc070c43d6d}{%
-           family={{Wechsler}},
-           familyi={W\bibinitperiod},
-           given={Risa\bibnamedelima H.},
-           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=faf864974eb463953af6bf764204af95}{%
-           family={{Conroy}},
-           familyi={C\bibinitperiod},
-           given={Charlie},
+        {{un=0,uniquepart=base,hash=9d51dad372ab14a8c339b6729540ec93}{%
+           family={Doglioni},
+           familyi={D\bibinitperiod},
+           given={Caterina},
            giveni={C\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{cd544175bf6b490a50cdb9df3a3624a8}
-      \strng{fullhash}{cd544175bf6b490a50cdb9df3a3624a8}
-      \strng{bibnamehash}{cd544175bf6b490a50cdb9df3a3624a8}
-      \strng{authorbibnamehash}{cd544175bf6b490a50cdb9df3a3624a8}
-      \strng{authornamehash}{cd544175bf6b490a50cdb9df3a3624a8}
-      \strng{authorfullhash}{cd544175bf6b490a50cdb9df3a3624a8}
-      \field{labelalpha}{BWC13}
+      \list{publisher}{1}{%
+        {Annual Reviews}%
+      }
+      \strng{namehash}{ff9c9f9e5836baf1c3b33862b818510a}
+      \strng{fullhash}{1fd8b3b71a7d269eb8db8cc612173380}
+      \strng{bibnamehash}{ff9c9f9e5836baf1c3b33862b818510a}
+      \strng{authorbibnamehash}{ff9c9f9e5836baf1c3b33862b818510a}
+      \strng{authornamehash}{ff9c9f9e5836baf1c3b33862b818510a}
+      \strng{authorfullhash}{1fd8b3b71a7d269eb8db8cc612173380}
       \field{sortinit}{B}
       \field{sortinithash}{8de16967003c7207dae369d874f1456e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{eid}{57}
-      \field{eprintclass}{astro-ph.CO}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{The Astrophysical Journal}
-      \field{month}{6}
+      \field{issn}{1545-4134}
+      \field{journaltitle}{Annual Review of Nuclear and Particle Science}
+      \field{month}{10}
       \field{number}{1}
-      \field{title}{{The Average Star Formation Histories of Galaxies in Dark Matter Halos from z = 0-8}}
-      \field{volume}{770}
-      \field{year}{2013}
-      \field{pages}{57}
-      \range{pages}{1}
+      \field{title}{Dark Matter Searches at Colliders}
+      \field{volume}{68}
+      \field{year}{2018}
+      \field{pages}{429\bibrangedash 459}
+      \range{pages}{31}
       \verb{doi}
-      \verb 10.1088/0004-637X/770/1/57
+      \verb 10.1146/annurev-nucl-101917-021008
       \endverb
-      \verb{eprint}
-      \verb 1207.6105
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1146/annurev-nucl-101917-021008
       \endverb
-      \keyw{dark matter,galaxies: abundances,galaxies: evolution,methods: numerical,Astrophysics - Cosmology and Extragalactic Astrophysics}
+      \verb{url}
+      \verb http://dx.doi.org/10.1146/annurev-nucl-101917-021008
+      \endverb
     \endentry
     \entry{Conselice2016}{article}{}
       \name{author}{4}{}{%
@@ -262,7 +259,6 @@
       \strng{authorbibnamehash}{3f26a4fa0a28ac50919aaa314b3e2736}
       \strng{authornamehash}{3f26a4fa0a28ac50919aaa314b3e2736}
       \strng{authorfullhash}{253b76b70fc4df612a64ce08f06ceb9d}
-      \field{labelalpha}{Con+16}
       \field{sortinit}{C}
       \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
       \field{extradatescope}{labelyear}
@@ -288,6 +284,45 @@
       \verb http://dx.doi.org/10.3847/0004-637X/830/2/83
       \endverb
     \endentry
+    \entry{Croton2013}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0ab3bd996a366ca4f4f6afc69418f9c4}{%
+           family={Croton},
+           familyi={C\bibinitperiod},
+           given={Darren\bibnamedelima J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press (CUP)}%
+      }
+      \strng{namehash}{0ab3bd996a366ca4f4f6afc69418f9c4}
+      \strng{fullhash}{0ab3bd996a366ca4f4f6afc69418f9c4}
+      \strng{bibnamehash}{0ab3bd996a366ca4f4f6afc69418f9c4}
+      \strng{authorbibnamehash}{0ab3bd996a366ca4f4f6afc69418f9c4}
+      \strng{authornamehash}{0ab3bd996a366ca4f4f6afc69418f9c4}
+      \strng{authorfullhash}{0ab3bd996a366ca4f4f6afc69418f9c4}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1448-6083}
+      \field{journaltitle}{Publications of the Astronomical Society of Australia}
+      \field{title}{Damn You, Little h! (Or, Real-World Applications of the Hubble Constant Using Observed and Simulated Data)}
+      \field{volume}{30}
+      \field{year}{2013}
+      \verb{doi}
+      \verb 10.1017/pasa.2013.31
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1017/pasa.2013.31
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1017/pasa.2013.31
+      \endverb
+    \endentry
     \entry{Djorgovski1987}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=e4f06809361d6f79510a479dfd7bd977}{%
@@ -296,20 +331,19 @@
            given={S.},
            giveni={S\bibinitperiod},
            givenun=0}}%
-        {{un=2,uniquepart=given,hash=31f9b945473833401043cd7bac5b071e}{%
+        {{un=0,uniquepart=base,hash=31f9b945473833401043cd7bac5b071e}{%
            family={{Davis}},
            familyi={D\bibinitperiod},
            given={Marc},
            giveni={M\bibinitperiod},
-           givenun=2}}%
+           givenun=0}}%
       }
-      \strng{namehash}{addc93fa8eccbf6db32bca5cfe9d9cfc}
+      \strng{namehash}{716878f635709cbae2c5b2b31fadb643}
       \strng{fullhash}{addc93fa8eccbf6db32bca5cfe9d9cfc}
-      \strng{bibnamehash}{addc93fa8eccbf6db32bca5cfe9d9cfc}
-      \strng{authorbibnamehash}{addc93fa8eccbf6db32bca5cfe9d9cfc}
-      \strng{authornamehash}{addc93fa8eccbf6db32bca5cfe9d9cfc}
+      \strng{bibnamehash}{716878f635709cbae2c5b2b31fadb643}
+      \strng{authorbibnamehash}{716878f635709cbae2c5b2b31fadb643}
+      \strng{authornamehash}{716878f635709cbae2c5b2b31fadb643}
       \strng{authorfullhash}{addc93fa8eccbf6db32bca5cfe9d9cfc}
-      \field{labelalpha}{DD87}
       \field{sortinit}{D}
       \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
       \field{extradatescope}{labelyear}
@@ -343,13 +377,12 @@
            giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{5fdf0d379d1500b426cf7e971daa4255}
+      \strng{namehash}{f579d25a4b798f0c4d7261b663222fe3}
       \strng{fullhash}{5fdf0d379d1500b426cf7e971daa4255}
-      \strng{bibnamehash}{5fdf0d379d1500b426cf7e971daa4255}
-      \strng{authorbibnamehash}{5fdf0d379d1500b426cf7e971daa4255}
-      \strng{authornamehash}{5fdf0d379d1500b426cf7e971daa4255}
+      \strng{bibnamehash}{f579d25a4b798f0c4d7261b663222fe3}
+      \strng{authorbibnamehash}{f579d25a4b798f0c4d7261b663222fe3}
+      \strng{authornamehash}{f579d25a4b798f0c4d7261b663222fe3}
       \strng{authorfullhash}{5fdf0d379d1500b426cf7e971daa4255}
-      \field{labelalpha}{FJ76}
       \field{sortinit}{F}
       \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
       \field{extradatescope}{labelyear}
@@ -368,34 +401,82 @@
       \endverb
       \keyw{Elliptical Galaxies,Galactic Nuclei,Mass To Light Ratios,Power Spectra,Velocity Distribution,Astronomical Spectroscopy,Data Reduction,Light (Visible Radiation),M Stars,Noise Spectra,Spectral Line Width,Astrophysics}
     \endentry
+    \entry{Ferrarese2000}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8b81f5f34f2bf138e28ce6a2eb523e44}{%
+           family={Ferrarese},
+           familyi={F\bibinitperiod},
+           given={Laura},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=41811beb71bf2a9116384e0ad5637cac}{%
+           family={Merritt},
+           familyi={M\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Astronomical Society}%
+      }
+      \strng{namehash}{e2bd4f1fc8ca851af30b1afd1b28b685}
+      \strng{fullhash}{0e9e76363cd22e3365e51f370a823dd9}
+      \strng{bibnamehash}{e2bd4f1fc8ca851af30b1afd1b28b685}
+      \strng{authorbibnamehash}{e2bd4f1fc8ca851af30b1afd1b28b685}
+      \strng{authornamehash}{e2bd4f1fc8ca851af30b1afd1b28b685}
+      \strng{authorfullhash}{0e9e76363cd22e3365e51f370a823dd9}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0004-637X}
+      \field{journaltitle}{The Astrophysical Journal}
+      \field{month}{8}
+      \field{number}{1}
+      \field{title}{A Fundamental Relation between Supermassive Black Holes and Their Host Galaxies}
+      \field{volume}{539}
+      \field{year}{2000}
+      \field{pages}{L9\bibrangedash L12}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1086/312838
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1086/312838
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1086/312838
+      \endverb
+    \endentry
     \entry{Frenk1983}{article}{}
       \name{author}{3}{}{%
-        {{un=2,uniquepart=given,hash=ef23aac7fe4d2fa9e78bdb2c475a6b77}{%
+        {{un=0,uniquepart=base,hash=ef23aac7fe4d2fa9e78bdb2c475a6b77}{%
            family={{Frenk}},
            familyi={F\bibinitperiod},
            given={C.\bibnamedelimi S.},
            giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
-           givenun=2}}%
-        {{un=2,uniquepart=given,hash=b6c6fe2ff35a586cc62a3180c1add3c8}{%
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b6c6fe2ff35a586cc62a3180c1add3c8}{%
            family={{White}},
            familyi={W\bibinitperiod},
            given={S.\bibnamedelimi D.\bibnamedelimi M.},
            giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim M\bibinitperiod},
-           givenun=2}}%
-        {{un=2,uniquepart=given,hash=d27993d3d39ca56a54118eba9bc5ab30}{%
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d27993d3d39ca56a54118eba9bc5ab30}{%
            family={{Davis}},
            familyi={D\bibinitperiod},
            given={M.},
            giveni={M\bibinitperiod},
-           givenun=2}}%
+           givenun=0}}%
       }
-      \strng{namehash}{d5cfdedcfcd44439f8acae4163ff3090}
+      \strng{namehash}{85ccfa72360bb7dcf4f50d1bf2e3c327}
       \strng{fullhash}{d5cfdedcfcd44439f8acae4163ff3090}
-      \strng{bibnamehash}{d5cfdedcfcd44439f8acae4163ff3090}
-      \strng{authorbibnamehash}{d5cfdedcfcd44439f8acae4163ff3090}
-      \strng{authornamehash}{d5cfdedcfcd44439f8acae4163ff3090}
+      \strng{bibnamehash}{85ccfa72360bb7dcf4f50d1bf2e3c327}
+      \strng{authorbibnamehash}{85ccfa72360bb7dcf4f50d1bf2e3c327}
+      \strng{authornamehash}{85ccfa72360bb7dcf4f50d1bf2e3c327}
       \strng{authorfullhash}{d5cfdedcfcd44439f8acae4163ff3090}
-      \field{labelalpha}{FWD83}
       \field{sortinit}{F}
       \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
       \field{extradatescope}{labelyear}
@@ -492,7 +573,6 @@
       \strng{authorbibnamehash}{71f832896f4bb780f832146f6026e1e9}
       \strng{authornamehash}{71f832896f4bb780f832146f6026e1e9}
       \strng{authorfullhash}{11f8fd02d37e6cdc75495dc37160aecc}
-      \field{labelalpha}{Gen+17}
       \field{sortinit}{G}
       \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
       \field{extradatescope}{labelyear}
@@ -533,7 +613,6 @@
       \strng{authorbibnamehash}{2f8189d19a15710c6e056c923d1dce96}
       \strng{authornamehash}{2f8189d19a15710c6e056c923d1dce96}
       \strng{authorfullhash}{2f8189d19a15710c6e056c923d1dce96}
-      \field{labelalpha}{Hub26}
       \field{sortinit}{H}
       \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
       \field{extradatescope}{labelyear}
@@ -629,7 +708,6 @@
       \strng{authorbibnamehash}{99542f1c5f7601c1beed95ba88f27b87}
       \strng{authornamehash}{99542f1c5f7601c1beed95ba88f27b87}
       \strng{authorfullhash}{67dcb77ddebc232ee83739186d79e350}
-      \field{labelalpha}{Kel+12}
       \field{sortinit}{K}
       \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
       \field{extradatescope}{labelyear}
@@ -656,7 +734,7 @@
       \endverb
     \endentry
     \entry{white}{book}{}
-      \name{author}{3}{}{%
+      \name{author}{3}{ul=2}{%
         {{un=0,uniquepart=base,hash=62dd07b7d6fb9752bc5227a473571359}{%
            family={Mo},
            familyi={M\bibinitperiod},
@@ -672,24 +750,23 @@
            prefix={van\bibnamedelima den},
            prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod},
            prefixun=0}}%
-        {{un=1,uniquepart=given,hash=fe0717fe9402f7716bed30595b857f30}{%
+        {{un=0,uniquepart=base,hash=fe0717fe9402f7716bed30595b857f30}{%
            family={White},
            familyi={W\bibinitperiod},
            given={Simon},
            giveni={S\bibinitperiod},
-           givenun=1}}%
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Cambridge University Press}%
       }
-      \strng{namehash}{e04736dcc2d1ff2e493b3b5a88ed61d0}
+      \strng{namehash}{f3bf2ed86ae94d4f4ce48130128682dc}
       \strng{fullhash}{e04736dcc2d1ff2e493b3b5a88ed61d0}
-      \strng{bibnamehash}{e04736dcc2d1ff2e493b3b5a88ed61d0}
-      \strng{authorbibnamehash}{e04736dcc2d1ff2e493b3b5a88ed61d0}
-      \strng{authornamehash}{e04736dcc2d1ff2e493b3b5a88ed61d0}
+      \strng{bibnamehash}{f3bf2ed86ae94d4f4ce48130128682dc}
+      \strng{authorbibnamehash}{f3bf2ed86ae94d4f4ce48130128682dc}
+      \strng{authornamehash}{f3bf2ed86ae94d4f4ce48130128682dc}
       \strng{authorfullhash}{e04736dcc2d1ff2e493b3b5a88ed61d0}
       \field{extraname}{1}
-      \field{labelalpha}{MBW10}
       \field{sortinit}{M}
       \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
       \field{extradate}{1}
@@ -704,7 +781,7 @@
       \endverb
     \endentry
     \entry{Mo2010}{book}{}
-      \name{author}{3}{}{%
+      \name{author}{3}{ul=2}{%
         {{un=0,uniquepart=base,hash=62dd07b7d6fb9752bc5227a473571359}{%
            family={{Mo}},
            familyi={M\bibinitperiod},
@@ -717,21 +794,20 @@
            given={Frank\bibnamedelima C.},
            giveni={F\bibinitperiod\bibinitdelim C\bibinitperiod},
            givenun=0}}%
-        {{un=1,uniquepart=given,hash=fe0717fe9402f7716bed30595b857f30}{%
+        {{un=0,uniquepart=base,hash=fe0717fe9402f7716bed30595b857f30}{%
            family={{White}},
            familyi={W\bibinitperiod},
            given={Simon},
            giveni={S\bibinitperiod},
-           givenun=1}}%
+           givenun=0}}%
       }
-      \strng{namehash}{06bdadf72c57ce48cab1bcf565c33b3f}
+      \strng{namehash}{aacdf7d145ebf945c99bed88826672be}
       \strng{fullhash}{06bdadf72c57ce48cab1bcf565c33b3f}
-      \strng{bibnamehash}{06bdadf72c57ce48cab1bcf565c33b3f}
-      \strng{authorbibnamehash}{06bdadf72c57ce48cab1bcf565c33b3f}
-      \strng{authornamehash}{06bdadf72c57ce48cab1bcf565c33b3f}
+      \strng{bibnamehash}{aacdf7d145ebf945c99bed88826672be}
+      \strng{authorbibnamehash}{aacdf7d145ebf945c99bed88826672be}
+      \strng{authornamehash}{aacdf7d145ebf945c99bed88826672be}
       \strng{authorfullhash}{06bdadf72c57ce48cab1bcf565c33b3f}
       \field{extraname}{2}
-      \field{labelalpha}{MvW10}
       \field{sortinit}{M}
       \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
       \field{extradate}{2}
@@ -742,6 +818,61 @@
       \field{title}{Galaxy Formation and Evolution}
       \field{year}{2010}
     \endentry
+    \entry{Moster2012}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=eabac8841526e840f2030db934bf54d0}{%
+           family={Moster},
+           familyi={M\bibinitperiod},
+           given={Benjamin\bibnamedelima P.},
+           giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a76aca38cdca203a992dc4832b5928b6}{%
+           family={Naab},
+           familyi={N\bibinitperiod},
+           given={Thorsten},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=04393094616177a4b8448cc28119da88}{%
+           family={White},
+           familyi={W\bibinitperiod},
+           given={Simon\bibnamedelimb D.\bibnamedelimi M.},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press (OUP)}%
+      }
+      \strng{namehash}{d9196c4e3e617154d2baa0ad7696f30c}
+      \strng{fullhash}{385c1c2c01c8f5a4036180385b37eb26}
+      \strng{bibnamehash}{d9196c4e3e617154d2baa0ad7696f30c}
+      \strng{authorbibnamehash}{d9196c4e3e617154d2baa0ad7696f30c}
+      \strng{authornamehash}{d9196c4e3e617154d2baa0ad7696f30c}
+      \strng{authorfullhash}{385c1c2c01c8f5a4036180385b37eb26}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1365-2966}
+      \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
+      \field{month}{12}
+      \field{number}{4}
+      \field{title}{Galactic star formation and accretion histories from matching galaxies to dark matter haloes}
+      \field{volume}{428}
+      \field{year}{2012}
+      \field{pages}{3121\bibrangedash 3138}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1093/mnras/sts261
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1093/mnras/sts261
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1093/mnras/sts261
+      \endverb
+    \endentry
     \entry{Navarro1996}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=5867b69dd938a4ea4a392940f5e3d47f}{%
@@ -750,26 +881,25 @@
            given={Julio\bibnamedelima F.},
            giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
            givenun=0}}%
-        {{un=2,uniquepart=given,hash=f4776d513b928b621a13d84daa52cd5b}{%
+        {{un=0,uniquepart=base,hash=f4776d513b928b621a13d84daa52cd5b}{%
            family={{Frenk}},
            familyi={F\bibinitperiod},
            given={Carlos\bibnamedelima S.},
            giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
-           givenun=2}}%
-        {{un=2,uniquepart=given,hash=04393094616177a4b8448cc28119da88}{%
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=04393094616177a4b8448cc28119da88}{%
            family={{White}},
            familyi={W\bibinitperiod},
            given={Simon\bibnamedelima D.\bibnamedelimi M.},
            giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim M\bibinitperiod},
-           givenun=2}}%
+           givenun=0}}%
       }
-      \strng{namehash}{2dc50df4fd3c2432a8f62e519cd266bc}
+      \strng{namehash}{eb25e5c16aec9ac3acdd721bd81b94a4}
       \strng{fullhash}{2dc50df4fd3c2432a8f62e519cd266bc}
-      \strng{bibnamehash}{2dc50df4fd3c2432a8f62e519cd266bc}
-      \strng{authorbibnamehash}{2dc50df4fd3c2432a8f62e519cd266bc}
-      \strng{authornamehash}{2dc50df4fd3c2432a8f62e519cd266bc}
+      \strng{bibnamehash}{eb25e5c16aec9ac3acdd721bd81b94a4}
+      \strng{authorbibnamehash}{eb25e5c16aec9ac3acdd721bd81b94a4}
+      \strng{authornamehash}{eb25e5c16aec9ac3acdd721bd81b94a4}
       \strng{authorfullhash}{2dc50df4fd3c2432a8f62e519cd266bc}
-      \field{labelalpha}{NFW96}
       \field{sortinit}{N}
       \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
       \field{extradatescope}{labelyear}
@@ -801,20 +931,19 @@
            given={William\bibnamedelima H.},
            giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod},
            givenun=0}}%
-        {{un=2,uniquepart=given,hash=4fdade28e828345054d623166f90ef47}{%
+        {{un=0,uniquepart=base,hash=4fdade28e828345054d623166f90ef47}{%
            family={{Schechter}},
            familyi={S\bibinitperiod},
            given={Paul},
            giveni={P\bibinitperiod},
-           givenun=2}}%
+           givenun=0}}%
       }
-      \strng{namehash}{1ea57da547fbce794c0fa1e57b58b94c}
+      \strng{namehash}{618fa62f030076edf2937faa1b1684fb}
       \strng{fullhash}{1ea57da547fbce794c0fa1e57b58b94c}
-      \strng{bibnamehash}{1ea57da547fbce794c0fa1e57b58b94c}
-      \strng{authorbibnamehash}{1ea57da547fbce794c0fa1e57b58b94c}
-      \strng{authornamehash}{1ea57da547fbce794c0fa1e57b58b94c}
+      \strng{bibnamehash}{618fa62f030076edf2937faa1b1684fb}
+      \strng{authorbibnamehash}{618fa62f030076edf2937faa1b1684fb}
+      \strng{authornamehash}{618fa62f030076edf2937faa1b1684fb}
       \strng{authorfullhash}{1ea57da547fbce794c0fa1e57b58b94c}
-      \field{labelalpha}{PS74}
       \field{sortinit}{P}
       \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
       \field{extradatescope}{labelyear}
@@ -834,12 +963,12 @@
     \endentry
     \entry{Schechter1976}{article}{}
       \name{author}{1}{}{%
-        {{un=2,uniquepart=given,hash=b02c82ff35a06495f14a2532e68def71}{%
+        {{un=0,uniquepart=base,hash=b02c82ff35a06495f14a2532e68def71}{%
            family={{Schechter}},
            familyi={S\bibinitperiod},
            given={P.},
            giveni={P\bibinitperiod},
-           givenun=2}}%
+           givenun=0}}%
       }
       \strng{namehash}{b02c82ff35a06495f14a2532e68def71}
       \strng{fullhash}{b02c82ff35a06495f14a2532e68def71}
@@ -847,7 +976,6 @@
       \strng{authorbibnamehash}{b02c82ff35a06495f14a2532e68def71}
       \strng{authornamehash}{b02c82ff35a06495f14a2532e68def71}
       \strng{authorfullhash}{b02c82ff35a06495f14a2532e68def71}
-      \field{labelalpha}{Sch76}
       \field{sortinit}{S}
       \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
       \field{extradatescope}{labelyear}
@@ -946,7 +1074,6 @@
       \strng{authorbibnamehash}{e7dc400e04bdc783c289d7bee2a976b3}
       \strng{authornamehash}{e7dc400e04bdc783c289d7bee2a976b3}
       \strng{authorfullhash}{4362eca2b186b8d7ddc4865e964cb709}
-      \field{labelalpha}{Sco+18}
       \field{sortinit}{S}
       \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
       \field{extradatescope}{labelyear}
@@ -971,43 +1098,6 @@
       \verb{url}
       \verb http://dx.doi.org/10.1093/mnras/sty2355
       \endverb
-    \endentry
-    \entry{TullyFisher1977}{article}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=f932588309b74babd04dcc159e6e342f}{%
-           family={{Tully}},
-           familyi={T\bibinitperiod},
-           given={R.\bibnamedelimi B.},
-           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=db02c6414fcb826722c848f07281fee1}{%
-           family={{Fisher}},
-           familyi={F\bibinitperiod},
-           given={J.\bibnamedelimi R.},
-           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{7dc4fad216f665909f1940d79471af37}
-      \strng{fullhash}{7dc4fad216f665909f1940d79471af37}
-      \strng{bibnamehash}{7dc4fad216f665909f1940d79471af37}
-      \strng{authorbibnamehash}{7dc4fad216f665909f1940d79471af37}
-      \strng{authornamehash}{7dc4fad216f665909f1940d79471af37}
-      \strng{authorfullhash}{7dc4fad216f665909f1940d79471af37}
-      \field{labelalpha}{TF77}
-      \field{sortinit}{T}
-      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The Astrophysical Journal}
-      \field{month}{2}
-      \field{title}{{Reprint of 1977A\&A....54..661T. A new method of determining distance to galaxies.}}
-      \field{volume}{500}
-      \field{year}{1977}
-      \field{pages}{105\bibrangedash 117}
-      \range{pages}{13}
-      \keyw{Distance Measuring Equipment,H Lines,Luminous Intensity,Spectral Line Width,Spiral Galaxies,Telescopes,Astronomical Photometry,Calibrating,Galactic Clusters,Galactic Structure,Hubble Diagram,Synoptic Measurement,Astronomy}
     \endentry
     \entry{Tinker2008}{article}{}
       \name{author}{8}{}{%
@@ -1066,7 +1156,6 @@
       \strng{authorbibnamehash}{2dd3ff24c8dc60d80f4ae70f1ea1acd6}
       \strng{authornamehash}{2dd3ff24c8dc60d80f4ae70f1ea1acd6}
       \strng{authorfullhash}{70f3f6aaad85b9857e5b65fc80541517}
-      \field{labelalpha}{Tin+08}
       \field{sortinit}{T}
       \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
       \field{extradatescope}{labelyear}
@@ -1090,6 +1179,109 @@
       \verb 0803.2706
       \endverb
       \keyw{cosmology: theory,large-scale structure of universe,methods: numerical,Astrophysics}
+    \endentry
+    \entry{TullyFisher1977}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f932588309b74babd04dcc159e6e342f}{%
+           family={{Tully}},
+           familyi={T\bibinitperiod},
+           given={R.\bibnamedelimi B.},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=db02c6414fcb826722c848f07281fee1}{%
+           family={{Fisher}},
+           familyi={F\bibinitperiod},
+           given={J.\bibnamedelimi R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8f946fd8a1b8c8cf2f67d2633a8cc474}
+      \strng{fullhash}{7dc4fad216f665909f1940d79471af37}
+      \strng{bibnamehash}{8f946fd8a1b8c8cf2f67d2633a8cc474}
+      \strng{authorbibnamehash}{8f946fd8a1b8c8cf2f67d2633a8cc474}
+      \strng{authornamehash}{8f946fd8a1b8c8cf2f67d2633a8cc474}
+      \strng{authorfullhash}{7dc4fad216f665909f1940d79471af37}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Astrophysical Journal}
+      \field{month}{2}
+      \field{title}{{Reprint of 1977A\&A....54..661T. A new method of determining distance to galaxies.}}
+      \field{volume}{500}
+      \field{year}{1977}
+      \field{pages}{105\bibrangedash 117}
+      \range{pages}{13}
+      \keyw{Distance Measuring Equipment,H Lines,Luminous Intensity,Spectral Line Width,Spiral Galaxies,Telescopes,Astronomical Photometry,Calibrating,Galactic Clusters,Galactic Structure,Hubble Diagram,Synoptic Measurement,Astronomy}
+    \endentry
+    \entry{Tundo2007}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=4cf1050d519b8e017622f04d9d1d6121}{%
+           family={Tundo},
+           familyi={T\bibinitperiod},
+           given={Elena},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=54fefe97668f6bddd5e8bcad7b70e7fd}{%
+           family={Bernardi},
+           familyi={B\bibinitperiod},
+           given={Mariangela},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=032bbbc96207879d7ed0719e495c75f2}{%
+           family={Hyde},
+           familyi={H\bibinitperiod},
+           given={Joseph\bibnamedelima B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2d79198bba863fec90e70f512071d769}{%
+           family={Sheth},
+           familyi={S\bibinitperiod},
+           given={Ravi\bibnamedelima K.},
+           giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=160bd293dac02ad82f0c097a5a8e771d}{%
+           family={Pizzella},
+           familyi={P\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Astronomical Society}%
+      }
+      \strng{namehash}{6d7cacdd08845c9146792aaaec2d2e33}
+      \strng{fullhash}{64470d518564b82a93d1762d623939e5}
+      \strng{bibnamehash}{6d7cacdd08845c9146792aaaec2d2e33}
+      \strng{authorbibnamehash}{6d7cacdd08845c9146792aaaec2d2e33}
+      \strng{authornamehash}{6d7cacdd08845c9146792aaaec2d2e33}
+      \strng{authorfullhash}{64470d518564b82a93d1762d623939e5}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1538-4357}
+      \field{journaltitle}{The Astrophysical Journal}
+      \field{month}{7}
+      \field{number}{1}
+      \field{title}{On the Inconsistency between the Black Hole Mass Function Inferred from $M_{\odot}‐\sigma$ and $M_{\odot}‐L$ Correlations}
+      \field{volume}{663}
+      \field{year}{2007}
+      \field{pages}{53\bibrangedash 60}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1086/518225
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1086/518225
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1086/518225
+      \endverb
     \endentry
     \entry{Weinberger2016}{article}{}
       \name{author}{11}{}{%
@@ -1169,7 +1361,6 @@
       \strng{authorbibnamehash}{b23b129ac5765867b077bea2368f8d31}
       \strng{authornamehash}{b23b129ac5765867b077bea2368f8d31}
       \strng{authorfullhash}{cdf35590bb580e94049a32caa01f222a}
-      \field{labelalpha}{Wei+16}
       \field{sortinit}{W}
       \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
       \field{extradatescope}{labelyear}
@@ -1231,7 +1422,6 @@
       \strng{authorbibnamehash}{e0749bb74336d8433f9066abaf336dc7}
       \strng{authornamehash}{e0749bb74336d8433f9066abaf336dc7}
       \strng{authorfullhash}{a71b79dac786bc356c62dd98b465d0d9}
-      \field{labelalpha}{Zas+17}
       \field{sortinit}{Z}
       \field{sortinithash}{8f7b480688e809b50b6f6577b16f3db5}
       \field{extradatescope}{labelyear}

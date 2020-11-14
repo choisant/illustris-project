@@ -2,10 +2,13 @@
 Some astrophysics terms and constants:
 
 \begin{itemize}
-    \item z - redshift
-    \item H - the Hubble constant
-    \item h
+    \item $z$ - Redshift, a dimensionless measure of time where $z=0$ denotes the current time and $z \rightarrow \infty$ as we move back in time towards the beginning of the universe. The redshift also gives the actual physical frequency shift of light emitted from a source moving away from us in an expanding universe.
+    \item $H_{0}$ - The Hubble constant is a cosmological constant related to the expansion rate of the universe. The best measurements of today set the value of $H_0$ to $67.8\, $ km/s/Mpc. Specifically, this means that a galaxy located 100 Mpc from us is receding from us at a velocity of $67.8\,$km/s because of the expansion of the universe.
+    \item $h$ - The ``little hubble constant'' is given by $H_0 = 100\,h\,$ km/s/Mpc, and often appears in astrophysics data as a representation of the uncertainty of the Hubble constant. See section \ref{cosmologies} for further discussion on this.
     \item G - gravitational constant
+    \item $M_{*}$ - stellar mass
+    
+//Will add more here as I see the need.
 
 \end{itemize}
 
@@ -18,7 +21,7 @@ Given that these initial density fluctuations in matter were present, gravitatio
 \subsubsection{Dark matter halos}
 Dark matter halos are the result of such initial overdense regions of dark matter particles. Halos cover a huge range in magnitudes of mass from $M_{halo} <10^9 M_{\odot}$ to $M_{halo} >10^{15} M_{\odot}$. In general, halos are ellipsoid in shape. The spherically averaged density profile of halos, as predicted by N-body simulations of dark matter in a $\Lambda$CDM universe, is well described by the Frank-Nevarro-White profile \parencite{Navarro1996},
 \begin{equation}
-    \frac{\rho}{\rho_{crit}} = \frac{\delta_c}{(r/r_c)(+1+r/r_s)^2.}
+    \frac{\rho}{\rho_{crit}} = \frac{\delta_c}{(r/r_c)(1+r/r_s)^2.}
 \end{equation}
 $\rho_{crit} = 3H^2/8\pi G$ is the critical density, $\delta_c$ is the characteristic overdensity and $r_s$ is the scale radius. Both $\delta_c$ and $r_s$ may vary for each halo.
 
@@ -36,17 +39,19 @@ Where $f(\sigma)$ is the multiplicity function, $\sigma (R)$ is the variance of 
     f(\sigma) = \frac{2}{\pi} \sigma \exp(-\sigma^2/2).
 \end{equation}
 
+//add figure
+
 We will not cover the mathematical details of this analytical solution to the mass function, but it is based on the assumption of spherical collapse, and is not dependent on cosmology or redshift. Until the end of the century, numerical simulations tended to agree with the 1974 results. However, newer and more complex numerical solutions have shown that the Press-Schechter formalism tends to overestimate the amount of smaller halos, while underpredicting the abundance of larger halos. There has also been several studies that show how the mass function actually is slightly redshift-dependent (e.g. \cite{Tinker2008}).
 
 \subsubsection{Galaxies}
 As dark matter halos formed in the very early universe, they created a graviational potential well which gave room for the primordial baryonic matter (ionized hydrogen gas) to start collapsing. As the density of the gas increased, temperature increased and halted the collapse, but through several radiation cooling processes the gas was able to collapse enough for fusion to start and stars to be born. Because of the halos role as initial potential wells, the baryonic matter collapsed in such a way that it formed a spinning disk around the center of the halo. This was the birth of galaxies as we know them today.
 
-Galaxies are mainly composed of stars and hot gas, with a smaller contribution of stellar remnants, cold gas and dust. Hot gas is hydrogen gas that is fully ionized, and does not collapse into stars, while cold gas has a much lower temperature and can contribute to star formation. There are at least two trillion galaxies in the observable universe \parencite{Conselice2016}, with stellar masses ranging from $<10^6 M_{\odot}$ to $10^\{12\} M_{\odot}$. 
+Galaxies are mainly composed of stars and hot gas, with a smaller contribution of stellar remnants, cold gas and dust. Hot gas is hydrogen gas that is fully ionized, and does not collapse into stars, while cold gas has a much lower temperature and can contribute to star formation. There are at least two trillion galaxies in the observable universe \parencite{Conselice2016}, with stellar masses ranging from $<10^6 M_{\odot}$ to $10^{12} M_{\odot}$. 
 
 It has been found that a large fraction of the galaxies are gravitationally bound to each other in groups and clusters. % (Geller& Huchra 1989; Bond et al. 1996) 
 Galaxy clusters are the largest gravitationally bound systems in the Universe, and can span a distance of several megaparsecs. They typically contain more than a hundred galaxies, as well as large amounts of intergalactic gas. Galaxies in galaxy clusters serve an important purpose to astrophysicists, as they essentially function as tracors of the largest halos in the universe.
 
-The $\Lambda$CDM model for our universe gives a bottom-up solution to galaxy formation, a hierarchical formation. Essentially this means that larger galaxies have formed through mergers of smaller galaxies. When a galaxy forms, the angular momentum of its initial components get transferred to the galaxy as a whole, and the result is a rotating disk galaxy. Galaxies that are not pure disk galaxies, but have an elliptical component og stars and gas with a pressure dominated random motion and which extends in all directions from the center, are results of the merging of galaxies. As many galaxies exist in clusters, the likelihood of a galaxy merger is higher than one might otherwise expect in those regions, and so galaxy clusters contain more elliptical galaxies.
+The $\Lambda$CDM model for our universe gives a bottom-up solution to galaxy formation, a hierarchical formation. Essentially this means that larger galaxies have formed through mergers of smaller galaxies. When a galaxy forms, the angular momentum of its initial components get transferred to the galaxy as a whole, and the result is a rotating disk galaxy. Galaxies that are not pure disk galaxies, but have an elliptical component og stars and gas with pressure dominated random motions and which extends in all directions from the center, are results of the merging of galaxies. As many galaxies exist in clusters, the likelihood of a galaxy merger is higher than one might otherwise expect in those regions, and so galaxy clusters contain more elliptical galaxies.
 
 A very important property of the galaxy population is the galaxy luminosity function, which gives the number density of galaxies as a function of their luminosity. The luminosity of a galaxy is directly proportional to its stellar mass, so the luminosity function also gives us the mass distribution of galaxies. Mathematically, the luminosity function is defined as $\phi(L)dL$, the number density of galaxies in the luminosty range $L \pm dL/2$. In 1976 Paul Schechter proposed a fit to the luminosity function of galaxies on the form
 
@@ -54,7 +59,9 @@ A very important property of the galaxy population is the galaxy luminosity func
     \phi(L)dL = \phi^*(L/L^*)^{\alpha}\exp{(-L/L^*)}dL/L^*,
 \end{equation}
 
-where $\phi^*$ is a normalization, $L^*$ is the characteristic luminosity for that sample of galaxies (it will differ for instance for galaxies within a c luster compared to isolated galaxies) and $\alpha$ is the slope of the power law where $L<<L^*$ \parencite{Schechter1976}. This Schechter function is still a good fit to this day, and is in excellent agreement for galaxies with $L>>L^*$. For the low mass range of galaxies, the parameter $\alpha$ must be found, and this is one of the challenges of astrophysicists that study galaxy properties.
+//add figure
+
+where $\phi^*$ is a normalization, $L^*$ is the characteristic luminosity for that sample of galaxies (it will differ for instance for galaxies within a cluster compared to isolated galaxies) and $\alpha$ is the slope of the power law where $L<<L^*$ \parencite{Schechter1976}. This Schechter function is still a good fit to this day, and is in excellent agreement for galaxies with $L>>L^*$. For the low mass range of galaxies, the parameter $\alpha$ must be found, and this is one of the challenges of astrophysicists that study galaxy properties.
 
 
 \subsubsection{Stellar-to-Halo mass relation}
@@ -65,21 +72,14 @@ The stellar-to-halo mass relation (SHMR) is a relation which gives the stellar m
 
 One way of looking for this relation is through a method called abundance matching. In abundance matching, the numerically found halo mass function and the observationally found luminosity function are combined. This is done using the simple assumption that the largest halo contains the largest galaxy, the second largest halo contains the second largest halo and so on. By mapping each galaxy to its corresponding halo in such a fashion, the shape of the SHMR can be found directly.
 
-Using abundance matching, the SHMR has been found to be well described by a power law for low-mass galaxies, and a subpower law for the high-mass end of the spectrum \parencite{Behroozi2013}. 
+Using abundance matching, the SHMR has been found to be well described by a power law with different slopes for the low-mass and high-mass end of the spectrum \parencite{Behroozi2013}. 
 
-\begin{equation}
-    \log(M_*(M_h)) = \log(\epsilon M_1) + f(\log(M_h/M_1)) -f(0),
-\end{equation}
-\begin{equation*}
-    f(x) = -\log(10^{\alpha x}+1)+\delta \frac{(\log(1+\exp(x)))^\gamma}{1 +\exp(10^{-x})}
-\end{equation*}
-
-Here $M_*$ is the stellar mass, $M_h$ is the halo mass, $M_1$ is a characteristic halo mass, $\delta$ is the strength of the subpower law, $\alpha$ is the power law slope for $M_h << M_1$ and $\gamma$ is the power law index for $M_h >> M_1$.
+//add figure
 
 Other ways of studying the SHMR is through simulations which include both the halo mass and the corresponding stellar mass for that halo, or through inferring the halo mass by using the rotational curves of disk galaxies (see section \ref{earlies}).
 
 \subsection{Galaxy evolution and classification}
-%Maybe make list/figure to sum up differences
+
 As soon as telescopes became good enough to clearly make out galaxies in the sky, it became apparent to astronomers that galaxies come in many different shapes and sizes. The morphology of a galaxy is important because it turns out that morphology is closely linked to other properties of the galaxy. Edwin Hubble classified galaxies on a spectra \parencite{Hubble1926}, with elliptical galaxies (galaxies that have a dominant spheroidal component) on one end of the spectrum and spiral galaxies (galaxies with a prominent disk component) on the other (see Figure \ref{hubble}). As the galaxy types were presented as a sequence, Hubble deemed it convenient to use the adjectives ``early'' and ``late'' to describe the two extreme ends of the spectrum. He did consider the fact that these words might be confusing because of their temporal connotations, but went ahead with using ``early'' and ``late'' as a proxy for ``less complex'' and ``more complex'', respectively. Indeed this turned out to be confusing, as it is now established that galaxies actually evolve with time along the sequence, starting out as late-type disk galaxies and often ending up as more massive early-type ellipticals.
 
 \begin{figure}
@@ -100,7 +100,7 @@ Elliptical galaxies are mainly pressure-dominated systems, meaning that the moti
 Late type galaxies have a prominent disky component, orbiting around the galaxy's center. The rotational velocity of the disk is typically much larger than the velocity dispersion of the galaxy's bulge. The stars in a spiral galaxy are usually much younger than those in early types. There is a lot of gas and dust present in spirals, giving rise to ongoing star formation. Late type galaxies are bluer in color than early types. Field galaxies, galaxies that are not part of a galaxy cluster, are predominantly spirals. 
 
 
-The rotational velocities of the stars at different radii in the disk of spiral galaxies can be measured observationally, and plotting the velocity as a function of radius gived us the velocity curve og the galaxy. If the mass in the galaxy was solely made up of the gas and stars that we are able to detect optically, we would expect the velocity curve to drop off as we get to the outer parts of the galaxy. Assuming the particles move in circular orbits around the center of mass, the circular velocity at a given radius is given by the formula
+The rotational velocities of the stars at different radii in the disk of spiral galaxies can be measured observationally, and plotting the velocity as a function of radius gives us the velocity curve og the galaxy. If the mass in the galaxy was solely made up of the gas and stars that we are able to detect optically, we would expect the velocity curve to drop off as we get to the outer parts of the galaxy. Assuming the particles move in circular orbits around the center of mass, the circular velocity at a given radius is given by the formula
 
 \begin{equation}
     v_{circ} = \sqrt{GM(<R)/R}. 
@@ -111,7 +111,7 @@ However, the observational data shows that the velocity curve does not fall off 
 \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{images/rotation_curves.png}
-    \caption{Rotation curves for several spiral galaxies. The dashed line is the expected curve if there was no dark matter. Credit: \cite{Zasov2017}}.
+    \caption{Rotation curves for several spiral galaxies. The dashed line is the expected curve if there was no dark matter. Credit: \cite{Zasov2017}.}
     \label{rotation_curves}
 \end{figure}
 
@@ -146,21 +146,28 @@ The main differences between early and late-type galaxies is summed up in table 
 
 \subsubsection{The Tully-Fisher relation}
 
-In 1977, R.B. Tully and J.R. Fisher \parencite{TullyFisher1977} published a paper where they found a surprisingly good correlation between the luminosity of a spiral galaxy and the characteristic rotational speed of its disk on the form of a simple power law with index $\alpha$.
+In 1977, R.B. Tully and J.R. Fisher \parencite{TullyFisher1977} published a paper where they found a surprisingly good correlation between the luminosity of a spiral galaxy and the characteristic rotational speed of its disk on the form of a simple power law with index $\alpha$,
 
 \begin{equation}
-    L \propto v_{rot}^\alpha
+    L \propto v_{rot}^\alpha,
 \end{equation}
 %alpha = 4 
-This is known as the Tully-Fisher relation (TFR). As stellar mass is directly proportional to the luminosity, this gives us the ability to estimate stellar mass from a simple measurement of the rotational velocity.
+as seen in Figure \ref{tully_fisher}. This is known as the Tully-Fisher relation (TFR). As stellar mass is directly proportional to the luminosity, this gives us the ability to estimate stellar mass from a simple measurement of the rotational velocity.
 
 \begin{equation}
     M_* \propto v_{rot}^\alpha 
 \end{equation}
 
-The power law index $\alpha$ was found to be 3.7. Later work has found $\alpha$ to lie between 3.5 and 4 (needs citing...).
+$\alpha$ was found to be 3.7. Later work has found $\alpha$ to lie between 3.5 and 4 (needs citing...).
 
 This relation is a great tool for estimating the distance to a galaxy, as the calculated luminosity can be compared to the observed luminosity at Earth. For numerical simulations, being able to reproduce the TFR is an essential way to check if the model used is reliable.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{images/tully_fisher.png}
+    \caption{The original figure from the 1977 paper by R.B. Tully and J.R. Fisher, showing the linear fit for the luminosity - velocity values in the log-log plane. Credit: \cite{TullyFisher1977}}
+    \label{tully_fisher}
+\end{figure}
 
 \subsubsection{The Faber-Jackson relation and the Fundamental Plane}
 At around the same time that Tully and Fisher published their paper, Sandra M. Faber and Robert Earl Jackson published a paper that linked the velocity dispersion and luminosity of early-type galaxies. The proposed relation was on the form of a power law as well,
@@ -169,7 +176,14 @@ At around the same time that Tully and Fisher published their paper, Sandra M. F
     L \propto \sigma^{\gamma},
 \end{equation}
 
-with a power law index $\gamma$ of approximately 4 \parencite{FaberJackson1976}.
+with a power law index $\gamma$ of approximately 4 \parencite{FaberJackson1976}. Their results are shown in Figure \ref{faber_jackson}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{images/faber_jackson.png}
+    \caption{The original fit for the Faber-Jackson relation as presented in the 1976 paper. It shows the velocity dispersion as function of the luminosity in the log-log plane, along with a power law with index 4. Credit: \cite{FaberJackson1976}}
+    \label{faber_jackson}
+\end{figure}
 
 This is known as the Faber-Jackson (FJ) relation. The scatter in the FJ relation was larger than that found for the TFR however, and it was later found that the velocity dispersion also was dependent on the size of the galaxy.
 
@@ -177,7 +191,9 @@ This is known as the Faber-Jackson (FJ) relation. The scatter in the FJ relation
     \sigma \propto L^a R^b
 \end{equation}
 
-With the radius added into the equation, the scatter became much less significant. Most ellipticals are found on the same plane in ${\sigma, R, L}$ space. This plane became known as the Fundamental Plane (FP), through a paper published in 1987 \parencite{Djorgovski1987}, and is also something which successfull numerical simulations must reproduce.
+With the radius added into the equation, the scatter became much less significant. Most ellipticals are found on the same plane in ${\sigma, R, L}$ space. This plane became known as the Fundamental Plane (FP), through a paper published in 1987 \parencite{Djorgovski1987}, and is also something which successful numerical simulations must reproduce.
+
+//Add FP figure
 
 \subsubsection{Color bimodality}
 Color, in astrophysics, is defined as the difference in magnitudes measured for a galaxy by two different optical filters. A galaxy that is "blue" has a larger amount of blue light than red. In general, galaxies are found to inhabit one of two groups on a color-mass diagram, blue and red (see Figure \ref{color_bimodality}). The blue galaxies are most often smaller late type galaxies, while the red ones are mainly larger early types. There are many factors that contribute to the color of a galaxy, like stellar age and metallicity as well as the amount of gas the light has passed through and its metallicity.

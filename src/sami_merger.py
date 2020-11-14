@@ -6,7 +6,7 @@ from astropy.cosmology import FlatLambdaCDM
 # TNG cosmology
 cosmo = FlatLambdaCDM(H0=67.7, Om0=0.31, Ob0=0.0486)
 
-h=0.678 #Planck 2015
+h=0.6774 #Planck 2015
 
 #df1 = pd.read_csv("./data/SAMI/dr1.csv")
 df2 = pd.read_csv("./data/SAMI/dr2_stellar_kinematics.csv")
