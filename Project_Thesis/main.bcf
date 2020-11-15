@@ -2385,6 +2385,9 @@
     <bcf:citekey order="33">Kelvin2012</bcf:citekey>
     <bcf:citekey order="34">Moster2012</bcf:citekey>
     <bcf:citekey order="35">Behroozi2013</bcf:citekey>
+    <bcf:citekey order="36">Sande2018</bcf:citekey>
+    <bcf:citekey order="37">Ferrarese2000</bcf:citekey>
+    <bcf:citekey order="38">Tundo2007</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

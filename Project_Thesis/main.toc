@@ -62,9 +62,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1}SHMR}{23}{subsection.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}TFR}{26}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.2}TFR}{25}{subsection.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}FJ relation and the FP}{26}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.3}FJ relation and the FP}{25}{subsection.4.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.4}Color bimodality}{26}{subsection.4.4}%
 \defcounter {refsection}{0}\relax 

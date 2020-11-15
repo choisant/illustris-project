@@ -961,6 +961,112 @@
       \verb 10.1086/152650
       \endverb
     \endentry
+    \entry{Sande2018}{article}{}
+      \name{author}{11}{}{%
+        {{un=0,uniquepart=base,hash=8a8addbeaab3f0fc5396b3e80d506338}{%
+           family={Sande},
+           familyi={S\bibinitperiod},
+           given={Jesse},
+           giveni={J\bibinitperiod},
+           givenun=0,
+           prefix={van\bibnamedelima de},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod},
+           prefixun=0}}%
+        {{un=0,uniquepart=base,hash=e75f648fe20bcd8b355406e8775c0188}{%
+           family={Lagos},
+           familyi={L\bibinitperiod},
+           given={Claudia\bibnamedelimb D\bibnamedelima P},
+           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=20fd320220d56094c2808ca334b5d294}{%
+           family={Welker},
+           familyi={W\bibinitperiod},
+           given={Charlotte},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=369240b574bf463a3f06636c4bc49772}{%
+           family={Bland-Hawthorn},
+           familyi={B\bibinithyphendelim H\bibinitperiod},
+           given={Joss},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b9a3e60cbdea42c6b0f2f41c36da20f3}{%
+           family={Schulze},
+           familyi={S\bibinitperiod},
+           given={Felix},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b236e166615880add5f055055c3ea5db}{%
+           family={Remus},
+           familyi={R\bibinitperiod},
+           given={Rhea-Silvia},
+           giveni={R\bibinithyphendelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=af66b54f73b82d31f1d90dcfbe5df119}{%
+           family={Bahé},
+           familyi={B\bibinitperiod},
+           given={Yannick},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=be35103ba34fee98bd33070e37e7abef}{%
+           family={Brough},
+           familyi={B\bibinitperiod},
+           given={Sarah},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5435f7d5bbb92cd79aefb3ab25051b74}{%
+           family={Bryant},
+           familyi={B\bibinitperiod},
+           given={Julia\bibnamedelima J},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=46da6fb5bfc158fc9e315edf119a4cdc}{%
+           family={Cortese},
+           familyi={C\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod},
+           prefixun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press (OUP)}%
+      }
+      \strng{namehash}{dd26bbce862905fee9d4e9e6078d6f4b}
+      \strng{fullhash}{e43bd9b23479f2f398912f748be0cc33}
+      \strng{bibnamehash}{dd26bbce862905fee9d4e9e6078d6f4b}
+      \strng{authorbibnamehash}{dd26bbce862905fee9d4e9e6078d6f4b}
+      \strng{authornamehash}{dd26bbce862905fee9d4e9e6078d6f4b}
+      \strng{authorfullhash}{e43bd9b23479f2f398912f748be0cc33}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1365-2966}
+      \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
+      \field{month}{12}
+      \field{number}{1}
+      \field{title}{The SAMI Galaxy Survey: comparing 3D spectroscopic observations with galaxies from cosmological hydrodynamical simulations}
+      \field{volume}{484}
+      \field{year}{2018}
+      \field{pages}{869\bibrangedash 891}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1093/mnras/sty3506
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1093/mnras/sty3506
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1093/mnras/sty3506
+      \endverb
+    \endentry
     \entry{Schechter1976}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=b02c82ff35a06495f14a2532e68def71}{%
