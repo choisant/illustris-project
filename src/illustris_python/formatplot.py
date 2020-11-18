@@ -34,7 +34,7 @@ def Vmax_SM(ax, x0=1.5, x1=2.5, y0=9, y1=11.5):
     ax.set_ylabel(r"$log(M_*)$ [$ M_\odot $]", fontsize=TEXTSIZE)
     ax.tick_params(which='both', direction='in', top=True, right=True, labelsize=TEXTSIZE*0.8)
     ax.minorticks_on()
-    ax.legend()
+    ax.legend(loc=4)
 
 def CV_SM(ax, x0=1.5, x1=2.5, y0=9, y1=12):
     plt.axis([x0, x1, y0, y1])

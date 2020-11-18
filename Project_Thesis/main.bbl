@@ -19,6 +19,102 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{Planck2015}{article}{}
+      \name{author}{10}{}{%
+        {{un=0,uniquepart=base,hash=51c153ca86af1a2e37d85e103fc517f4}{%
+           family={Ade},
+           familyi={A\bibinitperiod},
+           given={P.\bibnamedelimi A.\bibnamedelimi R.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cbeb63670fb0a38482c74ddafc346179}{%
+           family={Aghanim},
+           familyi={A\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=91f02aef6904253aa317a3a2c8ec25a2}{%
+           family={Arnaud},
+           familyi={A\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7137e8418d9673d0706e88fba2b843b3}{%
+           family={Ashdown},
+           familyi={A\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=99776626ac726ad2e95cd64f7ec3deed}{%
+           family={Aumont},
+           familyi={A\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=142ba4c0e9cf8ef1f2256b0740e812d3}{%
+           family={Baccigalupi},
+           familyi={B\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f3d862cbc08a419afdc99977d27338bc}{%
+           family={Banday},
+           familyi={B\bibinitperiod},
+           given={A.\bibnamedelimi J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5d39e7673aa4212da24dff088d357fc1}{%
+           family={Barreiro},
+           familyi={B\bibinitperiod},
+           given={R.\bibnamedelimi B.},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0621a4fcc26506ce3b361aee1ea0bf7f}{%
+           family={Bartlett},
+           familyi={B\bibinitperiod},
+           given={J.\bibnamedelimi G.},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod},
+           prefixun=0}}%
+      }
+      \list{publisher}{1}{%
+        {EDP Sciences}%
+      }
+      \strng{namehash}{f8440d9e5d190ea37d8f850d015ddd7a}
+      \strng{fullhash}{a2f359f56c259aef182c6847e3e79d53}
+      \strng{bibnamehash}{f8440d9e5d190ea37d8f850d015ddd7a}
+      \strng{authorbibnamehash}{f8440d9e5d190ea37d8f850d015ddd7a}
+      \strng{authornamehash}{f8440d9e5d190ea37d8f850d015ddd7a}
+      \strng{authorfullhash}{a2f359f56c259aef182c6847e3e79d53}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1432-0746}
+      \field{journaltitle}{Astronomy \& Astrophysics}
+      \field{month}{9}
+      \field{title}{Planck2015 results}
+      \field{volume}{594}
+      \field{year}{2016}
+      \field{pages}{A13}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1051/0004-6361/201525830
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1051/0004-6361/201525830
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1051/0004-6361/201525830
+      \endverb
+    \endentry
     \entry{Behroozi2013}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=9672939ec01d5aad87fff46d86d06f33}{%
@@ -1490,6 +1586,97 @@
       \endverb
       \verb{url}
       \verb http://dx.doi.org/10.1093/mnras/stw2944
+      \endverb
+    \endentry
+    \entry{Zanisi2019}{article}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=c153f3a1f85e0753891ad0973550b1c1}{%
+           family={Zanisi},
+           familyi={Z\bibinitperiod},
+           given={Lorenzo},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a7d0ae34b86b15cd85382d2238fd69e7}{%
+           family={Shankar},
+           familyi={S\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=babd33033bd7db826c3ab7d6cb1055d2}{%
+           family={Lapi},
+           familyi={L\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ef3a239e2b3ea1b24e954ecdabe136a9}{%
+           family={Menci},
+           familyi={M\bibinitperiod},
+           given={Nicola},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=54fefe97668f6bddd5e8bcad7b70e7fd}{%
+           family={Bernardi},
+           familyi={B\bibinitperiod},
+           given={Mariangela},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c1e7d43e41e64f30d8a2096f21d319e5}{%
+           family={Duckworth},
+           familyi={D\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=760335df7503b6ffb4eea5a15074ea87}{%
+           family={Huertas-Company},
+           familyi={H\bibinithyphendelim C\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e11fdbed6740eb103f42d8e31504a812}{%
+           family={Grylls},
+           familyi={G\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=beb76203cb7d3b251f65fea65fc5168d}{%
+           family={Salucci},
+           familyi={S\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press (OUP)}%
+      }
+      \strng{namehash}{131046e619ff7aee00f65aef20a41f97}
+      \strng{fullhash}{d1e814ce71163d2d56a70a77913d9225}
+      \strng{bibnamehash}{131046e619ff7aee00f65aef20a41f97}
+      \strng{authorbibnamehash}{131046e619ff7aee00f65aef20a41f97}
+      \strng{authornamehash}{131046e619ff7aee00f65aef20a41f97}
+      \strng{authorfullhash}{d1e814ce71163d2d56a70a77913d9225}
+      \field{sortinit}{Z}
+      \field{sortinithash}{8f7b480688e809b50b6f6577b16f3db5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1365-2966}
+      \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
+      \field{month}{12}
+      \field{number}{2}
+      \field{title}{Galaxy sizes and the galaxy–halo connection – I. The remarkable tightness of the size distributions}
+      \field{volume}{492}
+      \field{year}{2019}
+      \field{pages}{1671\bibrangedash 1690}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1093/mnras/stz3516
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1093/mnras/stz3516
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1093/mnras/stz3516
       \endverb
     \endentry
     \entry{Zasov2017}{article}{}

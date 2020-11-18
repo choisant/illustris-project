@@ -22,11 +22,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.2.2}Spiral (late type) galaxies}{10}{subsubsection.2.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}Galaxy properties}{11}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.3}Galaxy properties}{12}{subsection.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.1}The Tully-Fisher relation}{11}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.1}The Tully-Fisher relation}{12}{subsubsection.2.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.2}The Faber-Jackson relation and the Fundamental Plane}{12}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.2}The Faber-Jackson relation and the Fundamental Plane}{14}{subsubsection.2.3.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.3.3}Color bimodality}{15}{subsubsection.2.3.3}%
 \defcounter {refsection}{0}\relax 
@@ -42,9 +42,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.1.3}Selection criteria}{19}{subsubsection.3.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Observational data}{19}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.2}Observational data}{20}{subsection.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.1}SAMI Galaxy Survey}{19}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.1}SAMI Galaxy Survey}{20}{subsubsection.3.2.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.2.2}Other data sets}{20}{subsubsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
@@ -52,22 +52,22 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.3.1}Cosmologies and property value representation}{21}{subsubsection.3.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.2}Separating out early and late type galaxies}{21}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.2}Separating out early and late type galaxies}{22}{subsubsection.3.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.3}Circular velocities}{22}{subsubsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.3}Circular velocities}{23}{subsubsection.3.3.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.3.4}Effective radius}{23}{subsubsection.3.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Results and discussions}{23}{section.4}%
+\contentsline {section}{\numberline {4}Results and discussions}{24}{section.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}SHMR}{23}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.1}SHMR}{24}{subsection.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}TFR}{25}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.2}TFR}{24}{subsection.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}FJ relation and the FP}{25}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.3}FJ relation and the FP}{27}{subsection.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4}Color bimodality}{26}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.4}Color bimodality}{27}{subsection.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5}SMBH relations}{26}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.5}SMBH relations}{34}{subsection.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Conclusions}{26}{section.5}%
+\contentsline {section}{\numberline {5}Conclusions}{35}{section.5}%

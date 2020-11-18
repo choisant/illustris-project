@@ -4,7 +4,7 @@ IllustrisTNG \footnote{https://www.tng-project.org/} is the follow-up project af
 
 
 \subsubsection{The simulations}
-The IllustrisTNG project includes 18 different simulations with varying resolutions, spatial size and included physics. There are three main simulations that differ in volume and resolution, and the details of these are summed up in Table \ref{TNG}. Each of the main simulations have been run at three different resolution levels, which makes it possible to study how changing only the resolution in a given simulation affects the outcome. TNG100 has a physical box volume of $110.7^3 \, $Mpc$^3$, and a baryonic particle resolution of $1.4 \times 10^6 M_{\odot}$, while the TNG300 simulation has a volume of $302.6^3 \, $Mpc$^3$ and a baryonic particle resolution of $1.1 \times 10^7 M_{\odot}$. The TNG50 data is actually not yet available, but it is expected soon, and provides a much higher resolution in a smaller box size. In this project, a large statistical sample of galaxies was needed, as well as detailed structure of the inner part of the galaxies to calculate the different properties, so the TNG100 simulation was the ideal middle ground with respect to size and resolution. The TNG100-1 simulation data has been used throughout the project, which is the highest available resolution for TNG100. A visual representation of parts of the simulations can be seen in Figure \ref{tng_illustration}.
+The IllustrisTNG project includes 18 different simulations with varying resolutions, spatial size and included physics. There are three main simulations that differ in volume and resolution, and the details of these are summed up in Table \ref{TNG}. Each of the main simulations have been run at three different resolution levels, which makes it possible to study how changing only the resolution in a given simulation affects the outcome. TNG100 has a physical box volume of $110.7^3 \, $Mpc$^3$, and a baryonic particle resolution of $1.4 \times 10^6 M_{\odot}$, while the TNG300 simulation has a volume of $302.6^3 \, $Mpc$^3$ and a baryonic particle resolution of $1.1 \times 10^7 M_{\odot}$. The TNG50 data is actually not yet available, but it is expected soon, and provides a much higher resolution in a smaller box size. In this project, a large statistical sample of galaxies was needed, as well as detailed structure of the inner part of the galaxies to calculate the different properties, so the TNG100 simulation was the ideal middle ground with respect to size and resolution. The TNG100-1 simulation data has been used throughout the project, which is the highest available resolution for TNG100, and will from now on be references as "TNG" only. A visual representation of parts of the simulations can be seen in Figure \ref{tng_illustration}. TNG uses the results from the Planck Collaboration for its cosmology parameters, $\Omega_{\Lambda,0} = 0.6911$, $\Omega_{m,0}=0.3089$, $\Omega_{b,0}=0.0486$, $\sigma_8=0.8159$, $n_s=0.9667$ and $h = 0.6774$ \parencite{Planck2015}. See section \ref{cosmologies} for more details.
 
 \begin{figure}
     \centering
@@ -54,11 +54,11 @@ It is desirable to use the same observational data when comparing different scal
 //fill in when you know more about this //
 
 \subsubsection{SAMI Galaxy Survey}
-The Sydney – Australian Astronomical Observatory Multi-Object Integral Field Spectrograph (SAMI) is mounted on the Anglo-Saxan telescope in Australia. The SAMI Galaxy Survey \footnote{https://sami-survey.org/} is a spectroscopic survey of a large sample of galaxies in the nearby universe ($z < 0.113$). The survey was started in 2013, and ended in 2018. There have been two major data releases, with the newest being Data Release Two (DR2) \parencite{Scott2018}. DR2 includes data for 1559 galaxies, which is about 50 \% of the full galaxy survey. The data products available are IFS data cubes and 2D maps, as well as catalogue data. Analysing data cubes and 2D maps falls outside the scope of this product, so catalogue data is used where possible. Some data is not available in the catalogues, but the direct results from research using the SAMI data has then been used.
+The Sydney – Australian Astronomical Observatory Multi-Object Integral Field Spectrograph (SAMI) is mounted on the Anglo-Saxan telescope in Australia. The SAMI Galaxy Survey \footnote{https://sami-survey.org/} is a spectroscopic survey of a large sample of galaxies in the nearby universe ($z < 0.113$). The survey was started in 2013, and ended in 2018. There have been two major data releases, with the newest being Data Release Two (DR2) \parencite{Scott2018}. DR2 includes data for 1559 galaxies, which is about 50 \% of the full galaxy survey. The data products available are IFS data cubes and 2D maps, as well as catalogue data. Analysing data cubes and 2D maps falls outside the scope of this product, so catalogue data is used where possible. 
 
+Rotational velocities were not available as catalogue data, but in \cite{Bloom2017} the calculations were already done, and the best fit for the TFR was used in our comparison: $\log(V_{rot}) = 0.31 \pm 0.0092 \times \log(M_*)-0.93 \pm 0.1$.
 
 \subsubsection{Other data sets}
-//Write about the data sets for SHMR and SMBH
 For the SHMR best fit models from two different abundance method papers were used in the comparison to TNG.
 
 In \cite{Moster2012} a double power law was used to fit the data,
@@ -70,17 +70,19 @@ where N is a normalization parameter, $M_1$ is a characteristic mass and $\beta,
 
 \cite{Behroozi2013} improved the fit by using a power law for the high mass end, and a subpower law for the low mass end.
 
-\begin{equation}
+\begin{equation} \label{eq_behroozi}
     \log(M_*(M_h)) = \log(\epsilon M_1) + f(\log(M_h/M_1)) -f(0),
 \end{equation}
 \begin{equation*}
     f(x) = -\log(10^{\alpha x}+1)+\delta \frac{(\log(1+\exp(x)))^\gamma}{1 +\exp(10^{-x})}
 \end{equation*}
 
-Here $M_1$ is a characteristic halo mass, $\delta$ is the strength of the subpower law, $\alpha$ is the power law slope for $M_h << M_1$ and $\gamma$ is the power law index for $M_h >> M_1$. The values for the parameters are $M_1 = 11.514\pm(0.053, 0.009)$, $\delta = 3.508 \pm (0.087, -0.369)$, $\alpha = -1.412 \pm (0.020, -0.105)$ and $\gamma = 0.316 \pm (0.076, -0.012)$.
+Here $M_1$ is a characteristic halo mass, $\delta$ is the strength of the subpower law, $\alpha$ is the power law slope for $M_h << M_1$ and $\gamma$ is the power law index for $M_h >> M_1$. The values for the parameters are $M_1 = 11.514\pm(0.053, 0.009)$, $\delta = 3.508 \pm (0.087, -0.369)$, $\alpha = -1.412 \pm (0.020, -0.105)$, $\epsilon = -1.777 \pm (0.133, 0.146)$ and $\gamma = 0.316 \pm (0.076, -0.012)$.
+
+The more recent work by \cite{Zanisi2019} was also used, which employed the same function for the fit as Behroozi et al., but with other values for the parameters. This study chose to only use central galaxies from the Sloan Digital Sky Survey (SDSS). The parameters were found to be $M_1 = 11.632\pm(0.008, 0.009)$, $\delta = 3.797 \pm (0.026, 0.021)$, $\alpha = -2.352 \pm (0.026, -0.021)$, $\epsilon = -1.785 \pm (0.010, 0.008)$  and $\gamma = 0.600 \pm (0.10, 0.013)$.
 
 
-//Moster, Behroozi, Tundo and Ferrarese
+//Tundo and Ferrarese
 
 \subsection{Calculating properties}
 
@@ -98,13 +100,13 @@ IllustrisTNG-distances are given as comoving distances. For $z=0$, the proper an
 
 \begin{table}
 \begin{center}
-\begin{tabular}{ l| c c c c } 
+\begin{tabular}{ l| c c c c c } 
  \hline
  \hline
-   &  Mass & Distance & Photometrics & Velocity \\
+   & $M_*$ & $M_{halo}$ & $R_e$ & Luminosity & Velocity \\
  \hline
- TNG & $M_{\odot}h^{-1}$ & kpc$\,h^{-1}$ & mag & km/s \\ 
- Observations & $M_{\odot}h^{-2}$ & kpc$\,h^{-1}$ & mag $+5\log(h)$ & km/s \\
+ TNG & $M_{\odot}h^{-1}$ & $M_{\odot}h^{-1}$ & kpc$\,h^{-1}$ & mag & km/s \\ 
+ Observations & $M_{\odot}h^{-2}$ & $M_{\odot}h^{-1}$ & kpc$\,h^{-1}$ & mag $+5\log(h)$ & km/s \\
  \hline 
  \end{tabular}
 \end{center}
