@@ -1,6 +1,5 @@
 \subsection{IllustrisTNG}
-%Add footnote with IllustrisTNG webpage
-IllustrisTNG \footnote{https://www.tng-project.org/} is the follow-up project after the success of the Illustris simulations. It is a huge project, built upon a magneto-hydrodynamical cosmological simulation code with added physical processes on a subgrid level \parencite{Weinberger2016}. Adding physical processes like gas radiation, star formation, stellar feedback through supernova explosions, supermassive blackhole accretion and magnetic fields are essential to model galaxy formation and evolution, and allows a much better comparison to reality. The data output from the simulations is extensive, and is not meant to be analysed all in one go, but rather through a series of analyses, each targeting a specific scientific question. 
+IllustrisTNG \footnote{https://www.tng-project.org/} is the follow-up project after the success of the Illustris simulations. It is a huge project, built upon a magneto-hydrodynamical cosmological simulation code with added physical processes on a subgrid level \parencite{Weinberger2016}. Adding physical processes like gas radiation, star formation, stellar feedback through supernova explosions, supermassive black hole accretion and magnetic fields are essential to model galaxy formation and evolution, and allows a much better comparison to reality. The data output from the simulations is extensive, and is not meant to be analysed all in one go, but rather through a series of analyses, each targeting a specific scientific question. 
 
 
 \subsubsection{The simulations}
@@ -15,6 +14,8 @@ The IllustrisTNG project includes 18 different simulations with varying resoluti
 
 \begin{table}
 \begin{center}
+\caption{The simulation details for the three main TNG simulations. $N_{DM}$ is the amount of dark matter particles. $m_{DM}$ and $m_{baryon}$ is the mass of the dark matter and baryonic particles, respectively.}
+ \label{TNG}
 \begin{tabular}{ l| c c c c c } 
  \hline
  \hline
@@ -26,40 +27,35 @@ The IllustrisTNG project includes 18 different simulations with varying resoluti
  \hline 
  \end{tabular}
 \end{center}
-\caption{The simulation details for the three main TNG simulations. $N_{DM}$ is the amount of dark matter particles. $m_{DM}$ and $m_{baryon}$ is the mass of the dark matter and baryonic particles, respectively.}
- \label{TNG}
 \end{table}
 
 \subsubsection{Data cataloges}
-All the Illustris-TNG data is publically available online at the TNG webpage. The data products that are available for each simulation are snapshots, group catalogs and merger trees as well as some supplementary data sets. There are 100 snapshots for each run, which are taken at specific redshifts. They include all the particles in the whole volume of the simulation, with 20 of them including all the particle fields for each particle as well. There are five different particle types, and each particle has its properties stored as particle fields. These fields include information like position, kinematic data and atomic/chemical composition. 
+All the Illustris-TNG data is publically available online at the TNG webpage\footnote{https://www.tng-project.org/data/}. The data products that are available for each simulation are snapshots, group catalogs and merger trees as well as some supplementary data sets. There are five different particle types in the simulations, and each has its properties stored as particle fields. These fields include information like position, kinematic data and atomic/chemical composition. For each different run of the simulation, 100 snapshots are created, which are taken at specific redshifts. They include all the particles in the whole volume of the simulation, with 20 of them including all the fields for each particle as well.
 
+The group catalogs provide a convenient way to quickly access already calculated properties of the different halos and subhalos instead of dealing with all the particles in a snapshot. This saves a lot of time and effort, but gives the user less control over what can be analysed. In future work, it might be interesting to do the calculations directly from the snapshots myself. There is one group catalog for each snapshot, and this includes two types of objects, Friends-of-Friends (FoF) and Subfind. The FoF catalog contains all the halos, and the Subfind catalog contains all the subhalos and their associated galaxy (if there is any) for each halo. Each subhalo has a parent halo, and the largest subhalo in each halo is the central subhalo. The merger trees data products contain the merger history of each subhalo.
 
-The group catalogs provide a convenient way to quickly access already calculated properties of the different halos and subhalos instead of dealing with all the particles in a snapshot. This saves a lot of time and effort, but gives the user less control over what can be analysed. In future work, it might be interesting to do the calculations directly from the snapshots myself. There is one group catalog for each snapshot, and this includes two types of objects, Friends-of-Friends (FoF) and Subfind. The FoF catalog contains all the halos, and the Subfind catalog contains all the subhalos for each halo. Each subhalo has a parent halo, and the largest subhalo in each halo is the central subhalo. The merger trees data products contain the merger history of each subhalo.
+This project makes use of the group catalogs for the $z = 0$ snapshot in TNG100-1, as we want to compare the output data to observations of the local (present time) Universe.
 
-This project makes use of the group catalogs for the $z = 0$ snapshot in TNG100-1, as we want to compare the output data to observations of the local (present time) universe.
-
-\subsubsection{Selection criteria} %badtitle
+\subsubsection{Sample reduction}
 
 The TNG documentation recommends filtering out all subhalos that are flagged with the $SubhaloFlag$ field, and so these were cut from the data. These are most probably subhalos of non-cosmological origin, and so should not be considered real galaxies.
 
 For most of the relations covered in this project, it is desirable to only use the central galaxies in each halo. This is because satellite galaxies are more affected by their environment, which in turn affects the kinematic and structural properties of the galaxy. This will naturally lead to a scatter in the galaxy scaling relations that are being studied, which central galaxies will not display. The FoF catalog contains the index for the largest subhalo in each halo, so combining this information with the Subfind catalog allows one to create a subset of the data that contains only the central galaxies.
 
-Only galaxies with stellar mass greater than $10^9 M_{\odot}$ are used, except for the SHMR analysis, where galaxies with stellar mass down to $10^8 M_{\odot}$ are included. This is because smaller galaxies will have fewer stellar particles, and thus their structure is not necessarily reliably resolved.
+Only galaxies with stellar mass greater than $10^9 M_{\odot}$ are used, except for the SHM relation analysis, where galaxies with stellar mass down to $10^8 M_{\odot}$ are included. This is because smaller galaxies will have fewer stellar particles, and thus their structure is not necessarily reliably resolved.
 
 \subsection{Observational data}
 //Some general itroduction to observational data goes here
 
-It is desirable to use the same observational data when comparing different scaling relations, however it has not been possible to do that. This is because we are analysing such different problems as stellar-to-halo mass and SMBH relations, which require very different kind of measurements. A compromise has been to use one main survey for the kinematic scaling relations. 
-
-//fill in when you know more about this //
+It is desirable to use the same observational data when comparing different scaling relations, however it has not been possible to do that for all the relations covered in this work. This is because we are analysing such different problems as stellar-to-halo mass and SMBH relations, which require very different kinds of measurements. A compromise has been to use one main survey, the SAMI Galaxy survey, for the kinematic scaling relations as well as the color-bimodality comparison. For the SHM and SMBH scaling relations, works employing different observational data have been used. All the data sets and best fits used in comparing the results from TNG to observations are described in this section.
 
 \subsubsection{SAMI Galaxy Survey}
-The Sydney – Australian Astronomical Observatory Multi-Object Integral Field Spectrograph (SAMI) is mounted on the Anglo-Saxan telescope in Australia. The SAMI Galaxy Survey \footnote{https://sami-survey.org/} is a spectroscopic survey of a large sample of galaxies in the nearby universe ($z < 0.113$). The survey was started in 2013, and ended in 2018. There have been two major data releases, with the newest being Data Release Two (DR2) \parencite{Scott2018}. DR2 includes data for 1559 galaxies, which is about 50 \% of the full galaxy survey. The data products available are IFS data cubes and 2D maps, as well as catalogue data. Analysing data cubes and 2D maps falls outside the scope of this product, so catalogue data is used where possible. 
+The Sydney – Australian Astronomical Observatory Multi-Object Integral Field Spectrograph (SAMI) is mounted on the Anglo-Saxan telescope in Australia. The SAMI Galaxy Survey \footnote{https://sami-survey.org/} is a spectroscopic survey of a large sample of galaxies in the nearby Universe ($z < 0.113$). The survey was started in 2013, and ended in 2018. There have been two major data releases, with the newest being Data Release Two (DR2) \parencite{Scott2018}. DR2 includes data for 1559 galaxies, which is about 50 \% of the full galaxy survey. The data products available are IFS data cubes and 2D maps, as well as catalogue data. Analysing data cubes and 2D maps falls outside the scope of this product, so catalogue data is used where possible. 
 
 Rotational velocities were not available as catalogue data, but in \cite{Bloom2017} the calculations were already done, and the best fit for the TFR was used in our comparison: $\log(V_{rot}) = 0.31 \pm 0.0092 \times \log(M_*)-0.93 \pm 0.1$.
 
 \subsubsection{Other data sets}
-For the SHMR best fit models from two different abundance method papers were used in the comparison to TNG.
+For the SHM relation best fit models from three different abundance method papers were used in the comparison to TNG.
 
 In \cite{Moster2012} a double power law was used to fit the data,
 
@@ -71,7 +67,7 @@ where N is a normalization parameter, $M_1$ is a characteristic mass and $\beta,
 \cite{Behroozi2013} improved the fit by using a power law for the high mass end, and a subpower law for the low mass end.
 
 \begin{equation} \label{eq_behroozi}
-    \log(M_*(M_h)) = \log(\epsilon M_1) + f(\log(M_h/M_1)) -f(0),
+    \log(M_*(M_{halo})) = \log(\epsilon M_1) + f(\log(M_h/M_1)) -f(0),
 \end{equation}
 \begin{equation*}
     f(x) = -\log(10^{\alpha x}+1)+\delta \frac{(\log(1+\exp(x)))^\gamma}{1 +\exp(10^{-x})}
@@ -81,37 +77,32 @@ Here $M_1$ is a characteristic halo mass, $\delta$ is the strength of the subpow
 
 The more recent work by \cite{Zanisi2019} was also used, which employed the same function for the fit as Behroozi et al., but with other values for the parameters. This study chose to only use central galaxies from the Sloan Digital Sky Survey (SDSS). The parameters were found to be $M_1 = 11.632\pm(0.008, 0.009)$, $\delta = 3.797 \pm (0.026, 0.021)$, $\alpha = -2.352 \pm (0.026, -0.021)$, $\epsilon = -1.785 \pm (0.010, 0.008)$  and $\gamma = 0.600 \pm (0.10, 0.013)$.
 
-
 //Tundo and Ferrarese
+
 
 \subsection{Calculating properties}
 
-\subsubsection{Cosmologies and property value representation} \label{cosmologies}
-When making measurements of galaxy properties at cosmological distances, some assumptions about the underlying cosmology of the universe must be made. One of these assumptions is the value of the Hubble constant $H_0$, more commonly represented by $h$. This constant is also used when properties are calculated using a simulation. For IllustrisTNG, $H_0 = 100\,h\,$ km/s/Mpc with $ h = 0.6774$ and the explicit $h$-dependence of each property value is stated clearly in the documentation. For the SAMI data catalogue, no h-dependence is explicitly stated in the documentation or data release papers, but the Hubble constant used is given, $h = 0.7$.
-\cite{Behroozi2013} uses $h = 0.7$ as well. In \cite{Moster2012} a value of $h = 0.704$ is chosen. For the BHMR papers, \cite{Ferrarese2000} does not state which cosmology is used and seems to use a mix of distance measurements, while \cite{Tundo2007} uses $h = 0.7$.
+\subsubsection{Cosmologies and h-dependence} \label{cosmologies}
+When making measurements of galaxy properties at cosmological distances, some assumptions about the underlying cosmology of the Universe must be made. One of these assumptions is the value of the Hubble constant $H_0$, more commonly represented by $h$. This constant is also used when running a cosmological simulation. 
 
-Best practice dictates that conversion between different cosmology-parameters should be done by replacing the $h$ with the most recent value for $h$ and evaluating the values which can then be compared \parencite{Croton2013}. In Table \ref{h_dependence} the h-dependence of the properties of TNG as well as the common h-dependences for observational data is shown along with the corresponding units. //add more here about what I ended up doing//
+For IllustrisTNG $H_0=100\,h\,$km/s/Mpc with $h=0.6774$ and the explicit $h$-dependence of each property value is stated clearly in the documentation. For the SAMI data catalogue, no $h$-dependence is explicitly stated in the documentation or data release papers, but the Hubble constant used is given by $h = 0.7$.
 
-IllustrisTNG-distances are given as comoving distances. For $z=0$, the proper and comoving distance of two objects are the same so no conversion is needed.
-
-//add information about IMF here //
-%IMF Chabrier - Moster 2012
-
+Best practice dictates that comparisons that include works with different assumed Hubble constants should be done by replacing the $h$ used in those specific works with the most recent value for $h$ \parencite{Croton2013}. The values for galaxy properties will then be comparable. In Table \ref{h_dependence} the h-dependence of the galaxy properties of TNG as well as the common h-dependences for observational data is shown along with their corresponding units. In this work, all data results are converted to the TNG cosmology, which uses the newest values for the cosmological parameters.
 
 \begin{table}
 \begin{center}
+\caption{The $h$-dependence along with units for properties used in this work. The dependence for observational data used is from Table 2 in \cite{Croton2013}.}
+\label{h_dependence}
 \begin{tabular}{ l| c c c c c } 
  \hline
  \hline
    & $M_*$ & $M_{halo}$ & $R_e$ & Luminosity & Velocity \\
  \hline
  TNG & $M_{\odot}h^{-1}$ & $M_{\odot}h^{-1}$ & kpc$\,h^{-1}$ & mag & km/s \\ 
- Observations & $M_{\odot}h^{-2}$ & $M_{\odot}h^{-1}$ & kpc$\,h^{-1}$ & mag $+5\log(h)$ & km/s \\
+ Observational & $M_{\odot}h^{-2}$ & - & kpc$\,h^{-1}$ & mag $+5\log(h)$ & km/s \\
  \hline 
- \end{tabular}
+\end{tabular}
 \end{center}
-\caption{...}
- \label{h_dependence}
 \end{table}
 
 \subsubsection{Separating out early and late type galaxies}
@@ -146,3 +137,5 @@ To convert the elliptical radius to circular radius, the definition of elliptici
 \end{equation}
 
 where $r_{e, circ}$ is the circular radius and $r_{e,sm}$ is the semi-major axis effective radius.
+
+IllustrisTNG-distances are given as comoving distances. Comoving and proper distances are two measurements of distance used in cosmology and are closely linked. The comoving distance between two particles that are only moving with the Hubble flow is constant. The proper distance factors in the expansion of the universe, and so the distance between the two particles would increase with time. For $z=0$, the proper and comoving distance of two objects are the same so no conversion is needed.

@@ -104,7 +104,7 @@ def SM_SFR(ax, x0=9, x1=13, y0=(-4), y1=0):
 def VD_BH(ax, x0=1, x1=3, y0=(6), y1=(10)):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
     ax.set_ylabel(r"$log(M_{BH})$ [$ M_\odot $]", fontsize=TEXTSIZE)
-    ax.set_xlabel(r'$log($\sigma)$ [km/s]', fontsize=TEXTSIZE)
+    ax.set_xlabel(r'$log(\sigma)$ [km/s]', fontsize=TEXTSIZE)
     ax.tick_params(which='both', direction='in', top=True, right=True, labelsize=TEXTSIZE*0.8)
     ax.minorticks_on()
     ax.legend()
