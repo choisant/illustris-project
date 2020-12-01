@@ -497,55 +497,6 @@
       \endverb
       \keyw{Elliptical Galaxies,Galactic Nuclei,Mass To Light Ratios,Power Spectra,Velocity Distribution,Astronomical Spectroscopy,Data Reduction,Light (Visible Radiation),M Stars,Noise Spectra,Spectral Line Width,Astrophysics}
     \endentry
-    \entry{Ferrarese2000}{article}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=8b81f5f34f2bf138e28ce6a2eb523e44}{%
-           family={Ferrarese},
-           familyi={F\bibinitperiod},
-           given={Laura},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=41811beb71bf2a9116384e0ad5637cac}{%
-           family={Merritt},
-           familyi={M\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {American Astronomical Society}%
-      }
-      \strng{namehash}{0e9e76363cd22e3365e51f370a823dd9}
-      \strng{fullhash}{0e9e76363cd22e3365e51f370a823dd9}
-      \strng{bibnamehash}{0e9e76363cd22e3365e51f370a823dd9}
-      \strng{authorbibnamehash}{0e9e76363cd22e3365e51f370a823dd9}
-      \strng{authornamehash}{0e9e76363cd22e3365e51f370a823dd9}
-      \strng{authorfullhash}{0e9e76363cd22e3365e51f370a823dd9}
-      \field{sortinit}{F}
-      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{0004-637X}
-      \field{journaltitle}{The Astrophysical Journal}
-      \field{month}{8}
-      \field{number}{1}
-      \field{title}{A Fundamental Relation between Supermassive Black Holes and Their Host Galaxies}
-      \field{volume}{539}
-      \field{year}{2000}
-      \field{pages}{L9\bibrangedash L12}
-      \range{pages}{-1}
-      \verb{doi}
-      \verb 10.1086/312838
-      \endverb
-      \verb{urlraw}
-      \verb http://dx.doi.org/10.1086/312838
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1086/312838
-      \endverb
-    \endentry
     \entry{Frenk1983}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=ef23aac7fe4d2fa9e78bdb2c475a6b77}{%
@@ -829,6 +780,172 @@
       \verb http://dx.doi.org/10.1111/j.1365-2966.2012.20355.x
       \endverb
     \endentry
+    \entry{Lelli2019}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=b4f5421f4986425ed851ecb2d7ac7f2c}{%
+           family={Lelli},
+           familyi={L\bibinitperiod},
+           given={Federico},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7b4d0dfabc055235b6e251879bad474f}{%
+           family={McGaugh},
+           familyi={M\bibinitperiod},
+           given={Stacy\bibnamedelima S},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fd4d2b5191f506b0f9cf794de687effb}{%
+           family={Schombert},
+           familyi={S\bibinitperiod},
+           given={James\bibnamedelima M},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5f99219339a2be1803a0895fc066afc5}{%
+           family={Desmond},
+           familyi={D\bibinitperiod},
+           given={Harry},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9af515daafc89f55cbf9957caad4a0cd}{%
+           family={Katz},
+           familyi={K\bibinitperiod},
+           given={Harley},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press (OUP)}%
+      }
+      \strng{namehash}{93d5650c4d7790fe9474532c397f0f9f}
+      \strng{fullhash}{e68e5cfb58e751f9515d7b13e5974336}
+      \strng{bibnamehash}{93d5650c4d7790fe9474532c397f0f9f}
+      \strng{authorbibnamehash}{93d5650c4d7790fe9474532c397f0f9f}
+      \strng{authornamehash}{93d5650c4d7790fe9474532c397f0f9f}
+      \strng{authorfullhash}{e68e5cfb58e751f9515d7b13e5974336}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1365-2966}
+      \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
+      \field{month}{1}
+      \field{number}{3}
+      \field{title}{The baryonic Tully–Fisher relation for different velocity definitions and implications for galaxy angular momentum}
+      \field{volume}{484}
+      \field{year}{2019}
+      \field{pages}{3267\bibrangedash 3278}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1093/mnras/stz205
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1093/mnras/stz205
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1093/mnras/stz205
+      \endverb
+    \endentry
+    \entry{Marinacci2018}{article}{}
+      \name{author}{11}{}{%
+        {{un=0,uniquepart=base,hash=f8d123402326022e2d7ff6a46172c40c}{%
+           family={Marinacci},
+           familyi={M\bibinitperiod},
+           given={Federico},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=135d434ea2b67c33af17ac769847bc4f}{%
+           family={Vogelsberger},
+           familyi={V\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=69de3efaeebbc09f97720c1f8f9f75b6}{%
+           family={Pakmor},
+           familyi={P\bibinitperiod},
+           given={Rüdiger},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f62acde05559146e05e6150742d70731}{%
+           family={Torrey},
+           familyi={T\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d673f4b06bc18145fb87123390b4948f}{%
+           family={Springel},
+           familyi={S\bibinitperiod},
+           given={Volker},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ea49fbd6c94c7c89f99c3f989cc8b15f}{%
+           family={Hernquist},
+           familyi={H\bibinitperiod},
+           given={Lars},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b9909edb91e754e15f2d489182a87df}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={Dylan},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=caa99d0c50cfa159b56dc9db955ca117}{%
+           family={Weinberger},
+           familyi={W\bibinitperiod},
+           given={Rainer},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d33cbf265c601867102906996581ef38}{%
+           family={Pillepich},
+           familyi={P\bibinitperiod},
+           given={Annalisa},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=37bfef933d675128c909933d7f961c17}{%
+           family={Naiman},
+           familyi={N\bibinitperiod},
+           given={Jill},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod},
+           prefixun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press (OUP)}%
+      }
+      \strng{namehash}{69ec655a005ed3ff9d027ac29792f605}
+      \strng{fullhash}{e61b97a0bc5ecc8ab57f7086e62900ea}
+      \strng{bibnamehash}{69ec655a005ed3ff9d027ac29792f605}
+      \strng{authorbibnamehash}{69ec655a005ed3ff9d027ac29792f605}
+      \strng{authornamehash}{69ec655a005ed3ff9d027ac29792f605}
+      \strng{authorfullhash}{e61b97a0bc5ecc8ab57f7086e62900ea}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1365-2966}
+      \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
+      \field{month}{8}
+      \field{title}{First results from the IllustrisTNG simulations: radio haloes and magnetic fields}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.1093/mnras/sty2206
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1093/mnras/sty2206
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1093/mnras/sty2206
+      \endverb
+    \endentry
     \entry{Mo2010}{book}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=62dd07b7d6fb9752bc5227a473571359}{%
@@ -920,6 +1037,109 @@
       \verb http://dx.doi.org/10.1093/mnras/sts261
       \endverb
     \endentry
+    \entry{Naiman2018}{article}{}
+      \name{author}{11}{}{%
+        {{un=0,uniquepart=base,hash=7afc0a7e7d3f8c7bb95f7b293569631c}{%
+           family={Naiman},
+           familyi={N\bibinitperiod},
+           given={Jill\bibnamedelima P},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d33cbf265c601867102906996581ef38}{%
+           family={Pillepich},
+           familyi={P\bibinitperiod},
+           given={Annalisa},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d673f4b06bc18145fb87123390b4948f}{%
+           family={Springel},
+           familyi={S\bibinitperiod},
+           given={Volker},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d995efb3484833e77f1122c9505a06aa}{%
+           family={Ramirez-Ruiz},
+           familyi={R\bibinithyphendelim R\bibinitperiod},
+           given={Enrico},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f62acde05559146e05e6150742d70731}{%
+           family={Torrey},
+           familyi={T\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=135d434ea2b67c33af17ac769847bc4f}{%
+           family={Vogelsberger},
+           familyi={V\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=69de3efaeebbc09f97720c1f8f9f75b6}{%
+           family={Pakmor},
+           familyi={P\bibinitperiod},
+           given={Rüdiger},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b9909edb91e754e15f2d489182a87df}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={Dylan},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f8d123402326022e2d7ff6a46172c40c}{%
+           family={Marinacci},
+           familyi={M\bibinitperiod},
+           given={Federico},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ea49fbd6c94c7c89f99c3f989cc8b15f}{%
+           family={Hernquist},
+           familyi={H\bibinitperiod},
+           given={Lars},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod},
+           prefixun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press (OUP)}%
+      }
+      \strng{namehash}{213c60606a79763d3ba8e931695b3cdc}
+      \strng{fullhash}{cc7523db4853b3bddbf797acf228b4f5}
+      \strng{bibnamehash}{213c60606a79763d3ba8e931695b3cdc}
+      \strng{authorbibnamehash}{213c60606a79763d3ba8e931695b3cdc}
+      \strng{authornamehash}{213c60606a79763d3ba8e931695b3cdc}
+      \strng{authorfullhash}{cc7523db4853b3bddbf797acf228b4f5}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1365-2966}
+      \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
+      \field{month}{3}
+      \field{number}{1}
+      \field{title}{First results from the IllustrisTNG simulations: a tale of two elements – chemical evolution of magnesium and europium}
+      \field{volume}{477}
+      \field{year}{2018}
+      \field{pages}{1206\bibrangedash 1224}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1093/mnras/sty618
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1093/mnras/sty618
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1093/mnras/sty618
+      \endverb
+    \endentry
     \entry{Navarro1996}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=5867b69dd938a4ea4a392940f5e3d47f}{%
@@ -969,6 +1189,212 @@
       \verb astro-ph/9508025
       \endverb
       \keyw{COSMOLOGY: THEORY,COSMOLOGY: DARK MATTER,GALAXIES: HALOS,METHODS: NUMERICAL,Astrophysics}
+    \endentry
+    \entry{Nelson2017}{article}{}
+      \name{author}{11}{}{%
+        {{un=0,uniquepart=base,hash=8b9909edb91e754e15f2d489182a87df}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={Dylan},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d33cbf265c601867102906996581ef38}{%
+           family={Pillepich},
+           familyi={P\bibinitperiod},
+           given={Annalisa},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d673f4b06bc18145fb87123390b4948f}{%
+           family={Springel},
+           familyi={S\bibinitperiod},
+           given={Volker},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=caa99d0c50cfa159b56dc9db955ca117}{%
+           family={Weinberger},
+           familyi={W\bibinitperiod},
+           given={Rainer},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ea49fbd6c94c7c89f99c3f989cc8b15f}{%
+           family={Hernquist},
+           familyi={H\bibinitperiod},
+           given={Lars},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=69de3efaeebbc09f97720c1f8f9f75b6}{%
+           family={Pakmor},
+           familyi={P\bibinitperiod},
+           given={Rüdiger},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c91318360a31c3782dec15bb32a9a305}{%
+           family={Genel},
+           familyi={G\bibinitperiod},
+           given={Shy},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f62acde05559146e05e6150742d70731}{%
+           family={Torrey},
+           familyi={T\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=135d434ea2b67c33af17ac769847bc4f}{%
+           family={Vogelsberger},
+           familyi={V\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8e8edecc3c11bce29f18ffa583dbf4c1}{%
+           family={Kauffmann},
+           familyi={K\bibinitperiod},
+           given={Guinevere},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod},
+           prefixun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press (OUP)}%
+      }
+      \strng{namehash}{01fad1087dc4a720456f487dd93428f7}
+      \strng{fullhash}{4304ac83f6e033b109740ad551056718}
+      \strng{bibnamehash}{01fad1087dc4a720456f487dd93428f7}
+      \strng{authorbibnamehash}{01fad1087dc4a720456f487dd93428f7}
+      \strng{authornamehash}{01fad1087dc4a720456f487dd93428f7}
+      \strng{authorfullhash}{4304ac83f6e033b109740ad551056718}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1365-2966}
+      \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
+      \field{month}{11}
+      \field{number}{1}
+      \field{title}{First results from the IllustrisTNG simulations: the galaxy colour bimodality}
+      \field{volume}{475}
+      \field{year}{2017}
+      \field{pages}{624\bibrangedash 647}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1093/mnras/stx3040
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1093/mnras/stx3040
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1093/mnras/stx3040
+      \endverb
+    \endentry
+    \entry{Pillepich2017}{article}{}
+      \name{author}{11}{}{%
+        {{un=0,uniquepart=base,hash=d33cbf265c601867102906996581ef38}{%
+           family={Pillepich},
+           familyi={P\bibinitperiod},
+           given={Annalisa},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b9909edb91e754e15f2d489182a87df}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={Dylan},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ea49fbd6c94c7c89f99c3f989cc8b15f}{%
+           family={Hernquist},
+           familyi={H\bibinitperiod},
+           given={Lars},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d673f4b06bc18145fb87123390b4948f}{%
+           family={Springel},
+           familyi={S\bibinitperiod},
+           given={Volker},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=69de3efaeebbc09f97720c1f8f9f75b6}{%
+           family={Pakmor},
+           familyi={P\bibinitperiod},
+           given={Rüdiger},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f62acde05559146e05e6150742d70731}{%
+           family={Torrey},
+           familyi={T\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=caa99d0c50cfa159b56dc9db955ca117}{%
+           family={Weinberger},
+           familyi={W\bibinitperiod},
+           given={Rainer},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c91318360a31c3782dec15bb32a9a305}{%
+           family={Genel},
+           familyi={G\bibinitperiod},
+           given={Shy},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7afc0a7e7d3f8c7bb95f7b293569631c}{%
+           family={Naiman},
+           familyi={N\bibinitperiod},
+           given={Jill\bibnamedelima P},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f8d123402326022e2d7ff6a46172c40c}{%
+           family={Marinacci},
+           familyi={M\bibinitperiod},
+           given={Federico},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod},
+           prefixun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press (OUP)}%
+      }
+      \strng{namehash}{9ea022d3ba1f986e1c69d1383de28892}
+      \strng{fullhash}{8cfeb1ae3742d215069a06055fe055e0}
+      \strng{bibnamehash}{9ea022d3ba1f986e1c69d1383de28892}
+      \strng{authorbibnamehash}{9ea022d3ba1f986e1c69d1383de28892}
+      \strng{authornamehash}{9ea022d3ba1f986e1c69d1383de28892}
+      \strng{authorfullhash}{8cfeb1ae3742d215069a06055fe055e0}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1365-2966}
+      \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
+      \field{month}{12}
+      \field{number}{1}
+      \field{title}{First results from the IllustrisTNG simulations: the stellar mass content of groups and clusters of galaxies}
+      \field{volume}{475}
+      \field{year}{2017}
+      \field{pages}{648\bibrangedash 675}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1093/mnras/stx3112
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1093/mnras/stx3112
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1093/mnras/stx3112
+      \endverb
     \endentry
     \entry{Press1974}{article}{}
       \name{author}{2}{}{%
@@ -1252,6 +1678,190 @@
       \verb http://dx.doi.org/10.1093/mnras/sty2355
       \endverb
     \endentry
+    \entry{Springel2017}{article}{}
+      \name{author}{11}{}{%
+        {{un=0,uniquepart=base,hash=d673f4b06bc18145fb87123390b4948f}{%
+           family={Springel},
+           familyi={S\bibinitperiod},
+           given={Volker},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=69de3efaeebbc09f97720c1f8f9f75b6}{%
+           family={Pakmor},
+           familyi={P\bibinitperiod},
+           given={Rüdiger},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d33cbf265c601867102906996581ef38}{%
+           family={Pillepich},
+           familyi={P\bibinitperiod},
+           given={Annalisa},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=caa99d0c50cfa159b56dc9db955ca117}{%
+           family={Weinberger},
+           familyi={W\bibinitperiod},
+           given={Rainer},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b9909edb91e754e15f2d489182a87df}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={Dylan},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ea49fbd6c94c7c89f99c3f989cc8b15f}{%
+           family={Hernquist},
+           familyi={H\bibinitperiod},
+           given={Lars},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=135d434ea2b67c33af17ac769847bc4f}{%
+           family={Vogelsberger},
+           familyi={V\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c91318360a31c3782dec15bb32a9a305}{%
+           family={Genel},
+           familyi={G\bibinitperiod},
+           given={Shy},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f62acde05559146e05e6150742d70731}{%
+           family={Torrey},
+           familyi={T\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f8d123402326022e2d7ff6a46172c40c}{%
+           family={Marinacci},
+           familyi={M\bibinitperiod},
+           given={Federico},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod},
+           prefixun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press (OUP)}%
+      }
+      \strng{namehash}{6310651d925c6f9bd6334da82082fecd}
+      \strng{fullhash}{603ff7ea5654a6919efbe843fe8433b3}
+      \strng{bibnamehash}{6310651d925c6f9bd6334da82082fecd}
+      \strng{authorbibnamehash}{6310651d925c6f9bd6334da82082fecd}
+      \strng{authornamehash}{6310651d925c6f9bd6334da82082fecd}
+      \strng{authorfullhash}{603ff7ea5654a6919efbe843fe8433b3}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1365-2966}
+      \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
+      \field{month}{12}
+      \field{number}{1}
+      \field{title}{First results from the IllustrisTNG simulations: matter and galaxy clustering}
+      \field{volume}{475}
+      \field{year}{2017}
+      \field{pages}{676\bibrangedash 698}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1093/mnras/stx3304
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1093/mnras/stx3304
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1093/mnras/stx3304
+      \endverb
+    \endentry
+    \entry{Tinker2008}{article}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=519e81de13c7711784d59c68d8b20293}{%
+           family={{Tinker}},
+           familyi={T\bibinitperiod},
+           given={Jeremy},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1e9b40e08757fa8facacdd46fc21b561}{%
+           family={{Kravtsov}},
+           familyi={K\bibinitperiod},
+           given={Andrey\bibnamedelima V.},
+           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bc0546c4738996bb4eed8c6b4e6d11c0}{%
+           family={{Klypin}},
+           familyi={K\bibinitperiod},
+           given={Anatoly},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cf8f53d9063f16955f40777551d24e3c}{%
+           family={{Abazajian}},
+           familyi={A\bibinitperiod},
+           given={Kevork},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=de8b10e533f98e8f4dfc96c6743245bc}{%
+           family={{Warren}},
+           familyi={W\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0b93abe9b5117d7e2caf50e4154b7367}{%
+           family={{Yepes}},
+           familyi={Y\bibinitperiod},
+           given={Gustavo},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8400aa11f35bed749f201f1379439dcc}{%
+           family={{Gottlöber}},
+           familyi={G\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=00b3dea7d632917486b21a711857c297}{%
+           family={{Holz}},
+           familyi={H\bibinitperiod},
+           given={Daniel\bibnamedelima E.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2dd3ff24c8dc60d80f4ae70f1ea1acd6}
+      \strng{fullhash}{70f3f6aaad85b9857e5b65fc80541517}
+      \strng{bibnamehash}{2dd3ff24c8dc60d80f4ae70f1ea1acd6}
+      \strng{authorbibnamehash}{2dd3ff24c8dc60d80f4ae70f1ea1acd6}
+      \strng{authornamehash}{2dd3ff24c8dc60d80f4ae70f1ea1acd6}
+      \strng{authorfullhash}{70f3f6aaad85b9857e5b65fc80541517}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{astro-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{The Astrophysical Journal}
+      \field{month}{12}
+      \field{number}{2}
+      \field{title}{Toward a Halo Mass Function for Precision Cosmology: The Limits of Universality}
+      \field{volume}{688}
+      \field{year}{2008}
+      \field{pages}{709\bibrangedash 728}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1086/591439
+      \endverb
+      \verb{eprint}
+      \verb 0803.2706
+      \endverb
+      \keyw{cosmology: theory,large-scale structure of universe,methods: numerical,Astrophysics}
+    \endentry
     \entry{TullyFisher1977}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=f932588309b74babd04dcc159e6e342f}{%
@@ -1287,73 +1897,6 @@
       \field{pages}{105\bibrangedash 117}
       \range{pages}{13}
       \keyw{Distance Measuring Equipment,H Lines,Luminous Intensity,Spectral Line Width,Spiral Galaxies,Telescopes,Astronomical Photometry,Calibrating,Galactic Clusters,Galactic Structure,Hubble Diagram,Synoptic Measurement,Astronomy}
-    \endentry
-    \entry{Tundo2007}{article}{}
-      \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=4cf1050d519b8e017622f04d9d1d6121}{%
-           family={Tundo},
-           familyi={T\bibinitperiod},
-           given={Elena},
-           giveni={E\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=54fefe97668f6bddd5e8bcad7b70e7fd}{%
-           family={Bernardi},
-           familyi={B\bibinitperiod},
-           given={Mariangela},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=032bbbc96207879d7ed0719e495c75f2}{%
-           family={Hyde},
-           familyi={H\bibinitperiod},
-           given={Joseph\bibnamedelima B.},
-           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=2d79198bba863fec90e70f512071d769}{%
-           family={Sheth},
-           familyi={S\bibinitperiod},
-           given={Ravi\bibnamedelima K.},
-           giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=160bd293dac02ad82f0c097a5a8e771d}{%
-           family={Pizzella},
-           familyi={P\bibinitperiod},
-           given={Alessandro},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {American Astronomical Society}%
-      }
-      \strng{namehash}{6d7cacdd08845c9146792aaaec2d2e33}
-      \strng{fullhash}{64470d518564b82a93d1762d623939e5}
-      \strng{bibnamehash}{6d7cacdd08845c9146792aaaec2d2e33}
-      \strng{authorbibnamehash}{6d7cacdd08845c9146792aaaec2d2e33}
-      \strng{authornamehash}{6d7cacdd08845c9146792aaaec2d2e33}
-      \strng{authorfullhash}{64470d518564b82a93d1762d623939e5}
-      \field{sortinit}{T}
-      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1538-4357}
-      \field{journaltitle}{The Astrophysical Journal}
-      \field{month}{7}
-      \field{number}{1}
-      \field{title}{On the Inconsistency between the Black Hole Mass Function Inferred from $M_{\odot}‐\sigma$ and $M_{\odot}‐L$ Correlations}
-      \field{volume}{663}
-      \field{year}{2007}
-      \field{pages}{53\bibrangedash 60}
-      \range{pages}{8}
-      \verb{doi}
-      \verb 10.1086/518225
-      \endverb
-      \verb{urlraw}
-      \verb http://dx.doi.org/10.1086/518225
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1086/518225
-      \endverb
     \endentry
     \entry{Weinberger2016}{article}{}
       \name{author}{11}{}{%
