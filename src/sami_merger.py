@@ -31,12 +31,12 @@ data["MSAMI"] = 10**data["MSAMI_log"]
 indexNames = data[data["r_e"] < 0].index
 data.drop(indexNames, inplace=True)
 data["r_e_angles"] = data["r_e"]
-data["r_e"] = (np.sin(np.radians(data["r_e_angles"]/3600))*cosmo.comoving_distance(data["z_spec"]))*1000 #kpc
+data["r_e"] = (np.sin(np.radians(data["r_e_angles"]/3600))*cosmo.luminosity_distance(data["z_spec"]))*1000 #kpc
 data["r_e_circ"] = np.sqrt(1-data["ellip"])*data["r_e"]
 data["r_petro_angles"] = data["r_petro"]
-data["r_petro"] = (np.sin(np.radians(data["r_petro_angles"]/3600))*cosmo.comoving_distance(data["z_spec"]))*1000 #kpc
+data["r_petro"] = (np.sin(np.radians(data["r_petro_angles"]/3600))*cosmo.luminosity_distance(data["z_spec"]))*1000 #kpc
 data["r_auto_angles"] = data["r_auto"]
-data["r_auto"] = (np.sin(np.radians(data["r_auto_angles"]/3600))*cosmo.comoving_distance(data["z_spec"]))*1000 #kpc
+data["r_auto"] = (np.sin(np.radians(data["r_auto_angles"]/3600))*cosmo.luminosity_distance(data["z_spec"]))*1000 #kpc
 data = data.sort_values(by=["cataid"])
 
 data.to_csv("./data/SAMI/all_data_vrot.csv")

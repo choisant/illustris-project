@@ -2350,10 +2350,10 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">mybib.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">Planck2015</bcf:citekey>
+    <bcf:citekey order="1">Planck2016</bcf:citekey>
     <bcf:citekey order="2">Boveia2018</bcf:citekey>
     <bcf:citekey order="3">Frenk1983</bcf:citekey>
-    <bcf:citekey order="4">Planck2015</bcf:citekey>
+    <bcf:citekey order="4">Planck2016</bcf:citekey>
     <bcf:citekey order="5">Navarro1996</bcf:citekey>
     <bcf:citekey order="6">Press1974</bcf:citekey>
     <bcf:citekey order="7">Tinker2008</bcf:citekey>
@@ -2383,29 +2383,31 @@
     <bcf:citekey order="31">Nelson2017</bcf:citekey>
     <bcf:citekey order="32">Marinacci2018</bcf:citekey>
     <bcf:citekey order="33">Weinberger2016</bcf:citekey>
-    <bcf:citekey order="34">Planck2015</bcf:citekey>
+    <bcf:citekey order="34">Planck2016</bcf:citekey>
     <bcf:citekey order="35">Scott2018</bcf:citekey>
     <bcf:citekey order="36">Moster2012</bcf:citekey>
     <bcf:citekey order="37">Behroozi2013</bcf:citekey>
     <bcf:citekey order="38">Zanisi2019</bcf:citekey>
-    <bcf:citekey order="39">Croton2013</bcf:citekey>
-    <bcf:citekey order="40">Croton2013</bcf:citekey>
+    <bcf:citekey order="39">Lu2020</bcf:citekey>
+    <bcf:citekey order="40">Genel2017</bcf:citekey>
     <bcf:citekey order="41">Croton2013</bcf:citekey>
-    <bcf:citekey order="42">Bloom2017</bcf:citekey>
-    <bcf:citekey order="43">Genel2017</bcf:citekey>
-    <bcf:citekey order="44">Kelvin2012</bcf:citekey>
-    <bcf:citekey order="45">Moster2012</bcf:citekey>
-    <bcf:citekey order="46">Behroozi2013</bcf:citekey>
-    <bcf:citekey order="47">Zanisi2019</bcf:citekey>
-    <bcf:citekey order="48">Moster2012</bcf:citekey>
-    <bcf:citekey order="49">Behroozi2013</bcf:citekey>
-    <bcf:citekey order="50">Zanisi2019</bcf:citekey>
-    <bcf:citekey order="51">Moster2012</bcf:citekey>
-    <bcf:citekey order="52">Behroozi2013</bcf:citekey>
-    <bcf:citekey order="53">Zanisi2019</bcf:citekey>
-    <bcf:citekey order="54">Bloom2017</bcf:citekey>
-    <bcf:citekey order="55">Bloom2017</bcf:citekey>
-    <bcf:citekey order="56">Sande2018</bcf:citekey>
+    <bcf:citekey order="42">Croton2013</bcf:citekey>
+    <bcf:citekey order="43">Croton2013</bcf:citekey>
+    <bcf:citekey order="44">Genel2017</bcf:citekey>
+    <bcf:citekey order="45">Kelvin2012</bcf:citekey>
+    <bcf:citekey order="46">Bloom2017</bcf:citekey>
+    <bcf:citekey order="47">Moster2012</bcf:citekey>
+    <bcf:citekey order="48">Behroozi2013</bcf:citekey>
+    <bcf:citekey order="49">Zanisi2019</bcf:citekey>
+    <bcf:citekey order="50">Moster2012</bcf:citekey>
+    <bcf:citekey order="51">Behroozi2013</bcf:citekey>
+    <bcf:citekey order="52">Zanisi2019</bcf:citekey>
+    <bcf:citekey order="53">Moster2012</bcf:citekey>
+    <bcf:citekey order="54">Behroozi2013</bcf:citekey>
+    <bcf:citekey order="55">Zanisi2019</bcf:citekey>
+    <bcf:citekey order="56">Bloom2017</bcf:citekey>
+    <bcf:citekey order="57">Bloom2017</bcf:citekey>
+    <bcf:citekey order="58">Sande2018</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

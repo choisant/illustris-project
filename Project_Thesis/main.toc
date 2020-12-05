@@ -46,24 +46,28 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.2.2}Other data sets}{23}{subsubsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Calculating properties}{24}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.3}Morphological classification}{24}{subsection.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.1}Cosmologies and h-dependence}{24}{subsubsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.4}Calculating properties}{25}{subsection.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.2}Separating out early and late type galaxies}{24}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.4.1}Cosmologies and h-dependence}{25}{subsubsection.3.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.3}Circular velocities}{25}{subsubsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.4.2}Mass}{25}{subsubsection.3.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.4}Effective radius}{26}{subsubsection.3.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.3}Effective radius}{25}{subsubsection.3.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Results and discussions}{26}{section.4}%
+\contentsline {subsubsection}{\numberline {3.4.4}Circular velocities}{26}{subsubsection.3.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}SHM relation}{26}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.5}Magnitude and colors}{27}{subsubsection.3.4.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Results and discussions}{27}{section.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}SHM relation}{27}{subsection.4.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2}TFR}{27}{subsection.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}FJ relation and the FP}{27}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.3}FJ relation and the FP}{30}{subsection.4.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.4}Color bimodality}{30}{subsection.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Conclusions}{30}{section.5}%
+\contentsline {section}{\numberline {5}Conclusions}{36}{section.5}%

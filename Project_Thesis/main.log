@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.5)  1 DEC 2020 10:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.5)  2 DEC 2020 13:52
 entering extended mode
 **./main.tex
 (main.tex
@@ -623,7 +623,7 @@ LaTeX Info: Redefining \nameref on input line 27.
 \openout4 = `main.out'.
 
  (sections/titlepage.tex
-<images/ntnu.png, id=139, 538.6524pt x 50.8299pt>
+<images/ntnu.png, id=147, 538.6524pt x 50.8299pt>
 File: images/ntnu.png Graphic file (type png)
 <use images/ntnu.png>
 Package pdftex.def Info: images/ntnu.png  used on input line 20.
@@ -635,137 +635,133 @@ ng>]) (main.tocpdfTeX warning (ext4): destination with the same identifier (nam
 e{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.67 ...{4.4}Color bimodality}{30}{subsection.4.4}
+l.67 ...{\numberline {4.2}TFR}{27}{subsection.4.2}
                                                   % [1])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
  [2]
 (sections/introduction.tex [3]) (sections/theory.tex [4] [5] [6]
-<images/halo_mass_function.png, id=238, 426.393pt x 431.81325pt>
+<images/halo_mass_function.png, id=248, 426.393pt x 431.81325pt>
 File: images/halo_mass_function.png Graphic file (type png)
 <use images/halo_mass_function.png>
 Package pdftex.def Info: images/halo_mass_function.png  used on input line 49.
 (pdftex.def)             Requested size: 350.99762pt x 355.47282pt.
  [7] [8 <./images/halo_mass_function.png>]
-<images/luminosity_function.png, id=255, 457.10776pt x 495.65175pt>
+<images/luminosity_function.png, id=265, 457.10776pt x 495.65175pt>
 File: images/luminosity_function.png Graphic file (type png)
 <use images/luminosity_function.png>
 Package pdftex.def Info: images/luminosity_function.png  used on input line 77.
 
 (pdftex.def)             Requested size: 350.99762pt x 380.60176pt.
  [9] [10 <./images/luminosity_function.png>]
-<images/hubble.jpg, id=276, 409.53pt x 337.26pt>
+<images/hubble.jpg, id=286, 409.53pt x 337.26pt>
 File: images/hubble.jpg Graphic file (type jpg)
 <use images/hubble.jpg>
 Package pdftex.def Info: images/hubble.jpg  used on input line 98.
 (pdftex.def)             Requested size: 272.99881pt x 224.83601pt.
 
 [11] [12 <./images/hubble.jpg>] [13]
-<images/rotation_curves.png, id=299, 702.82574pt x 395.076pt>
+<images/rotation_curves.png, id=309, 702.82574pt x 395.076pt>
 File: images/rotation_curves.png Graphic file (type png)
 <use images/rotation_curves.png>
 Package pdftex.def Info: images/rotation_curves.png  used on input line 127.
 (pdftex.def)             Requested size: 350.99762pt x 197.3024pt.
  [14 <./images/rotation_curves.png>]
-<images/tully_fisher.png, id=311, 410.7345pt x 388.45125pt>
+<images/tully_fisher.png, id=321, 410.7345pt x 388.45125pt>
 File: images/tully_fisher.png Graphic file (type png)
 <use images/tully_fisher.png>
 Package pdftex.def Info: images/tully_fisher.png  used on input line 177.
 (pdftex.def)             Requested size: 350.99762pt x 331.96329pt.
-<images/faber_jackson.png, id=315, 423.38174pt x 290.88675pt>
+<images/faber_jackson.png, id=325, 423.38174pt x 290.88675pt>
 File: images/faber_jackson.png Graphic file (type png)
 <use images/faber_jackson.png>
 Package pdftex.def Info: images/faber_jackson.png  used on input line 193.
 (pdftex.def)             Requested size: 350.99762pt x 241.1563pt.
 
 [15] [16 <./images/tully_fisher.png>] [17 <./images/faber_jackson.png>]
-<images/color_bimodality.png, id=343, 522.15076pt x 238.491pt>
+<images/color_bimodality.png, id=353, 522.15076pt x 238.491pt>
 File: images/color_bimodality.png Graphic file (type png)
 <use images/color_bimodality.png>
 Package pdftex.def Info: images/color_bimodality.png  used on input line 211.
 (pdftex.def)             Requested size: 350.99762pt x 160.32307pt.
 )
 (sections/method.tex [18] [19 <./images/color_bimodality.png>]
-<images/TNG.png, id=381, 595.9866pt x 628.0263pt>
+<images/TNG.png, id=391, 595.9866pt x 628.0263pt>
 File: images/TNG.png Graphic file (type png)
 <use images/TNG.png>
 Package pdftex.def Info: images/TNG.png  used on input line 10.
 (pdftex.def)             Requested size: 350.99762pt x 369.87108pt.
- [20] [21 <./images/TNG.png>] [22] [23] [24]
-Overfull \hbox (23.39987pt too wide) in paragraph at lines 110--111
+ [20] [21 <./images/TNG.png>] [22] [23]
+Overfull \hbox (23.39987pt too wide) in paragraph at lines 85--86
 \OT1/cmr/m/n/12 clas-si-fied into four dif-fer-ent cat-e-gories: el-lip-ti-cals
 , S0, Sa/Sb and Sc/Sd/irregulars.
  []
 
-[25]) (sections/results.tex [26]
-<images/results_shmr.png, id=447, 1156.32pt x 578.16pt>
+[24] [25] [26]) (sections/results.tex
+<images/results_shmr.png, id=458, 1156.32pt x 578.16pt>
 File: images/results_shmr.png Graphic file (type png)
 <use images/results_shmr.png>
-Package pdftex.def Info: images/results_shmr.png  used on input line 9.
+Package pdftex.def Info: images/results_shmr.png  used on input line 12.
 (pdftex.def)             Requested size: 552.86174pt x 276.42854pt.
-<images/results_tully_fisher.png, id=457, 578.16pt x 578.16pt>
+ [27] [28 <./images/results_shmr.png>]
+<images/results_tully_fisher.png, id=480, 578.16pt x 578.16pt>
 File: images/results_tully_fisher.png Graphic file (type png)
 <use images/results_tully_fisher.png>
-Package pdftex.def Info: images/results_tully_fisher.png  used on input line 20
+Package pdftex.def Info: images/results_tully_fisher.png  used on input line 23
 .
 (pdftex.def)             Requested size: 350.99762pt x 350.99208pt.
- [27] [28 <./images/results_shmr.png>] [29 <./images/results_tully_fisher.png>]
-<images/results_faber_jackson.png, id=478, 578.16pt x 578.16pt>
+
+[29 <./images/results_tully_fisher.png>]
+<images/results_faber_jackson.png, id=490, 578.16pt x 578.16pt>
 File: images/results_faber_jackson.png Graphic file (type png)
 <use images/results_faber_jackson.png>
 Package pdftex.def Info: images/results_faber_jackson.png  used on input line 3
-5.
+8.
 (pdftex.def)             Requested size: 390.0pt x 389.99414pt.
-<images/results_mass_radius_FP.png, id=479, 578.16pt x 578.16pt>
+<images/results_mass_radius_FP.png, id=491, 578.16pt x 578.16pt>
 File: images/results_mass_radius_FP.png Graphic file (type png)
 <use images/results_mass_radius_FP.png>
 Package pdftex.def Info: images/results_mass_radius_FP.png  used on input line 
-42.
+45.
 (pdftex.def)             Requested size: 390.0pt x 389.99414pt.
-<images/results_sigma_radius_FP.png, id=480, 578.16pt x 578.16pt>
+<images/results_sigma_radius_FP.png, id=492, 578.16pt x 578.16pt>
 File: images/results_sigma_radius_FP.png Graphic file (type png)
 <use images/results_sigma_radius_FP.png>
 Package pdftex.def Info: images/results_sigma_radius_FP.png  used on input line
- 49.
+ 52.
 (pdftex.def)             Requested size: 390.0pt x 389.99414pt.
-<images/results_color_magnitude.png, id=484, 1011.78pt x 867.24pt>
+<images/results_color_magnitude.png, id=495, 1156.32pt x 578.16pt>
 File: images/results_color_magnitude.png Graphic file (type png)
 <use images/results_color_magnitude.png>
 Package pdftex.def Info: images/results_color_magnitude.png  used on input line
- 61.
-(pdftex.def)             Requested size: 552.86174pt x 473.88696pt.
-<images/results_pdf_different_bands.png, id=485, 1011.78pt x 867.24pt>
-File: images/results_pdf_different_bands.png Graphic file (type png)
-<use images/results_pdf_different_bands.png>
-Package pdftex.def Info: images/results_pdf_different_bands.png  used on input 
-line 68.
-(pdftex.def)             Requested size: 552.86174pt x 473.88696pt.
-<images/results_pdf_g_i_band.png, id=486, 578.16pt x 578.16pt>
+ 64.
+(pdftex.def)             Requested size: 552.86174pt x 276.42854pt.
+<images/results_pdf_g_i_band.png, id=496, 578.16pt x 578.16pt>
 File: images/results_pdf_g_i_band.png Graphic file (type png)
 <use images/results_pdf_g_i_band.png>
-Package pdftex.def Info: images/results_pdf_g_i_band.png  used on input line 75
+Package pdftex.def Info: images/results_pdf_g_i_band.png  used on input line 72
 .
 (pdftex.def)             Requested size: 350.99762pt x 350.99208pt.
-) (sections/conclusions.tex) [30] [31 <./images/results_faber_jackson.png>] [32
- <./images/results_mass_radius_FP.png>]
-[33 <./images/results_sigma_radius_FP.png>] [34 <./images/results_color_magnitu
-de.png>] [35 <./images/results_pdf_different_bands.png>] [36 <./images/results_
-pdf_g_i_band.png>] [37] [38] [39] [40] (main.aux)
+) (sections/conclusions.tex [30]
+[31 <./images/results_faber_jackson.png>] [32 <./images/results_mass_radius_FP.
+png>] [33 <./images/results_sigma_radius_FP.png>] [34 <./images/results_color_m
+agnitude.png>] [35 <./images/results_pdf_g_i_band.png>]) [36] [37] [38]
+[39] (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5BE02028E6C3C3DA7FE3840922C140F3;2454.
+(rerunfilecheck)             Checksum: 932AE952F0A2DC13DA07B5B4E865EE22;2573.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 14863 strings out of 479799
- 267221 string characters out of 2879559
- 977207 words of memory out of 3000000
- 31491 multiletter control sequences out of 15000+200000
+ 14865 strings out of 479799
+ 267266 string characters out of 2879559
+ 977214 words of memory out of 3000000
+ 31493 multiletter control sequences out of 15000+200000
  541624 words of font info for 52 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,10n,73p,1742b,1463s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 66i,10n,73p,1742b,1461s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\auror\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/
 Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Fil
@@ -779,9 +775,9 @@ nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/pu
 blic/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts
 /cm/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.p
 fb>
-Output written on main.pdf (41 pages, 10370144 bytes).
+Output written on main.pdf (40 pages, 10180799 bytes).
 PDF statistics:
- 699 PDF objects out of 1000 (max. 8388607)
- 144 named destinations out of 1000 (max. 500000)
- 358 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 707 PDF objects out of 1000 (max. 8388607)
+ 145 named destinations out of 1000 (max. 500000)
+ 369 words of extra memory for PDF output out of 10000 (max. 10000000)
 
