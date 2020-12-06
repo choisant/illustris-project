@@ -114,5 +114,23 @@ def error_estimate_behroozi(a, M1, c, d, e, delta_a, delta_M1, delta_c, delta_d,
         Y_log_errors[i] = Y_log[i].s
     return Y_log_errors
 
+def error_estimate_behroozi_test(a, M1, c, d, e, delta_a, delta_M1, delta_c, delta_d, delta_e, x):
+    x = list(np.log10(x))
+    a = ufloat(a, delta_a, tag="a")
+    M1 = ufloat(10**M1, delta_M1*math.log(10)*10**M1, tag="M1")
+    c = ufloat(c, delta_c, tag="c")
+    d = ufloat(d, delta_d, tag="d")
+    e = ufloat(10**e, delta_e*math.log(10)*10**e, tag="e")
+    def f(x):
+        f = -log10(10**(a*x)+1)+d*((log10(1+exp(x)))**c)/(1+exp(10-x))
+        return f
+    Y_log = list(np.zeros(len(x)))
+    for i in range(len(x)):
+        Y_log[i] = log10(e*M1) +f(log10(x[i]/M1)) - f(0)
+    Y_log_errors = np.zeros(len(Y_log))
+    for i in range(len(Y_log)):
+        Y_log_errors[i] = Y_log[i].s
+    return Y_log_errors
+
 #X=np.array([9,10,11,12])
 #error_estimate_behroozi(a=-1.412, M1=(11.514), c=0.316, d=3.508, e=(-1.777), delta_a=0.02, delta_M1=0.053, delta_c=0.076, delta_d=0.087, delta_e=0.053, x=X)

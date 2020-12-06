@@ -38,33 +38,35 @@ The $\sigma$-radius relation is also affected by the systematically lower $\sigm
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{images/results_faber_jackson.png}
-    \caption{The FJ relation in early type galaxies. The whole data set, as well as average values are shown for both TNG and SAMI.}
+    \caption{The FJ relation in early type galaxies for TNG (red dots) and SAMI (green dots). The median values with 25-75 percentile error bars are also shown. For SAMI, the median values are not calculated below a stellar mass of $10**10$. The linear fit to the TNG data is shown as a solid red line, and has a slope of 3.14 with a y-intercept of 4.2.}
     \label{FJ_res}
 \end{figure}
 
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{images/results_mass_radius_FP.png}
-    \caption{Stellar mass as a function of effective radius.}
+    \caption{The stellar mass as a function of effective radius in early type galaxies for TNG (red dots) and SAMI (green dots). Median values are also shown with 25-75 percentile error bars. SAMI median values are only calculated for masses above $M_* = 10^{9.7}$} as there are too few data points below this mass.
     \label{FP_res1}
 \end{figure}
 
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{images/results_sigma_radius_FP.png}
-    \caption{Velocity dispersion as a function of effective radius for early type galaxies.}
+    \caption{Velocity dispersion as a function of effective radius for early type galaxies for TNG (red dots) and SAMI (green dots). Also included are median values and 25-75 percentile error bars for both data sets.}
     \label{FP_res2}
 \end{figure}
 
 \subsection{Color bimodality}
-The color-mass diagrams for different filters are shown in Figure \ref{color_magnitude_res}. There is a distinct seperation between early and late type galaxies, as expected. The distinction is clear in all bandfilters. 
+The g-i color-mass diagrams for TNG and SAMI are shown in Figure \ref{color_magnitude_res}. There is a distinct seperation between early and late type galaxies in TNG, as expected. For SAMI, the distinction is less clear. The sample size is much smaller for SAMI, but even so it is possible to see at least a seperation into two main areas of higher density.
 
-In Figure \ref{pdf_color} the PDF for the TNG and SAMI (g-i) color are shown. The peaks coincide well for the two data sets, although the distribution in galaxies is different. This is likely because TNG has a larger amount of smaller, late-type blue galaxies, which are much more difficult to observe than larger and generally redder galaxies. A mass weighted PDF might give a more fair comparison.
+In Figure \ref{pdf_color} the PDF for the TNG and SAMI g-i color are shown. The peaks coincide well for the two data sets, although the distribution in galaxies is different. This is likely because TNG has a larger amount of smaller, late-type blue galaxies, which are much more difficult to observe than larger and generally redder galaxies. A mass weighted PDF might give a more fair comparison.
+
+\textcite{Nelson_2018} also found the color bimodality in TNG to be in good agreement with observations, and notes a large improvement with respect to the original Illustris simulation.
 
 \begin{figure}
     \centering
     \makebox[\textwidth][c]{\includegraphics[width=0.9\paperwidth]{images/results_color_magnitude.png}}
-    \caption{}
+    \caption{Left: TNG g-i color-mass diagram. Early type (blue dots) and early type (red dots) are shown in seperate colors. Right: SAMI g-i color-mass diagram.}
     \label{color_magnitude_res}
 \end{figure}
 
@@ -72,7 +74,7 @@ In Figure \ref{pdf_color} the PDF for the TNG and SAMI (g-i) color are shown. Th
 \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{images/results_pdf_g_i_band.png}
-    \caption{}
+    \caption{The distribution of g-i color. Kernel density weighted PDF (with Gaussian kernels) are shown for TNG (orange line) and SAMI (green dashed line).}
     \label{pdf_color}
 \end{figure}
 

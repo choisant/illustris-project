@@ -45,10 +45,10 @@ For the relations covered in this project, it is desirable to use only the centr
 Only galaxies with stellar mass greater than $10^9 M_{\odot}$ are used. This is because smaller galaxies will have fewer stellar particles, and thus their structure is not necessarily reliably resolved.
 
 \subsection{Observational data}
-When possible, it is good practice to use the same observational data for comparisons with the simulation data. Trying to accomplish this, in this work I used the SAMI Galaxy Survey . For the SHM relation however, it was not possible to use the SAMI data set, so other works have been chosen to use for that comparison. All the data sets and best fits used in comparing the results from TNG to observations are described in this section.
+When possible, it is good practice to use the same observational data for comparisons with the simulation data. Trying to accomplish this, in this work I used the SAMI Galaxy Survey \parencite{Bryant_2015}. For the SHM relation however, it was not possible to use the SAMI data set, so other works have been chosen to use for that comparison. All the data sets and best fits used in comparing the results from TNG to observations are described in this section.
 
 \subsubsection{SAMI Galaxy Survey}
-The Sydney – Australian Astronomical Observatory Multi-Object Integral Field Spectrograph (SAMI) is mounted on the Anglo-Saxan telescope in Australia. The SAMI Galaxy Survey \footnote{https://sami-survey.org/} is a spectroscopic survey of a large sample of galaxies in the nearby Universe ($z < 0.113$). The survey was started in 2013, and ended in 2018. There have been two major data releases, with the newest being Data Release Two (DR2) \parencite{Scott2018}. DR2 includes data for 1559 galaxies, which is about 50 \% of the full galaxy survey. The data products available are IFS data cubes and 2D maps, as well as catalogue data. Analysing data cubes and 2D maps falls outside the scope of this work, so catalogue data with some properties already estimated is used where possible. 
+The Sydney – Australian Astronomical Observatory Multi-Object Integral Field Spectrograph (SAMI) is mounted on the Anglo-Saxan telescope in Australia. The SAMI Galaxy Survey \footnote{https://sami-survey.org/} is a spectroscopic survey of a large sample of galaxies in the nearby Universe ($z < 0.113$). The survey was started in 2013, and ended in 2018. There have been two major data releases, with the newest being Data Release Two (DR2) \parencite{Scott2018}. DR2 includes data for 1559 galaxies, which is about 50 \% of the full galaxy survey. The data products available are IFS data cubes and 2D maps, as well as catalogue data. As the same galaxies have been cataloged in several other studies, data products from those studies are added to SAMI data. Analysing data cubes and 2D maps falls outside the scope of this work, so catalogue data with some properties already estimated is used where possible. 
 
 \subsubsection{Other data sets}
 For the SHM relation, best fit models from two different abundance method papers were used in the comparison to TNG.
@@ -102,22 +102,29 @@ Best practice dictates that to compare works with different assumed Hubble const
 \end{center}
 \end{table}
 
+\subsubsection{Magnitude and colors}
+The magnitude ($\mathcal{M}$) is a measure of the total luminosity of the galaxy such that $\mathcal{M} = -2.5 \log(L/L_\odot) + \mathcal{M}_\odot$.
+
+For the TNG data, the Subhalo field \texttt{SubhaloStellarPhotometrics} is used to get the magnitudes based on the summed up luminosities of all the stellar particles in the Subhalo. Eight bands are available, but in this work only the g- and i-band are used. The g-i colors are calculated by simply subtracting the i-band magnitude from the g-band magnitude.
+
+In SAMI, g-i color is adopted from the GAMA Sérsic catalogue \parencite{Driver_2011}.
 
 \subsubsection{Stellar mass}
-The stellar mass of TNG is given for all galaxies in the group catalog.
+The stellar mass of each galaxy in both TNG and SAMI are readily available in the group catalogs. Stellar mass estimates depend on the stellar initial mass function (IMF), which describe the spectral evolution of a population of stars, and as such the relationship between luminosity in a given spectral band. SAMI and TNG both adopt a \textcite{Chabrier_2003} IMF.
+
+For SAMI DR2, the stellar mass values are taken from the GAMA Sérsic catalogue \parencite{Driver_2011}. They calculate the stellar masses by using the i-band magnitude and g-i color of each galaxy through the formula $\frac{log M_*}{M_\odot} = 1.15 + 0.70(g-i) -0.4M_i$, where $M_i$ is the rest-frame i-band absolute magnitude \parencite{Taylor_2011}.
 
 \subsubsection{Effective radius}
 In observational data, galaxy sizes are always projected sizes, as they are derived from 2D images. A common measure of the size of a galaxy is the effective radius, which is the radius within which half the light of the galaxy is contained. This quantity depends on the analysis and quality of the 2D profiles, and may not be able to include all the light in a galaxy in the way that we can ensure for computer simulated data. The radius also depends on which optical filter the measurements are made in, as different filters will capture different parts of the galaxy.
 
-For TNG data, the \texttt{SubhaloHalfmassRadStellar} field has been used. The half-mass radius is the radius of a spherical volume within which half the stellar mass is found. It is the 3D half-mass radius, as it is not a projected quantity. This value is generally higher than the 2D projected half-light radius for a given mass up to $M_{*} < 10^{10.5}$, as seen in \parencite{Genel2017}.
+For TNG data, the \texttt{SubhaloHalfmassRadStellar} field has been used. The half-mass radius is the radius of a spherical volume within which half the stellar mass is found. It is the 3D half-mass radius, as it is not a projected quantity. This value is generally higher than the 2D projected half-light radius for a given mass up to $M_{*} < 10^{10.5}$, as seen in \parencite{Genel2017}. The 3D radius is deprojected by using the relation $R_{e, 3D} = \frac{4}{3}r_{e, 2D}$ which generally holds for pressure supported systems like elliptical galaxies \parencite{Wolf_2010}.
 
-The SAMI catalog data takes the values for the effective radius from the GAMA Sérsic catalogue \parencite{Kelvin2012}. The effective radius is defined as the semi-major axis half-light radius, measured in the r-band. The values are given in units of arcsec which were then converted to a physical radius in kpc.
+The SAMI catalog data takes the values for the effective radius from the GAMA Sérsic catalogue \parencite{Driver_2011}. The effective radius is defined as the semi-major axis half-light radius, measured in the r-band. The values are given in units of arcsec which were then converted to a physical radius in kpc.
 
-
-The elliptical radius is converted to circular radius using the formula
+Then these semi-major axis radii are converted to circular radii using the formula
 
 \begin{equation}
-   r_{e, circ} = r_{e,sm}\sqrt{(1-\epsilon)},
+   r_{e, circ} = r_{e, sm}\sqrt{(1-\epsilon)},
 \end{equation}
 
 where $r_{e, circ}$ is the circular radius, $r_{e,sm}$ is the semi-major axis effective radius and $\epsilon$ is the eccentricity.
@@ -129,5 +136,3 @@ Rotational velocities were not available as SAMI catalogue data, but an extensiv
 \begin{equation}
 	\log(V_{rot}) = 0.31 \pm 0.0092 \times \log(M_*)-0.93 \pm 0.1.
 \end{equation}
-
-\subsubsection{Magnitude and colors}
