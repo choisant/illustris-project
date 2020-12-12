@@ -8,7 +8,7 @@ Some astrophysical notation, terms and constants:
     \item $M_{*}$ - The stellar mass of a given galaxy.
     \item $M_{halo}$ - The dark matter halo mass of a given galaxy.
     \item $M_{\odot}$ - Solar mass. In astrophysics, masses are always given in units of solar masses.
-    \item $L$ - Luminosity. The luminosity of a galaxy is a measure of its total radiated electromagnetic energy per unit time. The absolute magnitude (\mathcal{M}) is related to the luminosity as $\mathcal{M} = -2.5 \log(L/L_\odot) + \mathcal{M}_\odot$
+    \item $L$ - Luminosity. The luminosity of a galaxy is a measure of its total radiated electromagnetic energy per unit time. The absolute magnitude ($\mathcal{M}$) is related to the luminosity as $\mathcal{M} = -2.5 \log(L/L_\odot) + \mathcal{M}_\odot$.
     \item $R_e$ - Effective radius. The radius within which half the luminosity of a galaxy is emitted.
 \end{itemize}
 
@@ -31,7 +31,7 @@ One of the most interesting properties of a $\Lambda$CDM Universe is the halo ma
     \frac{dn}{dM} = f(\sigma)\frac{\overline{\rho}}{M^2}\frac{d\log(\sigma^{-1})}{d\log(M)}.
 \end{equation}
 
-Where $\sigma = \sigma (R)$ is the variance of the field with a smoothing radius $R$, $\overline{\rho}$ is the mean density of the Universe and $f(\sigma)$ is the multiplicity function  \parencite{Press1974}. For that work, $f(\sigma)$ was found to be
+Where $\sigma = \sigma (R)$ is the variance of the field with a smoothing radius $R$, $\overline{\rho}$ is the mean density of the Universe and $f(\sigma)$ is the multiplicity function \parencite{Press1974}. For that work, $f(\sigma)$ was found to be
 
 \begin{equation}
     f(\sigma) = \frac{2}{\pi} \sigma \exp(-\sigma^2/2),
@@ -47,10 +47,9 @@ Until the end of the century, numerical simulations tended to agree with the res
 \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{images/halo_mass_function.png}
-    \caption{Halo mass function for different critical overdensities, $\delta_c$. The solid black lines are best fits for each value of the overdensity $\Delta$. The colored points represent the different simulations used to measure the halo mass function. Credit \textcite{Tinker2008}.}
+    \caption{Halo mass function for different overdensities, $\Delta$ (points). The color of the points represent the different simulations used to measure the halo mass function. The solid black lines are best fits for each value of the overdensity $\Delta$. They are all three Schechter functions, with varying multiplicity functions to get the best fit to their respective data points. Credit \textcite{Tinker2008}.}
     \label{halo_mass}
 \end{figure}
-
 
 \subsubsection{Galaxies}
 Dark matter halos formed before baryonic matter could gather in densities even close to that needed to form stars, as there is 6-7 times more dark matter than baryonic matter. The dark matter halos created a graviational potential well which gave room for the primordial baryonic matter (ionized hydrogen gas) to start collapsing. 
@@ -75,7 +74,7 @@ where $\phi^*$ is a normalization, $L^*$ is the characteristic luminosity for th
 \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{images/luminosity_function.png}
-    \caption{The luminosity function from observed galaxies (points). The filled in circles are cD galaxies (giant ellipticals). The solid line is the best fit using equation \ref{lum_func}. Credit: \textcite{Schechter1976}.}
+    \caption{The luminosity function at redshift 0. The open circles correspond to observed galaxies in clusters, while the filled in circles denote cD galaxies (giant ellipticals). The solid line shows the best fit using equation \ref{lum_func}. Credit: \textcite{Schechter1976}.}
     \label{luminosity_function}
 \end{figure}
 
@@ -104,30 +103,8 @@ In the $\Lambda$CDM model, galaxies grow through mergers. Mergers are separated 
 
 It is not always easy to distinguish between a disky elliptical and a spiral with a large spheroidal component (bulge). Some galaxies are also in the middle of a merging process. These can have very irregular shapes, and so are hard to classify. Other galaxies are very small, so called dwarf galaxies. These galaxies tend to have very little stellar mass compared to dark matter, so they do not exhibit the properties of ellipticals, even though they may be more elliptical in shape.
 
-//
 Galaxies were initially seperated into the two types (early and late) by their shape, but as astronomers have studied these different galaxy categories, it has become apparent that there are many other properties that also serve to distinguish the two types. Table \ref{morphologies} gives a quick overview of the main properties of early and late type galaxies, while the rest of this section explains them in more detail.
 
-\subsubsection{Elliptical (early type) galaxies}
-Elliptical galaxies are mainly pressure-dominated systems, meaning that the motion of the stars is predominantly radial. The largest galaxies in the Universe tend to be ellipticals, but they come in all sizes. The star population of ellipticals is generally older than that of spirals, and there is usually little to no star formation. There is very little gas and dust in ellipticals, and they tend to emit more light in the redder end of the electromagnetic spectrum. Early type galaxies are less common than late type galaxies, and are more usually found in galaxy clusters.
-
-\subsubsection{Spiral (late type) galaxies} \label{lates}
-Late type galaxies have a prominent disky component that orbits around the galaxy's center. The rotational velocity of the disk is typically much larger than the velocity dispersion of the galaxy's bulge. The stars in a spiral galaxy are usually much younger than those in early types. There is a lot of gas and dust present in spirals, giving rise to ongoing star formation. Late type galaxies are bluer in color than early types. Field galaxies, which are not part of any galaxy cluster, are predominantly spirals. 
-
-
-The rotational velocities of the stars at different radii in the disk of spiral galaxies can be measured observationally, and plotting the velocity as a function of radius gives us the velocity curve of the galaxy. If the mass in the galaxy was solely made up of the gas and stars that we are able to detect optically, we would expect the velocity curve to drop off as we get to the outer parts of the galaxy. Assuming the particles move in circular orbits around the center of mass, the circular velocity at a given radius is given by the formula
-
-\begin{equation}
-    v_{circ} = \sqrt{GM(<R)/R}, 
-\end{equation}
-
-where $M(<R)$ is the total mass within radius $R$. However, the observational data shows that the velocity curve does not fall off towards the outer parts of the galaxy, but actually flattens out. An example of this can be seen in Figure \ref{rotation_curves}. There the rotation curves of several spiral galaxies is shown, along with the curve showing the expected fall off of velocity if there was no dark matter (long-dashed line). This perplexed early astrophysicists, as the mass inside the outer radius must be much greater than that which could be accounted for by the stars and gas in the galaxy. An effort to solve this problem led to the theory of dark matter, and later to the $\Lambda$CDM model.
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.9\textwidth]{images/rotation_curves.png}
-    \caption{Rotation curves for several spiral galaxies (points). The velocities are normalized with respect to each of the galaxies maximum velocity. Radial distances are in units of the optical radius $R_{opt}$ (the radius within 83\% of the light is enclosed). The long-dashed line shows the expected Keplerian curve if there was no dark matter. Credit: \textcite{Zasov2017}.}
-    \label{rotation_curves}
-\end{figure}
 
 \begin{table}
 \begin{center}
@@ -151,6 +128,28 @@ where $M(<R)$ is the total mass within radius $R$. However, the observational da
 \end{center}
 \end{table}
 
+\subsubsection{Elliptical (early type) galaxies}
+Elliptical galaxies are mainly pressure-dominated systems, meaning that the motion of the stars is predominantly radial. The largest galaxies in the Universe tend to be ellipticals, but they come in all sizes. The star population of ellipticals is generally older than that of spirals, and there is usually little to no star formation. There is very little gas and dust in ellipticals, and they tend to emit more light in the redder end of the electromagnetic spectrum. Early type galaxies are less common than late type galaxies, and are more usually found in galaxy clusters.
+
+\subsubsection{Spiral (late type) galaxies} \label{lates}
+Late type galaxies have a prominent disky component that orbits around the galaxy's center. The rotational velocity of the disk is typically much larger than the velocity dispersion of the galaxy's bulge. The stars in a spiral galaxy are usually much younger than those in early types. There is a lot of gas and dust present in spirals, giving rise to ongoing star formation. Late type galaxies are bluer in color than early types. Field galaxies, which are not part of any galaxy cluster, are predominantly spirals. 
+
+
+The rotational velocities of the stars at different radii in the disk of spiral galaxies can be measured observationally, and plotting the velocity as a function of radius gives us the velocity curve of the galaxy. If the mass in the galaxy was solely made up of the gas and stars that we are able to detect optically, we would expect the velocity curve to drop off as we get to the outer parts of the galaxy. Assuming the particles move in circular orbits around the center of mass, the circular velocity at a given radius is given by the formula
+
+\begin{equation}
+    v_{circ} = \sqrt{GM(<R)/R}, 
+\end{equation}
+
+where $M(<R)$ is the total mass within radius $R$. However, the observational data shows that the velocity curve does not fall off towards the outer parts of the galaxy, but actually flattens out. An example of this can be seen in Figure \ref{rotation_curves}. There the rotation curves of several spiral galaxies is shown, along with the curve showing the expected fall off of velocity if there was no dark matter (long-dashed line). This perplexed early astrophysicists, as the mass inside the outer radius must be much greater than that which could be accounted for by the stars and gas in the galaxy. An effort to solve this problem led to the theory of dark matter, and later to the $\Lambda$CDM model.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{images/rotation_curves.png}
+    \caption{Rotation curves for several spiral galaxies (points). The velocities are normalized with respect to each of the galaxies maximum velocity. Radial distances are in units of the optical radius $R_{opt}$ (the radius within 83\% of the light is enclosed). The long-dashed line shows the expected Keplerian curve if there was no dark matter. Credit: \textcite{Zasov2017}.}
+    \label{rotation_curves}
+\end{figure}
+
 \subsection{Galaxy properties}
 In this report I will be looking at many of the main galaxy properties that have been explored throughout the years. We will only be looking at the relations in the present time, $z=0$, but the relations have been studied across redshifts and many are redshift-dependent.
 
@@ -168,7 +167,7 @@ This is known as the Tully-Fisher relation (TFR) (Figure \ref{tully_fisher}). As
     M_* \propto V_{rot}^\alpha 
 \end{equation}
 
-$\alpha$ was found to be 3.7 \parencite{TullyFisher1977}. Later work has found $\alpha$ to lie between 3 and 4 (\textcite{Lelli2019}, \textcite{Bloom2017}).
+$\alpha$ was found to be 3.7 \parencite{TullyFisher1977}. Later work has found $\alpha$ to lie between 3 and 4 \parencite{Lelli2019, Bloom2017}.
 
 This relation is a great tool for estimating the distance to a galaxy, as the predicted total luminosity can be compared to the apparent magnitude at Earth. For numerical simulations, being able to reproduce the TFR is an essential way to check if the model is reliable.
 

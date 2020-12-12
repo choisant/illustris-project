@@ -4,7 +4,7 @@
 \graphicspath{ {./images/} }
 \usepackage{url}
 \usepackage{appendix}
-\usepackage{caption}
+\usepackage[font=small,labelfont=bf]{caption}
 \usepackage{subfig}
 \usepackage{epigraph}
 \setlength\epigraphwidth{.8\textwidth}
@@ -27,6 +27,7 @@
 \begin{document}
 
 \input{sections/titlepage}
+\pagenumbering{arabic}
 
 \section*{Abstract}
 %\input{sections/abstract}
@@ -46,6 +47,7 @@
 \section{Results and discussions} \label{results}
 \input{sections/results}
 
+\newpage
 \section{Conclusions} \label{conclusions}
 \input{sections/conclusions}
 

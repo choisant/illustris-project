@@ -40,11 +40,12 @@ def C_SM(color, ax, x0=9, x1=12, y0=-1, y1=1):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
     ax.set_ylabel(color + " [mag]", fontsize=TEXTSIZE)
     ax.set_xlabel(r"$\log(M_*)$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
-    ax.tick_params(which="both", direction="in", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
+    ax.tick_params(which="both", direction="in", top=True, right=True, labelsize=TEXTSIZE, pad=20, length=4, width=2)
     ax.minorticks_on()
     ax.legend(loc=0, fontsize=TEXTSIZE, frameon=False)
     
-def PDF_C(color, ax, legend_on):
+def PDF_C(color, ax, legend_on, x0=-1, x1=2, y0=0, y1=4):
+    ax.set(xlim=(x0, x1), ylim=(y0, y1))
     ax.set_ylabel("PDF", fontsize=TEXTSIZE)
     ax.set_xlabel(color + " color [mag]", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="in", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
