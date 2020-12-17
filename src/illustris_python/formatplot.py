@@ -38,11 +38,12 @@ def Vmax_SM(ax, x0=1.5, x1=2.5, y0=9, y1=11.5):
 
 def C_SM(color, ax, x0=9, x1=12, y0=-1, y1=1):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
-    ax.set_ylabel(color + " [mag]", fontsize=TEXTSIZE)
-    ax.set_xlabel(r"$\log(M_*)$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
-    ax.tick_params(which="both", direction="in", top=True, right=True, labelsize=TEXTSIZE, pad=20, length=4, width=2)
+    ax.set_ylabel(color + " [mag]", fontsize=TEXTSIZE+5)
+    ax.set_xlabel(r"$\log(M_*)$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE+5)
+    ax.tick_params(which="major", direction="in", top=True, right=True, labelsize=TEXTSIZE+5, pad=20, length=8, width=3)
+    ax.tick_params(which="minor", direction="in", top=True, right=True, labelsize=TEXTSIZE+5, pad=20, length=5, width=3)
     ax.minorticks_on()
-    ax.legend(loc=0, fontsize=TEXTSIZE, frameon=False)
+    ax.legend(loc=0, fontsize=TEXTSIZE+5, frameon=False)
     
 def PDF_C(color, ax, legend_on, x0=-1, x1=2, y0=0, y1=4):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
